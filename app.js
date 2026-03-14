@@ -158,19 +158,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ===========================
-  // Dashboard chart animation
+  // Mobile Sticky CTA visibility
   // ===========================
-  const chartBars = document.querySelectorAll('.chart-bar');
-  if (chartBars.length) {
-    // Animate bars on load
-    chartBars.forEach((bar, i) => {
-      const targetHeight = bar.style.height;
-      bar.style.height = '0';
-      setTimeout(() => {
-        bar.style.transition = 'height 0.6s ease';
-        bar.style.height = targetHeight;
-      }, 300 + i * 80);
-    });
+  const mobileStickyCta = document.getElementById('mobileStickyCta');
+  if (mobileStickyCta) {
+    // Already visible by default on mobile via CSS
+    // Hide on scroll past hero, show when scrolled enough
   }
 
   // ===========================
