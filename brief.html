@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>需求表 — 漫漫行銷</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background:var(--gray-50);">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="logo-icon">漫</div>
+      漫漫行銷
+    </a>
+    <div class="navbar-nav">
+      <a href="index.html" class="nav-link">回首頁</a>
+      <a href="pricing.html" class="nav-link">方案與價格</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="#" class="btn btn-outline btn-sm"><span style="color:#06C755;">●</span> LINE 帳號</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BRIEF HERO -->
+<section style="background:var(--primary-50);border-bottom:1px solid var(--gray-200);padding:40px 0 32px;text-align:center;">
+  <div class="container">
+    <div class="section-tag" style="margin-bottom:12px;">需求表</div>
+    <h1 style="font-size:32px;font-weight:900;color:var(--dark);margin-bottom:8px;">填好這份需求表，我們就能正式開始</h1>
+    <p style="font-size:16px;color:var(--gray-500);max-width:560px;margin:0 auto;">這份表單的目的是幫你把需求整理清楚，讓專案更快進入製作。若目前有些資料還沒準備好，也沒關係，可以先填你現有的內容。</p>
+    <div style="margin-top:16px;display:flex;align-items:center;justify-content:center;gap:20px;font-size:13px;color:var(--gray-500);">
+      <span>⏱️ 填寫約 5～10 分鐘</span>
+      <span>📋 7 個步驟</span>
+      <span>🔒 資料安全保存</span>
+    </div>
+  </div>
+</section>
+
+<!-- BRIEF FORM -->
+<section style="padding:40px 0 80px;">
+  <div class="container" style="max-width:760px;">
+
+    <!-- Progress Bar -->
+    <div class="brief-progress" id="progressBar">
+      <button class="progress-step active" onclick="goToStep(1)">
+        <span class="progress-step-num">1</span>
+        品牌資訊
+      </button>
+      <button class="progress-step" onclick="goToStep(2)">
+        <span class="progress-step-num">2</span>
+        專案目標
+      </button>
+      <button class="progress-step" onclick="goToStep(3)">
+        <span class="progress-step-num">3</span>
+        功能需求
+      </button>
+      <button class="progress-step" onclick="goToStep(4)">
+        <span class="progress-step-num">4</span>
+        視覺風格
+      </button>
+      <button class="progress-step" onclick="goToStep(5)">
+        <span class="progress-step-num">5</span>
+        資料準備
+      </button>
+      <button class="progress-step" onclick="goToStep(6)">
+        <span class="progress-step-num">6</span>
+        時程補充
+      </button>
+      <button class="progress-step" onclick="goToStep(7)">
+        <span class="progress-step-num">7</span>
+        送出確認
+      </button>
+    </div>
+
+    <form id="briefForm" novalidate>
+
+      <!-- STEP 1: Brand Info -->
+      <div class="brief-section active" id="step1">
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:32px;margin-bottom:24px;">
+          <h2 style="font-size:22px;font-weight:800;margin-bottom:6px;">你的品牌基本資訊</h2>
+          <p style="font-size:14px;color:var(--gray-500);margin-bottom:28px;">讓我們先認識你的品牌是做什麼的。</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">品牌名稱 / 公司名稱 <span class="required">*</span></label>
+              <input type="text" class="form-input" placeholder="XX 品牌" id="brandName" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">聯絡人姓名 <span class="required">*</span></label>
+              <input type="text" class="form-input" placeholder="王小明" id="contactName" required />
+            </div>
+            <div class="form-group full">
+              <label class="form-label">品牌簡介 <span class="required">*</span></label>
+              <textarea class="form-textarea" rows="3" placeholder="請簡單描述你的品牌是做什麼的、服務或商品是什麼…" id="brandDesc" required></textarea>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">主要販售商品 / 服務</label>
+              <input type="text" class="form-input" placeholder="例：手工甜點、設計顧問服務、保養品…" id="mainProduct" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">聯絡 Email <span class="required">*</span></label>
+              <input type="email" class="form-input" placeholder="you@example.com" id="email" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">手機 <span class="required">*</span></label>
+              <input type="tel" class="form-input" placeholder="09XX-XXX-XXX" id="phone" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">LINE ID <span class="optional">選填</span></label>
+              <input type="text" class="form-input" placeholder="your_line_id" id="lineId" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">現有網站 <span class="optional">若有</span></label>
+              <input type="url" class="form-input" placeholder="https://yoursite.com" id="existingWebsite" />
+            </div>
+            <div class="form-group full">
+              <label class="form-label">現有賣場 / 社群連結 <span class="optional">若有</span></label>
+              <input type="text" class="form-input" placeholder="蝦皮、Instagram、Facebook 等連結…" id="socialLinks" />
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:flex-end;">
+          <button type="button" class="btn btn-primary btn-lg" onclick="nextStep(1)">下一步：專案目標 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: Project Goals -->
+      <div class="brief-section" id="step2">
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:32px;margin-bottom:24px;">
+          <h2 style="font-size:22px;font-weight:800;margin-bottom:6px;">這次你最希望完成什麼？</h2>
+          <p style="font-size:14px;color:var(--gray-500);margin-bottom:28px;">可以複選，選出最符合你現在需求的目標。</p>
+          <div class="goal-grid" id="goalGrid">
+            <label class="goal-item"><input type="checkbox" name="goal" value="brand_image"> 建立品牌形象</label>
+            <label class="goal-item"><input type="checkbox" name="goal" value="seo"> 讓客戶更容易找到我</label>
+            <label class="goal-item"><input type="checkbox" name="goal" value="inquiry"> 增加詢問與聯絡</label>
+            <label class="goal-item"><input type="checkbox" name="goal" value="sell"> 開始線上賣商品</label>
+            <label class="goal-item"><input type="checkbox" name="goal" value="payment"> 串接金流 / 購物流程</label>
+            <label class="goal-item"><input type="checkbox" name="goal" value="marketplace"> 整理平台賣場頁面</label>
+            <label class="goal-item"><input type="checkbox" name="goal" value="conversion"> 增加成交率</label>
+            <label class="goal-item"><input type="checkbox" name="goal" value="brand_feel"> 建立更完整的品牌感</label>
+            <label class="goal-item"><input type="checkbox" name="goal" value="other_goal"> 其他</label>
+          </div>
+          <div class="form-group" style="margin-top:20px;">
+            <label class="form-label">你最在意這次專案的哪件事？<span class="optional">開放填寫</span></label>
+            <textarea class="form-textarea" rows="3" placeholder="例：希望網站感覺很專業但不失溫度、一定要手機版好用、想讓客戶一進來就知道我在賣什麼…" id="mainConcern"></textarea>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;">
+          <button type="button" class="btn btn-outline btn-lg" onclick="prevStep(2)">← 上一步</button>
+          <button type="button" class="btn btn-primary btn-lg" onclick="nextStep(2)">下一步：功能需求 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Features & Requirements -->
+      <div class="brief-section" id="step3">
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:32px;margin-bottom:24px;">
+          <h2 style="font-size:22px;font-weight:800;margin-bottom:6px;">你需要的內容與功能</h2>
+          <p style="font-size:14px;color:var(--gray-500);margin-bottom:28px;">依你的方案類型填寫，不確定的跳過也沒關係。</p>
+
+          <!-- Website type -->
+          <div style="margin-bottom:28px;">
+            <h4 style="font-size:14px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--gray-100);">網站相關功能</h4>
+            <div class="form-group" style="margin-bottom:16px;">
+              <label class="form-label">需要的頁面類型 <span class="optional">可列出你想要的頁面</span></label>
+              <input type="text" class="form-input" placeholder="例：首頁、關於我們、服務介紹、商品頁、聯絡我們、FAQ…" id="pageTypes" />
+            </div>
+            <div class="form-grid" style="grid-template-columns:1fr 1fr;">
+              <div class="form-group">
+                <label class="form-label">是否需要購物車？</label>
+                <select class="form-select" id="needCart">
+                  <option value="">— 請選擇 —</option>
+                  <option value="yes">是，需要購物車</option>
+                  <option value="no">否</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">是否需要金流串接？</label>
+                <select class="form-select" id="needPayment">
+                  <option value="">— 請選擇 —</option>
+                  <option value="yes">是，需要金流</option>
+                  <option value="no">否</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">是否需要物流設定？</label>
+                <select class="form-select" id="needLogistics">
+                  <option value="">— 請選擇 —</option>
+                  <option value="yes">是</option>
+                  <option value="no">否</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">是否需要發票功能？</label>
+                <select class="form-select" id="needInvoice">
+                  <option value="">— 請選擇 —</option>
+                  <option value="yes">是，需要電子發票</option>
+                  <option value="no">否</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">是否需要會員功能？</label>
+                <select class="form-select" id="needMember">
+                  <option value="">— 請選擇 —</option>
+                  <option value="basic">是，基本會員</option>
+                  <option value="advanced">是，進階會員分級</option>
+                  <option value="no">否</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">是否需要預約 / 詢價 / 表單？</label>
+                <select class="form-select" id="needForm">
+                  <option value="">— 請選擇 —</option>
+                  <option value="yes">是</option>
+                  <option value="no">否</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Marketplace type -->
+          <div style="margin-bottom:20px;">
+            <h4 style="font-size:14px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--gray-100);">平台賣場相關（若有）</h4>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label">目前經營的平台</label>
+                <input type="text" class="form-input" placeholder="例：蝦皮、MOMO、PChome…" id="platforms" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">商品數量大約</label>
+                <select class="form-select" id="productCount">
+                  <option value="">— 請選擇 —</option>
+                  <option value="less20">20 項以下</option>
+                  <option value="20-50">20～50 項</option>
+                  <option value="50-100">50～100 項</option>
+                  <option value="100+">100 項以上</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label class="form-label">想優化的重點</label>
+                <input type="text" class="form-input" placeholder="例：首頁、商品頁、分類、活動頁、標題關鍵字、轉換率…" id="marketFocus" />
+              </div>
+              <div class="form-group full">
+                <label class="form-label">是否需要協助上架商品？</label>
+                <select class="form-select" id="needUpload">
+                  <option value="">— 請選擇 —</option>
+                  <option value="yes">是，需要協助</option>
+                  <option value="no">否，我自行處理</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;">
+          <button type="button" class="btn btn-outline btn-lg" onclick="prevStep(3)">← 上一步</button>
+          <button type="button" class="btn btn-primary btn-lg" onclick="nextStep(3)">下一步：視覺風格 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: Style Preferences -->
+      <div class="brief-section" id="step4">
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:32px;margin-bottom:24px;">
+          <h2 style="font-size:22px;font-weight:800;margin-bottom:6px;">你希望整體看起來像什麼感覺？</h2>
+          <p style="font-size:14px;color:var(--gray-500);margin-bottom:28px;">可複選，選出最符合你品牌感的風格描述。</p>
+
+          <div class="style-tags" id="styleTags">
+            <span class="style-tag" onclick="toggleStyle(this)">簡約俐落</span>
+            <span class="style-tag" onclick="toggleStyle(this)">品牌感強</span>
+            <span class="style-tag" onclick="toggleStyle(this)">高級質感</span>
+            <span class="style-tag" onclick="toggleStyle(this)">親切好懂</span>
+            <span class="style-tag" onclick="toggleStyle(this)">電商感</span>
+            <span class="style-tag" onclick="toggleStyle(this)">科技感</span>
+            <span class="style-tag" onclick="toggleStyle(this)">溫暖感</span>
+            <span class="style-tag" onclick="toggleStyle(this)">年輕活潑</span>
+            <span class="style-tag" onclick="toggleStyle(this)">穩重專業</span>
+            <span class="style-tag" onclick="toggleStyle(this)">清新自然</span>
+            <span class="style-tag" onclick="toggleStyle(this)">深色質感</span>
+            <span class="style-tag" onclick="toggleStyle(this)">台式文創</span>
+          </div>
+
+          <div class="form-grid" style="margin-top:24px;">
+            <div class="form-group">
+              <label class="form-label">參考網站連結 1 <span class="optional">選填</span></label>
+              <input type="url" class="form-input" placeholder="https://…" id="refSite1" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">參考網站連結 2 <span class="optional">選填</span></label>
+              <input type="url" class="form-input" placeholder="https://…" id="refSite2" />
+            </div>
+            <div class="form-group full">
+              <label class="form-label">不喜歡的風格補充 <span class="optional">選填</span></label>
+              <input type="text" class="form-input" placeholder="例：不要太花俏、不要太工程感、不要過度文青…" id="dislikeStyle" />
+            </div>
+          </div>
+          <p style="font-size:13px;color:var(--gray-400);margin-top:12px;">有參考網站很好，沒有也沒關係，我們會依你選擇的風格來規劃。</p>
+        </div>
+        <div style="display:flex;justify-content:space-between;">
+          <button type="button" class="btn btn-outline btn-lg" onclick="prevStep(4)">← 上一步</button>
+          <button type="button" class="btn btn-primary btn-lg" onclick="nextStep(4)">下一步：資料準備 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 5: Asset Preparation -->
+      <div class="brief-section" id="step5">
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:32px;margin-bottom:24px;">
+          <h2 style="font-size:22px;font-weight:800;margin-bottom:6px;">目前你準備到哪裡了？</h2>
+          <p style="font-size:14px;color:var(--gray-500);margin-bottom:28px;">勾選你目前已有的素材與資料，讓我們了解哪些地方需要協助。</p>
+
+          <div class="asset-grid">
+            <label class="asset-item"><input type="checkbox" name="asset" value="logo"> ✅ 已有 Logo</label>
+            <label class="asset-item"><input type="checkbox" name="asset" value="brand_color"> 🎨 已有品牌色 / 視覺</label>
+            <label class="asset-item"><input type="checkbox" name="asset" value="copy"> ✍️ 已有網站文案</label>
+            <label class="asset-item"><input type="checkbox" name="asset" value="product_data"> 📦 已有商品資料</label>
+            <label class="asset-item"><input type="checkbox" name="asset" value="product_images"> 📸 已有商品圖片</label>
+            <label class="asset-item"><input type="checkbox" name="asset" value="brand_intro"> 📝 已有品牌介紹</label>
+            <label class="asset-item"><input type="checkbox" name="asset" value="payment_account"> 💳 已有金流帳號 / 串接需求</label>
+            <label class="asset-item"><input type="checkbox" name="asset" value="nothing"> ⚡ 還沒有，需要協助整理</label>
+          </div>
+
+          <div class="form-group" style="margin-top:24px;">
+            <label class="form-label">目前最卡的地方是什麼？<span class="optional">選填，但這題很重要</span></label>
+            <textarea class="form-textarea" rows="3" placeholder="例：不知道文案要怎麼寫、商品圖片還沒拍好、不確定要用哪個金流…" id="biggestChallenge"></textarea>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;">
+          <button type="button" class="btn btn-outline btn-lg" onclick="prevStep(5)">← 上一步</button>
+          <button type="button" class="btn btn-primary btn-lg" onclick="nextStep(5)">下一步：時程補充 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 6: Timeline -->
+      <div class="brief-section" id="step6">
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:32px;margin-bottom:24px;">
+          <h2 style="font-size:22px;font-weight:800;margin-bottom:6px;">時程與其他補充</h2>
+          <p style="font-size:14px;color:var(--gray-500);margin-bottom:28px;">讓我們了解你的時程需求與其他特殊說明。</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">希望上線時間 <span class="optional">選填</span></label>
+              <input type="text" class="form-input" placeholder="例：三個月內、6 月前、越快越好…" id="targetLaunch" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">是否有急件需求？</label>
+              <select class="form-select" id="isUrgent">
+                <option value="">— 請選擇 —</option>
+                <option value="yes">是，有急件需求</option>
+                <option value="no">否，正常時程即可</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">其他特殊需求 <span class="optional">選填</span></label>
+              <textarea class="form-textarea" rows="3" placeholder="例：需要第三方串接、特殊功能、有特定的設計規範…" id="specialNeeds"></textarea>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">是否對後續維護 / 顧問 / 代操有興趣？</label>
+              <select class="form-select" id="futureServices">
+                <option value="">— 請選擇 —</option>
+                <option value="interested">有興趣，可以之後討論</option>
+                <option value="maybe">之後再說</option>
+                <option value="no">目前不需要</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;">
+          <button type="button" class="btn btn-outline btn-lg" onclick="prevStep(6)">← 上一步</button>
+          <button type="button" class="btn btn-primary btn-lg" onclick="nextStep(6)">最後確認 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 7: Confirmation -->
+      <div class="brief-section" id="step7">
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:32px;margin-bottom:24px;">
+          <div style="text-align:center;margin-bottom:28px;">
+            <div style="font-size:48px;margin-bottom:12px;">🎉</div>
+            <h2 style="font-size:22px;font-weight:800;margin-bottom:6px;">送出後，我們就會開始整理你的專案</h2>
+            <p style="font-size:14px;color:var(--gray-500);">送出後，系統會建立你的專案資料並進入啟動流程。若後續需要補充資料，也可以透過官方帳號、Email 或專案訊息再補上。</p>
+          </div>
+
+          <!-- Summary Review -->
+          <div style="background:var(--gray-50);border-radius:var(--radius);padding:20px;margin-bottom:24px;" id="summaryReview">
+            <h4 style="font-size:13px;font-weight:700;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">資料摘要</h4>
+            <div id="summaryContent" style="font-size:14px;color:var(--gray-700);line-height:1.8;">
+              <!-- Populated by JS -->
+              請確認上方各步驟已填寫完整後，再勾選並送出。
+            </div>
+          </div>
+
+          <div class="terms-list">
+            <label class="term-item">
+              <input type="checkbox" id="confirmAccuracy" required />
+              我確認以上資料為目前可提供內容（部分資訊後續可再補充）
+            </label>
+            <label class="term-item">
+              <input type="checkbox" id="confirmAddons" required />
+              我了解後續若有新增需求，可能需另行評估加購費用
+            </label>
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+          <button type="button" class="btn btn-outline btn-lg" onclick="prevStep(7)">← 修改資料</button>
+          <button type="submit" class="btn btn-primary btn-lg" style="font-size:16px;padding:16px 36px;" onclick="submitBrief(event)">
+            送出需求，啟動專案 🚀
+          </button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- Submit Success Modal -->
+<div id="successModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:2000;align-items:center;justify-content:center;">
+  <div style="background:var(--white);border-radius:var(--radius-xl);padding:48px;max-width:480px;width:90%;text-align:center;box-shadow:var(--shadow-xl);">
+    <div style="font-size:56px;margin-bottom:16px;">🎊</div>
+    <h2 style="font-size:26px;font-weight:900;margin-bottom:8px;">需求已送出，<br>專案正式啟動！</h2>
+    <p style="font-size:15px;color:var(--gray-500);margin-bottom:28px;">我們已收到你的資料，接下來會依照方案內容開始整理與安排後續流程。後續可透過官方帳號、Email 或專案訊息持續聯繫。</p>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <a href="#" class="btn btn-primary w-full"><span style="color:white;">●</span> 加入官方帳號</a>
+      <a href="index.html" class="btn btn-outline w-full">← 回首頁</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER SIMPLE -->
+<footer style="background:var(--dark-2);padding:32px 0;text-align:center;margin-top:0;">
+  <div class="container">
+    <p style="font-size:13px;color:rgba(255,255,255,0.35);">© 2026 漫漫行銷. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+let currentStep = 1;
+const totalSteps = 7;
+
+function goToStep(n) {
+  // Deactivate all
+  document.querySelectorAll('.brief-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.progress-step').forEach((s, i) => {
+    s.classList.remove('active');
+    if (i + 1 < n) s.classList.add('completed');
+    else s.classList.remove('completed');
+    if (i + 1 === n) s.classList.add('active');
+  });
+  document.getElementById('step' + n).classList.add('active');
+  currentStep = n;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function nextStep(from) {
+  if (from < totalSteps) {
+    if (from === totalSteps - 1) buildSummary();
+    goToStep(from + 1);
+  }
+}
+
+function prevStep(from) {
+  if (from > 1) goToStep(from - 1);
+}
+
+function toggleStyle(tag) {
+  tag.classList.toggle('selected');
+}
+
+function buildSummary() {
+  const brandName = document.getElementById('brandName').value;
+  const email = document.getElementById('email').value;
+  const goals = Array.from(document.querySelectorAll('input[name="goal"]:checked')).map(c => c.parentElement.textContent.trim());
+  const assets = Array.from(document.querySelectorAll('input[name="asset"]:checked')).map(c => c.parentElement.textContent.trim());
+  const styles = Array.from(document.querySelectorAll('.style-tag.selected')).map(s => s.textContent.trim());
+
+  let html = `<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">`;
+  html += `<div><strong>品牌：</strong>${brandName || '（未填）'}</div>`;
+  html += `<div><strong>Email：</strong>${email || '（未填）'}</div>`;
+  if (goals.length) html += `<div style="grid-column:1/-1"><strong>目標：</strong>${goals.join('、')}</div>`;
+  if (styles.length) html += `<div style="grid-column:1/-1"><strong>風格：</strong>${styles.join('、')}</div>`;
+  if (assets.length) html += `<div style="grid-column:1/-1"><strong>已有素材：</strong>${assets.join('、')}</div>`;
+  html += `</div>`;
+  document.getElementById('summaryContent').innerHTML = html;
+}
+
+function submitBrief(e) {
+  e.preventDefault();
+  const c1 = document.getElementById('confirmAccuracy').checked;
+  const c2 = document.getElementById('confirmAddons').checked;
+  if (!c1 || !c2) {
+    alert('請勾選所有確認事項。');
+    return;
+  }
+  // Show success modal
+  const modal = document.getElementById('successModal');
+  modal.style.display = 'flex';
+}
+
+// Close modal on backdrop
+document.getElementById('successModal')?.addEventListener('click', function(e) {
+  if (e.target === this) this.style.display = 'none';
+});
+
+// Style tag selection
+document.querySelectorAll('.goal-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const cb = this.querySelector('input');
+    if (cb.checked) {
+      this.style.borderColor = 'var(--primary)';
+      this.style.background = 'var(--primary-50)';
+    } else {
+      this.style.borderColor = '';
+      this.style.background = '';
+    }
+  });
+});
+
+document.querySelectorAll('.asset-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const cb = this.querySelector('input');
+    if (cb.checked) {
+      this.style.borderColor = 'var(--success)';
+      this.style.background = '#F0FDF4';
+    } else {
+      this.style.borderColor = '';
+      this.style.background = '';
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>漫漫行銷 — 品牌網站・電商・賣場・行銷，一次搞定</title>
+  <meta name="description" content="中小品牌與創業者的一站式建站與行銷服務平台。網站建置、電商系統、平台賣場、行銷代操，價格透明，流程清楚，直接下單。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ========================= NAVBAR ========================= -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="logo-icon">漫</div>
+      漫漫行銷
+    </a>
+    <div class="navbar-nav">
+      <a href="#services" class="nav-link">服務項目</a>
+      <a href="pricing.html" class="nav-link">方案與價格</a>
+      <a href="#portfolio" class="nav-link">成果展示</a>
+      <a href="#process" class="nav-link">合作流程</a>
+      <a href="#faq" class="nav-link">常見問題</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="pricing.html" class="btn btn-outline btn-sm">查看方案</a>
+      <a href="order.html" class="btn btn-primary btn-sm">直接下單</a>
+      <button class="hamburger" id="hamburger" aria-label="選單">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#services" class="mobile-nav-link">服務項目</a>
+  <a href="pricing.html" class="mobile-nav-link">方案與價格</a>
+  <a href="#portfolio" class="mobile-nav-link">成果展示</a>
+  <a href="#process" class="mobile-nav-link">合作流程</a>
+  <a href="#faq" class="mobile-nav-link">常見問題</a>
+  <div class="mobile-nav-btns">
+    <a href="pricing.html" class="btn btn-outline w-full">查看方案</a>
+    <a href="order.html" class="btn btn-primary w-full">直接下單</a>
+  </div>
+</div>
+
+<!-- ========================= HERO ========================= -->
+<section class="hero">
+  <div class="hero-inner">
+    <!-- Left: Text -->
+    <div class="hero-content fade-up">
+      <div class="hero-tag">
+        🚀 中小品牌的建站與行銷夥伴
+      </div>
+      <h1 class="hero-title">
+        網站、賣場、收款、行銷，<span>一次搞定</span>
+      </h1>
+      <p class="hero-subtitle">
+        不是只會做設計的公司。漫漫行銷把中小品牌最常需要的建站、電商、賣場優化與行銷代操，整理成清楚透明的方案——可以直接下單付款，今天就開始。
+      </p>
+      <div class="hero-features">
+        <span class="hero-feature">
+          <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></span>
+          價格透明不藏
+        </span>
+        <span class="hero-feature">
+          <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></span>
+          直接下單付款
+        </span>
+        <span class="hero-feature">
+          <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></span>
+          流程清楚好溝通
+        </span>
+        <span class="hero-feature">
+          <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></span>
+          一站式全包服務
+        </span>
+      </div>
+      <div class="btn-group">
+        <a href="pricing.html" class="btn btn-primary btn-lg">
+          立即看方案
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6 3l5 5-5 5"/></svg>
+        </a>
+        <a href="order.html" class="btn btn-dark btn-lg">直接開始下單</a>
+        <a href="#" class="btn btn-outline btn-lg">
+          <span style="color:#06C755;">●</span> 加入官方帳號
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Browser Mockup -->
+    <div class="hero-visual">
+      <div class="browser-mockup">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <div class="browser-dot dot-red"></div>
+            <div class="browser-dot dot-yellow"></div>
+            <div class="browser-dot dot-green"></div>
+          </div>
+          <div class="browser-url">manman-shop.com/admin</div>
+        </div>
+        <div class="browser-content">
+          <div class="dashboard">
+            <div class="dashboard-header">
+              <span style="font-weight:700;">漫漫後台</span>
+              <div class="dashboard-nav">
+                <span>訂單</span>
+                <span>商品</span>
+                <span>行銷</span>
+                <span>報表</span>
+              </div>
+            </div>
+            <div class="dashboard-body">
+              <div class="dash-stat">
+                <div class="dash-stat-label">本月營收</div>
+                <div class="dash-stat-value">$184K</div>
+                <div class="dash-stat-change">↑ 23%</div>
+              </div>
+              <div class="dash-stat">
+                <div class="dash-stat-label">新增訂單</div>
+                <div class="dash-stat-value">268</div>
+                <div class="dash-stat-change">↑ 15%</div>
+              </div>
+              <div class="dash-stat">
+                <div class="dash-stat-label">網站訪客</div>
+                <div class="dash-stat-value">9,421</div>
+                <div class="dash-stat-change">↑ 31%</div>
+              </div>
+            </div>
+            <div class="dashboard-chart">
+              <div style="font-size:11px;color:#9CA3AF;margin-bottom:6px;">近 7 天訂單趨勢</div>
+              <div class="chart-bars">
+                <div class="chart-bar" style="height:40%;"></div>
+                <div class="chart-bar" style="height:55%;"></div>
+                <div class="chart-bar" style="height:50%;"></div>
+                <div class="chart-bar" style="height:75%;"></div>
+                <div class="chart-bar" style="height:65%;"></div>
+                <div class="chart-bar active" style="height:88%;"></div>
+                <div class="chart-bar" style="height:80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating badges -->
+      <div class="hero-float-1">
+        <div class="float-icon">✅</div>
+        <div>
+          <div style="font-weight:700;font-size:13px;">網站已上線</div>
+          <div style="font-size:11px;color:#9CA3AF;">約 14 個工作天</div>
+        </div>
+      </div>
+      <div class="hero-float-2">
+        <div class="float-icon">💰</div>
+        <div>
+          <div style="font-weight:700;font-size:13px;">金流已串接</div>
+          <div style="font-size:11px;color:#9CA3AF;">信用卡 / LINE Pay</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="container" style="margin-top:64px;">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">200<span>+</span></div>
+        <div class="stat-label">合作品牌與商家</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98<span>%</span></div>
+        <div class="stat-label">客戶滿意度</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">14<span>天</span></div>
+        <div class="stat-label">標準交付時間</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span>NT$</span>19K<span>起</span></div>
+        <div class="stat-label">方案從這個價格開始</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= SERVICES ========================= -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">核心服務</div>
+      <h2 class="section-title">你需要的，我們都有</h2>
+      <p class="section-subtitle">從建站、電商、賣場到行銷，四個核心服務，整合成一個可以直接下單的流程。</p>
+    </div>
+    <div class="grid-4 fade-up">
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>品牌網站</h3>
+        <p>給你一個讓客戶找到你、信任你、聯絡你的專業官網。</p>
+        <ul class="service-list">
+          <li>入門形象站 NT$19,800 起</li>
+          <li>品牌形象站 Pro NT$39,800</li>
+          <li>RWD 響應式設計</li>
+          <li>SEO 基礎設定</li>
+          <li>GA4 安裝整合</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <h3>電商網站</h3>
+        <p>建立自己的品牌電商站，串接金流、物流，直接開始賣。</p>
+        <ul class="service-list">
+          <li>電商起步版 NT$59,800</li>
+          <li>電商成長版 NT$89,800</li>
+          <li>電商旗艦版 NT$129,800 起</li>
+          <li>金流 / 物流 / 發票整合</li>
+          <li>追蹤像素設定</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏪</div>
+        <h3>平台賣場</h3>
+        <p>已經在蝦皮、Momo 等平台的賣家，把頁面整理好才是差別。</p>
+        <ul class="service-list">
+          <li>賣場建置 NT$9,800 起</li>
+          <li>賣場代營運 NT$15,800 / 月起</li>
+          <li>商品頁 SEO 優化</li>
+          <li>活動頁規劃設計</li>
+          <li>標題與關鍵字優化</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📣</div>
+        <h3>行銷代操</h3>
+        <p>網站做好之後，流量與成交才是真的課題。讓我們繼續幫你。</p>
+        <ul class="service-list">
+          <li>短影音代操 NT$18,800 / 月起</li>
+          <li>行銷顧問 NT$3,600 / 次</li>
+          <li>月顧問方案 NT$12,800 / 月起</li>
+          <li>網站維護 NT$2,000 / 月起</li>
+          <li>內容策略規劃</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Trust badges -->
+    <div class="mt-48 fade-up">
+      <div class="trust-badges">
+        <div class="trust-badge">
+          <div class="icon">🔒</div>
+          價格透明不追加
+        </div>
+        <div class="trust-badge">
+          <div class="icon">⚡</div>
+          直接下單不來回
+        </div>
+        <div class="trust-badge">
+          <div class="icon">📋</div>
+          流程清楚好追蹤
+        </div>
+        <div class="trust-badge">
+          <div class="icon">🤝</div>
+          持續支援不斷線
+        </div>
+        <div class="trust-badge">
+          <div class="icon">📱</div>
+          RWD 手機優先
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= TARGET AUDIENCE ========================= -->
+<section class="section" id="audience">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">適合對象</div>
+      <h2 class="section-title">你是哪一類型？</h2>
+      <p class="section-subtitle">我們不是什麼都做的大公司，而是專注服務這四類對象。</p>
+    </div>
+    <div class="grid-2 fade-up">
+      <div class="audience-card">
+        <div class="audience-avatar">🧑‍💼</div>
+        <div>
+          <h3>個人品牌 / 接案者</h3>
+          <p>你有專業、有服務，但沒有一個正式的網站幫你建立可信度。你需要的是一個能展示你、讓客戶聯絡你的門面。</p>
+          <div class="audience-tags">
+            <span class="tag">顧問師</span>
+            <span class="tag">設計師</span>
+            <span class="tag">攝影師</span>
+            <span class="tag">教練</span>
+            <span class="tag">自由工作者</span>
+          </div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <div class="audience-avatar">🏢</div>
+        <div>
+          <h3>中小商家 / 工作室</h3>
+          <p>你已經在做生意了，但一直沒有一個可以代表品牌的官方網站。想讓更多人找到你、信任你、主動詢問你。</p>
+          <div class="audience-tags">
+            <span class="tag">餐飲</span>
+            <span class="tag">工作室</span>
+            <span class="tag">服務業</span>
+            <span class="tag">B2B</span>
+            <span class="tag">小型公司</span>
+          </div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <div class="audience-avatar">📦</div>
+        <div>
+          <h3>電商品牌 / 賣家</h3>
+          <p>你在賣東西，但想建立自己的品牌官方網站，不想永遠只靠平台流量。想有自己的收單渠道與品牌資產。</p>
+          <div class="audience-tags">
+            <span class="tag">網路商店</span>
+            <span class="tag">蝦皮賣家</span>
+            <span class="tag">食品</span>
+            <span class="tag">美妝</span>
+            <span class="tag">文創品牌</span>
+          </div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <div class="audience-avatar">🌱</div>
+        <div>
+          <h3>初創事業 / 創業者</h3>
+          <p>你剛開始，資源有限，但不想做出來的東西很廉價。需要的是一個預算合理、看起來夠專業、可以快速上線的起點。</p>
+          <div class="audience-tags">
+            <span class="tag">新創</span>
+            <span class="tag">創業初期</span>
+            <span class="tag">副業品牌</span>
+            <span class="tag">社群轉電商</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= DIFFERENTIATORS ========================= -->
+<section class="section section-alt" id="why">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">為什麼選我們</div>
+      <h2 class="section-title">跟其他公司有什麼不同？</h2>
+      <p class="section-subtitle">不是說別人不好，而是我們把「讓你安心成交」這件事，直接做進服務設計裡。</p>
+    </div>
+
+    <div class="fade-up">
+      <div class="diff-table">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:30%;">比較項目</th>
+              <th style="width:22%;">一般設計公司</th>
+              <th style="width:22%;">接案設計師</th>
+              <th class="highlight" style="width:26%;">漫漫行銷</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>價格透明</td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>可直接線上下單</td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>電商 / 金流整合</td>
+              <td>部分有</td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>賣場優化服務</td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>行銷代操延伸</td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>清楚的交付規則</td>
+              <td>視情況</td>
+              <td>視情況</td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>不追加費用承諾</td>
+              <td><span class="cross-icon">✕</span></td>
+              <td>不一定</td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+            <tr>
+              <td>從網站到行銷一條龍</td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="cross-icon">✕</span></td>
+              <td><span class="check-icon">✓</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="text-center mt-32 fade-up">
+      <p style="font-size:15px;color:var(--gray-600);">我們不是讓你「感覺很好」，而是讓你真的可以快速把生意做起來。</p>
+      <div class="btn-group" style="justify-content:center;margin-top:20px;">
+        <a href="pricing.html" class="btn btn-primary">看完整方案</a>
+        <a href="order.html" class="btn btn-outline">直接下單</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PRICING HIGHLIGHTS ========================= -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">熱門方案</div>
+      <h2 class="section-title">選一個適合你的開始</h2>
+      <p class="section-subtitle">這裡列出最常被選擇的三個方案，詳細內容與完整比較請看方案頁。</p>
+    </div>
+
+    <div class="grid-3 pricing-cards-grid fade-up">
+      <!-- Card 1 -->
+      <div class="pricing-card">
+        <div class="pricing-category">品牌網站</div>
+        <h3>入門形象站</h3>
+        <p class="pricing-target">個人品牌、工作室、顧問型服務</p>
+        <div class="pricing-price">
+          <div class="price-label">方案價格</div>
+          <div class="price-amount"><span class="currency">NT$</span>19,800</div>
+        </div>
+        <div class="pricing-includes">
+          <ul class="includes-list">
+            <li><span class="icon-check">✓</span> 1～3 頁網站</li>
+            <li><span class="icon-check">✓</span> RWD 響應式設計</li>
+            <li><span class="icon-check">✓</span> 聯絡表單</li>
+            <li><span class="icon-check">✓</span> 基礎 SEO 設定</li>
+            <li><span class="icon-check">✓</span> 協助上線</li>
+          </ul>
+        </div>
+        <div class="pricing-meta">
+          <div class="pricing-meta-item">
+            <div class="pricing-meta-label">交付時間</div>
+            <div class="pricing-meta-value">7～14 天</div>
+          </div>
+          <div class="pricing-meta-item">
+            <div class="pricing-meta-label">修改次數</div>
+            <div class="pricing-meta-value">2 次</div>
+          </div>
+        </div>
+        <div class="pricing-btns">
+          <a href="order.html?plan=starter-site" class="btn btn-dark w-full">立即下單</a>
+          <a href="pricing.html#brand-website" class="btn btn-outline w-full">查看細節</a>
+        </div>
+      </div>
+
+      <!-- Card 2 (featured) -->
+      <div class="pricing-card featured">
+        <div class="pricing-badge"><span class="badge badge-primary">熱門方案</span></div>
+        <div class="pricing-category">電商網站</div>
+        <h3>電商成長版</h3>
+        <p class="pricing-target">成長型品牌，想把品牌感與購物流程一起做好</p>
+        <div class="pricing-price">
+          <div class="price-label">方案價格</div>
+          <div class="price-amount"><span class="currency">NT$</span>89,800</div>
+        </div>
+        <div class="pricing-includes">
+          <ul class="includes-list">
+            <li><span class="icon-check">✓</span> 電商網站完整建置</li>
+            <li><span class="icon-check">✓</span> 金流串接 1～2 種</li>
+            <li><span class="icon-check">✓</span> 物流設定</li>
+            <li><span class="icon-check">✓</span> 發票串接基礎整合</li>
+            <li><span class="icon-check">✓</span> GA4 / Meta Pixel</li>
+            <li><span class="icon-check">✓</span> 上線後 14 天微調</li>
+          </ul>
+        </div>
+        <div class="pricing-meta">
+          <div class="pricing-meta-item">
+            <div class="pricing-meta-label">交付時間</div>
+            <div class="pricing-meta-value">21～30 天</div>
+          </div>
+          <div class="pricing-meta-item">
+            <div class="pricing-meta-label">修改次數</div>
+            <div class="pricing-meta-value">2 次</div>
+          </div>
+        </div>
+        <div class="pricing-btns">
+          <a href="order.html?plan=ecom-growth" class="btn btn-primary w-full">立即下單</a>
+          <a href="pricing.html#ecommerce" class="btn btn-outline w-full">查看細節</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="pricing-card">
+        <div class="pricing-category">電商網站</div>
+        <h3>電商起步版</h3>
+        <p class="pricing-target">剛開始賣商品的小品牌，先把基本流程做起來</p>
+        <div class="pricing-price">
+          <div class="price-label">方案價格</div>
+          <div class="price-amount"><span class="currency">NT$</span>59,800</div>
+        </div>
+        <div class="pricing-includes">
+          <ul class="includes-list">
+            <li><span class="icon-check">✓</span> 電商網站建置</li>
+            <li><span class="icon-check">✓</span> 購物車功能</li>
+            <li><span class="icon-check">✓</span> 金流串接 1 種</li>
+            <li><span class="icon-check">✓</span> 物流基本設定</li>
+            <li><span class="icon-check">✓</span> 後台操作教學</li>
+          </ul>
+        </div>
+        <div class="pricing-meta">
+          <div class="pricing-meta-item">
+            <div class="pricing-meta-label">交付時間</div>
+            <div class="pricing-meta-value">14～21 天</div>
+          </div>
+          <div class="pricing-meta-item">
+            <div class="pricing-meta-label">修改次數</div>
+            <div class="pricing-meta-value">2 次</div>
+          </div>
+        </div>
+        <div class="pricing-btns">
+          <a href="order.html?plan=ecom-starter" class="btn btn-dark w-full">立即下單</a>
+          <a href="pricing.html#ecommerce" class="btn btn-outline w-full">查看細節</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-32 fade-up">
+      <a href="pricing.html" class="btn btn-primary btn-lg">
+        查看全部方案與價格
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6 3l5 5-5 5"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PROCESS ========================= -->
+<section class="section section-amber" id="process">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">合作流程</div>
+      <h2 class="section-title">六個步驟，清楚啟動</h2>
+      <p class="section-subtitle">不用先打電話、也不用來回談很久。看方案、下單、填需求表，就開始了。</p>
+    </div>
+
+    <div class="process-steps fade-up">
+      <div class="process-step">
+        <div class="step-icon active">
+          🔍
+          <div class="step-number">1</div>
+        </div>
+        <h4>看方案選擇</h4>
+        <p>從價格頁選最適合你的方案</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">
+          💳
+          <div class="step-number">2</div>
+        </div>
+        <h4>線上付款</h4>
+        <p>支援信用卡 / ATM / LINE Pay</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">
+          📝
+          <div class="step-number">3</div>
+        </div>
+        <h4>填需求表</h4>
+        <p>約 5～10 分鐘整理品牌資訊</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">
+          📋
+          <div class="step-number">4</div>
+        </div>
+        <h4>建立專案</h4>
+        <p>系統建立後開始安排製作</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">
+          🎨
+          <div class="step-number">5</div>
+        </div>
+        <h4>製作與對接</h4>
+        <p>透過官方帳號持續確認進度</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">
+          🚀
+          <div class="step-number">6</div>
+        </div>
+        <h4>交付上線</h4>
+        <p>完成後提供教學，正式上線</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-48 fade-up">
+      <p style="font-size:15px;color:var(--gray-600);margin-bottom:20px;">標準方案不需要先反覆開會，先啟動、再整理，效率更高。</p>
+      <a href="order.html" class="btn btn-primary btn-lg">直接開始下單</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PORTFOLIO ========================= -->
+<section class="section" id="portfolio">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">成果展示</div>
+      <h2 class="section-title">我們幫品牌做過的事</h2>
+      <p class="section-subtitle">不只是好看，而是真的能幫品牌把生意做起來的作品。</p>
+    </div>
+
+    <div class="grid-3 fade-up">
+      <div class="portfolio-card">
+        <div class="portfolio-image" style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);">
+          <div class="portfolio-mockup">
+            <div class="portfolio-mock-header">
+              <span style="background:#FF5F57;"></span>
+              <span style="background:#FEBC2E;"></span>
+              <span style="background:#28C840;"></span>
+            </div>
+            <div class="portfolio-mock-body" style="background:linear-gradient(135deg,#FFF7ED,#FEF3C7);">
+              <div style="background:var(--primary);height:32px;border-radius:4px;margin-bottom:8px;"></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;">
+                <div style="background:rgba(232,145,42,0.2);height:40px;border-radius:4px;"></div>
+                <div style="background:rgba(232,145,42,0.2);height:40px;border-radius:4px;"></div>
+                <div style="background:rgba(232,145,42,0.2);height:40px;border-radius:4px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="portfolio-type">電商網站</div>
+          <h3>手工烘焙品牌 — 甜時工作室</h3>
+          <p style="font-size:13px;color:var(--gray-500);margin-top:6px;">從 Facebook 賣家轉型為品牌電商，完整金流 / 物流 / 發票整合。</p>
+          <div class="portfolio-stats">
+            <div class="portfolio-stat">上線後 <strong>訂單 +185%</strong></div>
+            <div class="portfolio-stat"><strong>21</strong> 個工作天交付</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-image" style="background:linear-gradient(135deg,#EFF6FF,#DBEAFE);">
+          <div class="portfolio-mockup">
+            <div class="portfolio-mock-header">
+              <span style="background:#FF5F57;"></span>
+              <span style="background:#FEBC2E;"></span>
+              <span style="background:#28C840;"></span>
+            </div>
+            <div class="portfolio-mock-body" style="background:linear-gradient(135deg,#F0F9FF,#EFF6FF);">
+              <div style="background:#3B82F6;height:32px;border-radius:4px;margin-bottom:8px;display:flex;align-items:center;padding:0 8px;">
+                <div style="background:white;height:12px;width:60%;border-radius:2px;"></div>
+              </div>
+              <div style="background:rgba(59,130,246,0.1);height:60px;border-radius:4px;margin-bottom:4px;"></div>
+              <div style="display:flex;gap:4px;">
+                <div style="background:rgba(59,130,246,0.2);height:16px;border-radius:8px;width:40%;"></div>
+                <div style="background:rgba(59,130,246,0.2);height:16px;border-radius:8px;width:30%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="portfolio-type">品牌形象網站</div>
+          <h3>企業顧問公司 — 策略力管理</h3>
+          <p style="font-size:13px;color:var(--gray-500);margin-top:6px;">重新規劃品牌架構與 CTA 流程，讓詢問量顯著提升。</p>
+          <div class="portfolio-stats">
+            <div class="portfolio-stat">詢問率 <strong>+240%</strong></div>
+            <div class="portfolio-stat"><strong>16</strong> 個工作天交付</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-image" style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);">
+          <div class="portfolio-mockup">
+            <div class="portfolio-mock-header">
+              <span style="background:#FF5F57;"></span>
+              <span style="background:#FEBC2E;"></span>
+              <span style="background:#28C840;"></span>
+            </div>
+            <div class="portfolio-mock-body" style="background:linear-gradient(135deg,#F0FDF4,#ECFDF5);">
+              <div style="background:#10B981;height:28px;border-radius:4px;margin-bottom:8px;"></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:4px;">
+                <div style="background:rgba(16,185,129,0.15);height:30px;border-radius:4px;"></div>
+                <div style="background:rgba(16,185,129,0.15);height:30px;border-radius:4px;"></div>
+              </div>
+              <div style="background:rgba(16,185,129,0.3);height:20px;border-radius:4px;width:60%;margin:0 auto;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="portfolio-type">平台賣場優化</div>
+          <h3>天然保養品牌 — 葉綠工坊</h3>
+          <p style="font-size:13px;color:var(--gray-500);margin-top:6px;">蝦皮賣場全面重整：頁面視覺、商品頁、關鍵字與活動頁。</p>
+          <div class="portfolio-stats">
+            <div class="portfolio-stat">轉換率 <strong>+92%</strong></div>
+            <div class="portfolio-stat"><strong>12</strong> 個工作天交付</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= ADD-ON SERVICES ========================= -->
+<section class="section section-alt" id="addons">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">加值服務</div>
+      <h2 class="section-title">需要更多？清楚加購就好</h2>
+      <p class="section-subtitle">我們不把不必要的項目全部包進去讓價格變高。需要的功能再加，透明又合理。</p>
+    </div>
+
+    <div class="grid-2 fade-up">
+      <div class="addon-card">
+        <div class="addon-icon">🎨</div>
+        <div class="addon-info">
+          <h4>Logo / 視覺識別</h4>
+          <p>適合品牌視覺尚未建立者</p>
+        </div>
+        <div class="addon-price">
+          <div class="amount">NT$8,000</div>
+          <div class="unit">起</div>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">📄</div>
+        <div class="addon-info">
+          <h4>額外頁面</h4>
+          <p>需要更多頁面延伸內容</p>
+        </div>
+        <div class="addon-price">
+          <div class="amount">NT$3,500</div>
+          <div class="unit">/ 頁起</div>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">✍️</div>
+        <div class="addon-info">
+          <h4>文案代寫</h4>
+          <p>沒有完整文案，需要協助整理</p>
+        </div>
+        <div class="addon-price">
+          <div class="amount">NT$3,000</div>
+          <div class="unit">/ 頁起</div>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">🧾</div>
+        <div class="addon-info">
+          <h4>發票串接</h4>
+          <p>有電子發票需求者</p>
+        </div>
+        <div class="addon-price">
+          <div class="amount">NT$5,000</div>
+          <div class="unit">起</div>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">💳</div>
+        <div class="addon-info">
+          <h4>額外金流串接</h4>
+          <p>需要多元付款方式</p>
+        </div>
+        <div class="addon-price">
+          <div class="amount">NT$3,000</div>
+          <div class="unit">起</div>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">🌍</div>
+        <div class="addon-info">
+          <h4>多語系</h4>
+          <p>跨語言客群品牌</p>
+        </div>
+        <div class="addon-price">
+          <div class="amount">NT$8,000</div>
+          <div class="unit">起</div>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">🔧</div>
+        <div class="addon-info">
+          <h4>網站維護 Lite</h4>
+          <p>上線後固定更新與排查</p>
+        </div>
+        <div class="addon-price">
+          <div class="amount">NT$2,000</div>
+          <div class="unit">/ 月</div>
+        </div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-icon">📊</div>
+        <div class="addon-info">
+          <h4>SEO 文章</h4>
+          <p>提升搜尋排名的內容行銷</p>
+        </div>
+        <div class="addon-price">
+          <div class="amount">NT$2,500</div>
+          <div class="unit">/ 篇起</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-32 fade-up">
+      <p style="font-size:14px;color:var(--gray-500);">若你的需求超出方案範圍，我們會先說明，再由你決定是否加購，不會直接做到一半才突然追加。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FAQ ========================= -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">常見問題</div>
+      <h2 class="section-title">在下單之前，很多人會先問這些</h2>
+    </div>
+
+    <div class="faq-list fade-up">
+      <div class="faq-item">
+        <button class="faq-question">
+          我不確定自己該選哪個方案，怎麼辦？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            可以先從最接近你需求的方案看起，或直接聯繫我們，我們會協助你判斷是否需要升級或加購。選錯方案不要緊，在啟動前我們都可以一起調整。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          可以直接在網站付款嗎？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            可以，標準方案可直接線上付款啟動，支援信用卡、ATM 轉帳與 LINE Pay。付款完成後會立即進入需求表填寫與專案啟動流程。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          如果我之後想加功能呢？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            可以，會依新增需求另行報價，不會直接混進原本方案造成不透明。所有追加項目我們會先說明費用，由你決定是否繼續，再進行製作。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          價格看起來比有些平台高，差別在哪？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            平台是工具，漫漫行銷提供的是規劃、設計、設定、整合與上線協助，幫你把整個流程真正做起來。如果你需要的只是工具，平台很夠用；如果你需要的是「幫你把生意做起來的夥伴」，這才是我們做的事。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          做完之後我自己能改嗎？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            可以，我們會依方案內容提供基本操作說明；若不想自己改，也可交由我們維護。維護方案從 NT$2,000/月 起，固定支援小修改與排查。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          一定要先聊過才能合作嗎？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            不一定。標準化方案可以直接下單，流程設計就是為了讓你可以快速開始。客製型需求或旗艦方案，再安排專案評估即可。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          製作期間需要我提供什麼？
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            基本上需要品牌資料、文案草稿與圖片素材。若你目前還沒準備好，也可先填基本資訊，我們會在對接過程中協助你補齊——文案代寫與視覺整理也可以加購。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CTA FOOTER ========================= -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner fade-up">
+      <h2>已經想清楚了，就直接開始吧</h2>
+      <p>不管你現在需要的是品牌網站、電商網站、賣場優化，還是後續顧問與代操，漫漫行銷都希望把合作變得更清楚、更快、更安心。</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="order.html" class="btn btn-primary btn-lg">直接下單</a>
+        <a href="pricing.html" class="btn btn-outline-white btn-lg">查看完整方案</a>
+        <a href="#" class="btn btn-outline-white btn-lg">
+          <span style="color:#06C755;">●</span> 加入官方帳號
+        </a>
+      </div>
+      <p class="cta-note">價格透明，流程清楚，今天就可以啟動。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <div class="logo-icon" style="width:32px;height:32px;font-size:16px;">漫</div>
+          漫漫行銷
+        </div>
+        <p>中小品牌與創業者的一站式建站與行銷服務平台。從網站到電商，從賣場到行銷代操，一次搞定。</p>
+        <div style="display:flex;gap:10px;">
+          <a href="#" style="background:rgba(255,255,255,0.08);padding:8px;border-radius:8px;font-size:16px;">📘</a>
+          <a href="#" style="background:rgba(255,255,255,0.08);padding:8px;border-radius:8px;font-size:16px;">📸</a>
+          <a href="#" style="background:#06C755;padding:8px;border-radius:8px;font-size:16px;">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>服務項目</h4>
+        <ul>
+          <li><a href="pricing.html#brand-website">品牌網站</a></li>
+          <li><a href="pricing.html#ecommerce">電商網站</a></li>
+          <li><a href="pricing.html#marketplace">平台賣場</a></li>
+          <li><a href="pricing.html#consulting">顧問代操</a></li>
+          <li><a href="pricing.html#addons">加購項目</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>快速入口</h4>
+        <ul>
+          <li><a href="pricing.html">方案與價格</a></li>
+          <li><a href="order.html">直接下單</a></li>
+          <li><a href="brief.html">填寫需求表</a></li>
+          <li><a href="#portfolio">成果展示</a></li>
+          <li><a href="#faq">常見問題</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>聯絡我們</h4>
+        <ul>
+          <li><a href="#">官方 LINE 帳號</a></li>
+          <li><a href="mailto:hello@manman.tw">hello@manman.tw</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 漫漫行銷. All rights reserved.</span>
+      <span>台灣 · 服務全台中小品牌</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================= FLOATING BUTTONS ========================= -->
+<div class="floating-btns">
+  <a href="#" class="fab fab-line">
+    <span class="fab-icon" style="background:#06C755;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;width:36px;height:36px;">💬</span>
+    加入官方帳號
+  </a>
+  <a href="order.html" class="fab fab-order btn-primary" style="background:var(--primary);color:white;border:none;">
+    <span style="font-size:16px;">⚡</span>
+    立即下單
+  </a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

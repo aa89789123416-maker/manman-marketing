@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>付款成功 — 漫漫行銷</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background:var(--gray-50);">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="logo-icon">漫</div>
+      漫漫行銷
+    </a>
+    <div class="navbar-nav">
+      <a href="index.html" class="nav-link">回首頁</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="#" class="btn btn-outline btn-sm"><span style="color:#06C755;">●</span> 加入官方帳號</a>
+    </div>
+  </div>
+</nav>
+
+<!-- SUCCESS HERO -->
+<section class="success-hero">
+  <div class="container">
+    <div style="animation:bounceIn 0.6s ease;">
+      <div class="success-icon">✅</div>
+    </div>
+    <div class="badge badge-success" style="margin-bottom:16px;font-size:13px;">訂單已成立</div>
+    <h1>付款成功，專案已成立。</h1>
+    <p>謝謝你選擇漫漫行銷。接下來只要再完成需求填寫，我們就能正式開始。</p>
+
+    <div style="background:var(--white);border-radius:var(--radius-xl);border:1px solid var(--gray-200);padding:28px;max-width:500px;margin:0 auto 32px;text-align:left;box-shadow:var(--shadow-sm);">
+      <h3 style="font-size:14px;font-weight:700;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:16px;">你的訂單資訊</h3>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:14px;padding-bottom:10px;border-bottom:1px solid var(--gray-100);">
+          <span style="color:var(--gray-500);">訂單編號</span>
+          <strong id="orderNum">MM-20260314-00125</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;padding-bottom:10px;border-bottom:1px solid var(--gray-100);">
+          <span style="color:var(--gray-500);">方案名稱</span>
+          <strong id="orderPlan">電商成長版</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;padding-bottom:10px;border-bottom:1px solid var(--gray-100);">
+          <span style="color:var(--gray-500);">付款金額</span>
+          <strong style="color:var(--primary);font-size:18px;" id="orderAmount">NT$89,800</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;padding-bottom:10px;border-bottom:1px solid var(--gray-100);">
+          <span style="color:var(--gray-500);">付款方式</span>
+          <strong id="orderPayment">信用卡</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:14px;">
+          <span style="color:var(--gray-500);">付款時間</span>
+          <strong id="orderTime">2026/03/14 14:25</strong>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:13px;color:var(--gray-400);">我們也已將訂單資訊寄送到你的 Email。</p>
+  </div>
+</section>
+
+<!-- NEXT STEPS -->
+<section style="padding:0 0 64px;background:var(--gray-50);">
+  <div class="container">
+
+    <!-- Step header -->
+    <div style="text-align:center;margin-bottom:32px;">
+      <h2 style="font-size:28px;font-weight:800;color:var(--dark);margin-bottom:8px;">下一步只差一步</h2>
+      <p style="font-size:16px;color:var(--gray-500);">為了讓我們更快理解你的品牌、需求與製作方向，請先完成專案需求表。<br>填寫完成後，系統會建立你的專案資料，我們也會開始安排後續製作流程。</p>
+    </div>
+
+    <div class="next-steps">
+      <div class="next-step">
+        <div class="next-step-num">1</div>
+        <h4>填寫需求表</h4>
+        <p>約 5～10 分鐘，整理品牌資訊</p>
+      </div>
+      <div class="next-step">
+        <div class="next-step-num">2</div>
+        <h4>建立專案資料</h4>
+        <p>系統自動建立專案</p>
+      </div>
+      <div class="next-step">
+        <div class="next-step-num">3</div>
+        <h4>開啟專屬溝通</h4>
+        <p>透過 LINE / Email 對接</p>
+      </div>
+      <div class="next-step">
+        <div class="next-step-num">4</div>
+        <h4>開始製作</h4>
+        <p>依方案時程正式啟動</p>
+      </div>
+    </div>
+
+    <!-- Main CTA -->
+    <div style="text-align:center;margin-top:40px;">
+      <a href="brief.html" class="btn btn-primary btn-lg" style="font-size:18px;padding:20px 48px;box-shadow:0 8px 24px rgba(232,145,42,0.4);">
+        立即填寫需求表 →
+      </a>
+      <p style="font-size:13px;color:var(--error);margin-top:12px;font-weight:500;">
+        ⚠️ 若尚未填寫需求表，專案不會正式排入製作流程
+      </p>
+    </div>
+
+    <!-- Secondary CTAs -->
+    <div style="display:flex;justify-content:center;gap:16px;margin-top:24px;flex-wrap:wrap;">
+      <a href="#" class="btn btn-outline btn-sm">
+        <span style="color:#06C755;">●</span> 加入官方 LINE 帳號
+      </a>
+      <a href="#" class="btn btn-outline btn-sm">📋 查看訂單明細</a>
+      <a href="index.html" class="btn btn-outline btn-sm">← 回首頁</a>
+    </div>
+
+    <!-- Reminder -->
+    <div style="background:var(--white);border-radius:var(--radius-lg);border:1px solid var(--gray-200);padding:24px;margin-top:40px;max-width:600px;margin-left:auto;margin-right:auto;">
+      <h4 style="font-size:15px;font-weight:700;margin-bottom:12px;">📌 提醒你</h4>
+      <ul style="display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--gray-600);">
+        <li style="display:flex;align-items:flex-start;gap:8px;">
+          <span style="color:var(--primary);flex-shrink:0;margin-top:1px;">●</span>
+          若尚未填寫需求表，專案不會正式排入製作流程
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:8px;">
+          <span style="color:var(--primary);flex-shrink:0;margin-top:1px;">●</span>
+          若你暫時無法立即填寫，也可稍後透過 Email 連結返回完成
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:8px;">
+          <span style="color:var(--primary);flex-shrink:0;margin-top:1px;">●</span>
+          高階方案或長期合作方案，後續可能會安排額外溝通方式
+        </li>
+        <li style="display:flex;align-items:flex-start;gap:8px;">
+          <span style="color:var(--primary);flex-shrink:0;margin-top:1px;">●</span>
+          有任何問題，可隨時透過 LINE 官方帳號聯繫我們
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER SIMPLE -->
+<footer style="background:var(--dark-2);padding:32px 0;text-align:center;">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:8px;">
+      <div class="logo-icon" style="width:28px;height:28px;font-size:14px;">漫</div>
+      <span style="color:white;font-size:18px;font-weight:800;">漫漫行銷</span>
+    </div>
+    <p style="font-size:13px;color:rgba(255,255,255,0.4);">© 2026 漫漫行銷. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+@keyframes bounceIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  80% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+</style>
+
+<script src="app.js"></script>
+<script>
+// Set order info from URL or localStorage
+const now = new Date();
+const orderNum = 'MM-' + now.getFullYear() + String(now.getMonth()+1).padStart(2,'0') + String(now.getDate()).padStart(2,'0') + '-' + String(Math.floor(Math.random()*90000)+10000);
+document.getElementById('orderNum').textContent = orderNum;
+document.getElementById('orderTime').textContent = now.toLocaleDateString('zh-TW') + ' ' + String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
+</script>
+</body>
+</html>
