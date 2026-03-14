@@ -60,19 +60,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (btn && answer) {
       btn.addEventListener('click', function () {
-        const isOpen = item.classList.contains('open');
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
 
         // Close all
         faqItems.forEach(i => {
-          i.classList.remove('open');
+          const b = i.querySelector('.faq-question');
           const a = i.querySelector('.faq-answer');
-          if (a) a.style.maxHeight = '0';
+          if (b) b.setAttribute('aria-expanded', 'false');
+          if (a) a.hidden = true;
+          i.classList.remove('open');
+          const icon = i.querySelector('.faq-icon');
+          if (icon) icon.textContent = '+';
         });
 
         // Open clicked (if not already open)
         if (!isOpen) {
+          btn.setAttribute('aria-expanded', 'true');
+          answer.hidden = false;
           item.classList.add('open');
-          answer.style.maxHeight = answer.scrollHeight + 'px';
+          const icon = btn.querySelector('.faq-icon');
+          if (icon) icon.textContent = '×';
         }
       });
     }
