@@ -3569,11 +3569,13 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
     height: 50px;
     border-radius: var(--radius-sm);
     font-size: 15px;
     font-weight: 700;
     text-decoration: none;
+    background: var(--primary);
     color: white;
   }
 
@@ -4091,4 +4093,12 @@ h1, h2, h3, h4, h5, h6 {
 
   /* FAB icons */
   .fab-icon { width: 30px; height: 30px; font-size: 14px; }
+}
+
+/* msca-plan icon gap */
+.msca-plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
