@@ -3773,3 +3773,322 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===================================================
+   ICON SYSTEM — Lucide SVG + Icon Badge
+   =================================================== */
+
+/* Base icon sizing (applied to <i data-lucide> or SVG) */
+.icon {
+  display: block;
+  flex-shrink: 0;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke: currentColor;
+}
+.icon--sm  { width: 18px; height: 18px; }
+.icon--md  { width: 22px; height: 22px; }
+.icon--lg  { width: 26px; height: 26px; }
+
+/* Button with icon on left */
+.btn-icon-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-icon-left .icon { margin: 0; }
+
+/* ---- Icon Badge Container ---- */
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.07);
+}
+.icon-badge--sm  { width: 36px; height: 36px; border-radius: 10px; }
+.icon-badge--md  { width: 44px; height: 44px; border-radius: 12px; }
+.icon-badge--lg  { width: 52px; height: 52px; border-radius: 14px; }
+
+/* colour themes */
+.icon-badge--brand {
+  background: rgba(245, 158, 11, 0.10);
+  color: var(--primary);
+  border-color: rgba(245, 158, 11, 0.16);
+}
+.icon-badge--neutral {
+  background: rgba(148, 163, 184, 0.10);
+  color: var(--gray-500);
+  border-color: rgba(148, 163, 184, 0.14);
+}
+.icon-badge--success {
+  background: rgba(34, 197, 94, 0.08);
+  color: #16a34a;
+  border-color: rgba(34, 197, 94, 0.16);
+}
+.icon-badge--warning {
+  background: rgba(249, 115, 22, 0.08);
+  color: #c2410c;
+  border-color: rgba(249, 115, 22, 0.16);
+}
+/* Trust bar: semi-transparent white on dark bg */
+.icon-badge--glass {
+  background: rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ===================================================
+   HERO PROCESS MOCKUP — icon-based steps
+   =================================================== */
+.pm-step-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gray-500);
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+.pm-step-icon--active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+.pm-step-icon--dim {
+  opacity: 0.45;
+}
+/* replace old pm-step-num */
+.pm-step-num { display: none; }
+
+.pm-step-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.12);
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* ===================================================
+   TRUST BAR — icon overrides
+   =================================================== */
+.trust-bar-item .icon-badge--glass {
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   SERVICES — scv2-icon overrides
+   =================================================== */
+.scv2-icon {
+  margin-bottom: 16px;
+}
+.scv2-icon .icon-badge { display: inline-flex; }
+
+/* ===================================================
+   AUDIENCE — asc-avatar overrides
+   =================================================== */
+.asc-avatar {
+  margin-bottom: 16px;
+}
+.asc-avatar .icon-badge { display: inline-flex; }
+
+/* ===================================================
+   PRICING — pcv2-check icon
+   =================================================== */
+.pcv2-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.10);
+  color: var(--primary);
+  flex-shrink: 0;
+}
+.pcv2-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===================================================
+   PAIN POINTS — new layout with icons
+   =================================================== */
+.pp-item {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-100);
+  background: var(--white);
+}
+.pp-pain,
+.pp-solution {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.pp-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pp-text {
+  font-size: 14px;
+  color: var(--gray-700);
+  line-height: 1.5;
+}
+.pp-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-300);
+  padding: 0 4px;
+}
+/* remove old pp-arrow (kept for backwards compat but hidden) */
+.pp-arrow { display: none; }
+
+/* ===================================================
+   PORTFOLIO TYPE — icon prefix
+   =================================================== */
+.portfolio-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+}
+.portfolio-type-icon {
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   ADD-ONS — icon-badge overrides
+   =================================================== */
+.addon-list-item .ali-icon {
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   FAQ — ChevronDown rotation
+   =================================================== */
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px !important;
+  height: 32px !important;
+  flex-shrink: 0;
+  background: transparent !important;
+  border-radius: 8px !important;
+  color: var(--gray-400);
+  transition: transform 0.3s ease, color 0.2s;
+  font-size: 0;
+}
+.faq-item.open .faq-icon {
+  background: transparent !important;
+  transform: rotate(180deg) !important;
+  color: var(--primary);
+}
+
+/* ===================================================
+   FOOTER — social + contact icon overrides
+   =================================================== */
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.footer-social {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--gray-100);
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.footer-social:hover { background: var(--gray-200); color: var(--gray-700); }
+.footer-social--line { background: #06C755; color: white; }
+.footer-social--line:hover { background: #05b34b; color: white; }
+
+.footer-contact-item--icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ===================================================
+   FLOATING BTNS — icon overrides
+   =================================================== */
+.fab-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.fab-icon--line {
+  background: #06C755;
+  color: white;
+}
+.fab-icon--order {
+  background: var(--primary);
+  color: white;
+}
+
+/* ===================================================
+   MOBILE STICKY CTA — icon alignment
+   =================================================== */
+.msca-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ===================================================
+   MOBILE — icon badge scaling
+   =================================================== */
+@media (max-width: 768px) {
+  .icon-badge--lg { width: 44px; height: 44px; border-radius: 12px; }
+  .icon-badge--md { width: 38px; height: 38px; border-radius: 10px; }
+
+  /* Pain points: stack on mobile */
+  .pp-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px;
+  }
+  .pp-divider { transform: rotate(90deg); }
+  .pp-arrow   { display: none; }
+
+  /* Portfolio type row wrapping */
+  .portfolio-type { flex-wrap: wrap; }
+
+  /* FAB icons */
+  .fab-icon { width: 30px; height: 30px; font-size: 14px; }
+}

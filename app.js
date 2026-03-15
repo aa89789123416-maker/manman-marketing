@@ -5,6 +5,13 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   // ===========================
+  // Lucide Icons Init
+  // ===========================
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
+  // ===========================
   // Mobile Nav Toggle
   // ===========================
   const hamburger = document.getElementById('hamburger');
@@ -69,8 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
           if (b) b.setAttribute('aria-expanded', 'false');
           if (a) a.hidden = true;
           i.classList.remove('open');
-          const icon = i.querySelector('.faq-icon');
-          if (icon) icon.textContent = '+';
         });
 
         // Open clicked (if not already open)
@@ -78,8 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
           btn.setAttribute('aria-expanded', 'true');
           answer.hidden = false;
           item.classList.add('open');
-          const icon = btn.querySelector('.faq-icon');
-          if (icon) icon.textContent = '×';
         }
       });
     }
