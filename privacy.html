@@ -3,23 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>隱私權政策 — 漫漫行銷</title>
-  <meta name="description" content="漫漫行銷隱私權政策，說明我們如何蒐集、使用與保護您的個人資料。" />
+  <title>隱私權政策｜漫漫行銷</title>
+  <meta name="description" content="了解漫漫行銷如何蒐集、處理與利用網站使用者的個人資料，以及你可行使的相關權利。" />
   <link rel="canonical" href="https://aa89789123416-maker.github.io/manman-marketing/privacy.html" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="隱私權政策｜漫漫行銷" />
+  <meta property="og:description" content="了解漫漫行銷如何蒐集、處理與利用網站使用者的個人資料，以及你可行使的相關權利。" />
+  <meta property="og:url" content="https://aa89789123416-maker.github.io/manman-marketing/privacy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://aa89789123416-maker.github.io/manman-marketing/og-cover.png" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#E8912A" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首頁",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "隱私權政策",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/privacy.html"
+      }
+    ]
+  }
+  </script>
   <style>
-    .policy-page { padding: 80px 0; }
-    .policy-hero { padding: 48px 0 32px; background: var(--gray-50); border-bottom: 1px solid var(--gray-200); margin-bottom: 48px; }
-    .policy-hero h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
-    .policy-hero .policy-date { font-size: 14px; color: var(--gray-500); }
-    .policy-body { max-width: 720px; }
-    .policy-body h2 { font-size: 20px; font-weight: 700; margin: 40px 0 12px; color: var(--dark); padding-bottom: 8px; border-bottom: 2px solid var(--primary-100); }
-    .policy-body p, .policy-body li { font-size: 15px; line-height: 1.8; color: var(--gray-700); margin-bottom: 12px; }
-    .policy-body ul { padding-left: 20px; list-style: disc; }
-    .policy-body a { color: var(--primary); text-decoration: underline; }
+    .policy-hero { background:var(--primary-50,#FFF8EE); padding:56px 0 48px; border-bottom:1px solid var(--primary-100,#FEF3E0); }
+    .policy-hero-inner { max-width:720px; }
+    .policy-hero h1 { font-size:clamp(28px,4vw,40px); font-weight:900; color:var(--dark); margin-bottom:12px; word-break:keep-all; }
+    .policy-hero p { font-size:16px; color:var(--gray-600,#4b5563); line-height:1.7; }
+    .policy-updated { font-size:13px; color:var(--gray-400,#9ca3af); margin-top:12px; }
+    .policy-content { max-width:720px; margin:0 auto; padding:56px 0 80px; }
+    .policy-content h2 { font-size:20px; font-weight:700; color:var(--dark); margin:40px 0 16px; padding-top:8px; border-top:2px solid var(--gray-100,#f3f4f6); word-break:keep-all; }
+    .policy-content h2:first-child { margin-top:0; border-top:none; }
+    .policy-content p { font-size:15px; line-height:1.8; color:var(--gray-700,#374151); margin-bottom:16px; }
+    .policy-content ul, .policy-content ol { padding-left:20px; margin-bottom:16px; }
+    .policy-content li { font-size:15px; line-height:1.8; color:var(--gray-700); margin-bottom:4px; }
+    .policy-back-nav { padding:40px 0; border-top:1px solid var(--gray-200); display:flex; gap:12px; flex-wrap:wrap; }
+    @media(max-width:600px){ .policy-hero { padding:40px 0 32px; } .policy-content { padding:40px 0 60px; } }
   </style>
 </head>
 <body>
@@ -33,91 +64,119 @@
     <div class="navbar-nav">
       <a href="index.html#services" class="nav-link">服務項目</a>
       <a href="pricing.html" class="nav-link">方案與價格</a>
+      <a href="index.html#portfolio" class="nav-link">成果展示</a>
+      <a href="index.html#process" class="nav-link">合作流程</a>
       <a href="index.html#faq" class="nav-link">常見問題</a>
     </div>
     <div class="navbar-actions">
-      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-sm">加入官方帳號</a>
+      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-sm nav-btn-line">加入官方帳號</a>
       <a href="pricing.html" class="btn btn-primary btn-sm">查看方案</a>
-      <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+      <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="手機導覽">
   <a href="index.html#services" class="mobile-nav-link">服務項目</a>
   <a href="pricing.html" class="mobile-nav-link">方案與價格</a>
+  <a href="index.html#portfolio" class="mobile-nav-link">成果展示</a>
+  <a href="index.html#process" class="mobile-nav-link">合作流程</a>
+  <a href="index.html#faq" class="mobile-nav-link">常見問題</a>
   <div class="mobile-nav-btns">
     <a href="pricing.html" class="btn btn-primary w-full">看方案</a>
+    <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline w-full">加入官方帳號</a>
   </div>
 </div>
 
-<main>
-  <div class="policy-hero">
-    <div class="container">
+<nav class="breadcrumb-nav" aria-label="breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+      <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">隱私權政策</li>
+    </ol>
+  </div>
+</nav>
+
+<section class="policy-hero">
+  <div class="container">
+    <div class="policy-hero-inner">
       <h1>隱私權政策</h1>
-      <p class="policy-date">最後更新：2026 年 3 月 15 日</p>
+      <p>本政策說明漫漫行銷在你使用本網站、填寫表單、加入聯繫或進行合作時，如何蒐集、處理、利用與保護你的個人資料。</p>
+      <p class="policy-updated">最後更新日期：2026 年 3 月 15 日</p>
     </div>
   </div>
+</section>
 
-  <div class="policy-page">
-    <div class="container">
-      <div class="policy-body">
+<div class="container">
+  <div class="policy-content">
 
-        <h2>一、資料蒐集範圍</h2>
-        <p>當您透過本網站填寫訂單、需求表，或透過 LINE 官方帳號、Email 與我們聯繫時，我們可能蒐集以下個人資料：</p>
-        <ul>
-          <li>姓名或公司名稱</li>
-          <li>電子郵件地址（Email）</li>
-          <li>聯絡電話</li>
-          <li>專案需求說明及相關附件</li>
-          <li>付款所需之必要帳務資訊</li>
-        </ul>
-        <p>我們僅蒐集提供服務所必要的資料，不會要求您提供與服務無關的個人資訊。</p>
+    <h2>一、政策適用範圍</h2>
+    <p>歡迎你使用漫漫行銷網站（以下稱「本網站」）。當你瀏覽本網站、填寫需求表、送出下單資訊、加入官方聯繫管道，或以其他方式與我們接觸時，本網站可能會蒐集、處理及利用你的個人資料。為了讓你清楚了解相關方式，我們在此說明隱私權政策內容。</p>
+    <p>本政策適用於本網站及其相關頁面、表單與聯繫流程；若你經由本網站連結到第三方平台或外部服務，其隱私權處理方式則依各該第三方網站或服務之規定辦理。</p>
 
-        <h2>二、資料使用目的</h2>
-        <p>我們蒐集的個人資料，將用於以下目的：</p>
-        <ul>
-          <li>提供您所委託的建站、電商或行銷顧問等服務</li>
-          <li>帳務處理、開立收據或發票</li>
-          <li>與您溝通專案進度、確認需求或回覆問題</li>
-          <li>在徵得您同意的前提下，提供服務相關資訊或優惠通知</li>
-        </ul>
-        <p>我們不會將您的個人資料用於上述目的以外的任何用途。</p>
+    <h2>二、我們可能蒐集的資料類型</h2>
+    <p>當你使用本網站時，我們可能蒐集以下資料：</p>
+    <ol>
+      <li>你主動提供的資料：包括姓名、品牌名稱、公司名稱、電子郵件、電話、LINE ID、網站或賣場連結、需求內容、預算區間、合作方向及其他你在表單或訊息中主動提供的資訊。</li>
+      <li>使用紀錄與技術資訊：包括瀏覽器類型、裝置資訊、IP 位址、瀏覽時間、瀏覽頁面、點擊紀錄與網站使用行為等。</li>
+      <li>其他因合作或服務流程需要而提供的資料：例如品牌介紹、商品資訊、頁面需求、設計偏好、專案資料等。</li>
+    </ol>
 
-        <h2>三、資料分享與揭露</h2>
-        <p>漫漫行銷不會出售、出租或以任何形式販售您的個人資料給第三方。僅在以下情形，我們可能與第三方共享必要資訊：</p>
-        <ul>
-          <li>配合金流服務商（如綠界、藍新等）完成付款處理，僅提供交易所需的最少必要資訊</li>
-          <li>依法律規定或政府機關要求而必須揭露時</li>
-        </ul>
-        <p>所有合作的第三方服務商均須遵守相應的資料保護規範。</p>
+    <h2>三、蒐集資料的目的</h2>
+    <p>我們蒐集資料的主要目的，包括但不限於：回覆你的詢問與需求、評估你適合的服務方案、處理下單、合作與專案執行流程、聯繫你並提供服務相關通知、改善網站內容、使用體驗與服務品質、作為內部統計、分析與營運管理用途、在符合法令範圍內提供後續服務、維護或相關資訊。</p>
 
-        <h2>四、資料保存期間</h2>
-        <p>您的個人資料將於合作關係結束後保存 3 年，以符合相關法規（如電子商務、稅務等）的要求。保存期限屆滿後，我們將依法進行資料刪除或去識別化處理。</p>
-        <p>若您主動要求刪除資料，我們將在法律允許的範圍內儘快處理您的請求。</p>
+    <h2>四、個人資料的利用方式</h2>
+    <p>你提供的資料，將由漫漫行銷於蒐集目的範圍內使用，包含以電子郵件、電話、通訊軟體、表單系統或其他適當方式與你聯繫，並作為合作評估、專案建置、售後支援及營運管理之用。除以下情況外，我們不會任意將你的個人資料提供給無關第三人：</p>
+    <ul>
+      <li>已取得你的同意；</li>
+      <li>為完成你所要求之服務或付款流程所必要；</li>
+      <li>依法令規定、主管機關要求，或配合司法、行政程序；</li>
+      <li>為維護本網站、其他使用者或第三人的合法權益所必要。</li>
+    </ul>
 
-        <h2>五、您的權利</h2>
-        <p>依據個人資料保護法，您對自己的個人資料享有以下權利：</p>
-        <ul>
-          <li>查詢或請求閱覽個人資料</li>
-          <li>請求補充或更正個人資料</li>
-          <li>請求停止蒐集、處理或利用個人資料</li>
-          <li>請求刪除個人資料（法律另有規定者除外）</li>
-        </ul>
-        <p>如需行使上述權利，請發送 Email 至 <a href="mailto:hello@manman.tw">hello@manman.tw</a>，我們將於收到申請後 10 個工作天內回覆處理結果。</p>
+    <h2>五、資料利用期間、地區、對象與方式</h2>
+    <p>你提供的個人資料，將於蒐集目的存續期間、服務提供期間、法令要求之保存期間，或為處理相關爭議所必要之期間內保存與使用。利用地區原則上為台灣，並可能因使用雲端工具、網站代管、表單或聯繫服務，而在提供服務必要範圍內進行跨境處理。利用對象可能包括：本網站營運者、受委託處理網站、表單、付款、客服、分析、主機代管或專案管理之合作服務提供者。利用方式包括以自動化或非自動化方式蒐集、處理、儲存、分析、聯繫與管理。</p>
 
-        <h2>六、Cookie 使用</h2>
-        <p>本網站僅使用維持網站基本功能所必要的 Cookie（例如記錄您的瀏覽偏好設定），不使用任何第三方追蹤 Cookie 或廣告追蹤技術。</p>
-        <p>您可透過瀏覽器設定管理或停用 Cookie，但停用部分 Cookie 可能影響網站的正常功能。</p>
+    <h2>六、你依個資法可行使的權利</h2>
+    <p>依《個人資料保護法》，你可就你的個人資料請求：</p>
+    <ul>
+      <li>查詢或請求閱覽</li>
+      <li>請求製給複製本</li>
+      <li>請求補充或更正</li>
+      <li>請求停止蒐集、處理或利用</li>
+      <li>請求刪除</li>
+    </ul>
+    <p>但若因法令要求、契約履行、保存義務或其他合法事由而無法立即辦理者，我們得依法在必要範圍內拒絕或延後處理。如需行使上述權利，請透過本頁所列聯絡方式與我們聯繫。</p>
 
-        <h2>七、聯絡方式</h2>
-        <p>若您對本隱私權政策有任何疑問，或需要行使您的個人資料相關權利，歡迎透過以下方式與我們聯繫：</p>
-        <p>Email：<a href="mailto:hello@manman.tw">hello@manman.tw</a></p>
-        <p>我們將於收到您的來信後，盡快回覆並協助處理。</p>
+    <h2>七、Cookie 與追蹤技術</h2>
+    <p>本網站可能使用 Cookie 或其他類似技術，以辨識使用者、保存偏好設定、進行流量分析及改善網站體驗。你可透過瀏覽器設定限制或刪除 Cookie，但部分功能可能因此無法正常運作。</p>
 
-      </div>
+    <h2>八、資料安全</h2>
+    <p>我們將以合理技術與管理措施保護你的個人資料，避免遭未經授權之存取、洩漏、竄改或毀損。但網路傳輸與儲存並非絕對安全，我們仍無法保證所有資料傳輸過程完全無風險。</p>
+
+    <h2>九、未成年人資料</h2>
+    <p>若你未滿法定年齡，請在法定代理人或監護人同意下使用本網站並提供資料。如我們得知係未經適當同意而蒐集之未成年人個人資料，將儘速處理。</p>
+
+    <h2>十、政策修訂</h2>
+    <p>本網站得視營運需要、服務內容或法令變更，隨時修訂本隱私權政策。更新後之內容將公布於本頁面，建議你定期查看。</p>
+
+    <h2>十一、聯絡我們</h2>
+    <p>若你對本隱私權政策、個人資料處理方式，或相關權利行使有任何疑問，請透過以下方式聯繫我們：</p>
+    <ul>
+      <li>品牌名稱：漫漫行銷</li>
+      <li>聯絡信箱：<a href="mailto:hello@manman.tw">hello@manman.tw</a></li>
+      <li>官方聯繫方式：<a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener">LINE 官方帳號</a></li>
+    </ul>
+
+    <div class="policy-back-nav">
+      <a href="index.html" class="btn btn-outline">返回首頁</a>
+      <a href="pricing.html" class="btn btn-outline">查看方案與價格</a>
+      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-primary">加入官方帳號聊聊</a>
     </div>
+
   </div>
-</main>
+</div>
 
 <footer class="footer">
   <div class="container">
@@ -128,6 +187,27 @@
           <span class="logo-name">漫漫行銷</span>
         </div>
         <p>為中小品牌與創業者提供建站、電商、賣場與後續經營支援。</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@manman.tw" class="footer-contact-item footer-contact-item--icon">
+            <i data-lucide="mail" class="icon icon--sm" aria-hidden="true"></i>
+            hello@manman.tw
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-contact-item footer-contact-item--icon line-item">
+            <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+            加入官方 LINE 帳號
+          </a>
+        </div>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-social footer-social--line" aria-label="LINE">
+            <i data-lucide="message-circle" class="icon icon--sm"></i>
+          </a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>服務項目</h4>
@@ -136,6 +216,17 @@
           <li><a href="ecommerce.html">電商網站架設</a></li>
           <li><a href="marketplace-optimization.html">平台賣場優化</a></li>
           <li><a href="consulting.html">行銷顧問與維護</a></li>
+          <li><a href="pricing.html#addons">加購項目</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>快速入口</h4>
+        <ul>
+          <li><a href="pricing.html">方案與價格</a></li>
+          <li><a href="order.html">直接下單</a></li>
+          <li><a href="brief.html">填寫需求表</a></li>
+          <li><a href="index.html#portfolio">成果展示</a></li>
+          <li><a href="index.html#faq">常見問題</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -145,13 +236,39 @@
           <li><a href="terms.html">服務條款</a></li>
           <li><a href="refund-policy.html">退款 / 變更規則</a></li>
         </ul>
+        <div class="footer-meta">
+          <p>服務地區：全台品牌與商家</p>
+          <p>回覆時間：平日依序回覆</p>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 漫漫行銷 Manman Marketing. All rights reserved.</span>
+      <span>台灣 · 服務全台中小品牌</span>
     </div>
   </div>
 </footer>
+
+<div class="floating-btns" aria-hidden="true">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="fab fab-line" tabindex="-1">
+    <span class="fab-icon fab-icon--line"><i data-lucide="message-circle" class="icon icon--sm"></i></span>
+    加入官方帳號
+  </a>
+  <a href="pricing.html" class="fab fab-order" tabindex="-1">
+    <span class="fab-icon fab-icon--order"><i data-lucide="arrow-right" class="icon icon--sm"></i></span>
+    查看方案
+  </a>
+</div>
+<div class="mobile-sticky-cta" id="mobileStickyCta" aria-label="快速行動">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="msca-line">
+    <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+    加入 LINE
+  </a>
+  <a href="pricing.html" class="msca-plan">
+    <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+    看方案
+  </a>
+</div>
 
 <script src="lucide.min.js"></script>
 <script src="app.js"></script>

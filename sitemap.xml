@@ -37,6 +37,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://aa89789123416-maker.github.io/manman-marketing/blog.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://aa89789123416-maker.github.io/manman-marketing/privacy.html</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>

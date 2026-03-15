@@ -3,23 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>退款與變更規則 — 漫漫行銷</title>
-  <meta name="description" content="漫漫行銷退款與方案變更規則，說明訂單確認後的退款條件與調整流程。" />
+  <title>退款與變更規則｜漫漫行銷</title>
+  <meta name="description" content="了解漫漫行銷各項網站建置、電商建置、賣場優化與顧問服務的退款、變更與取消規則。" />
   <link rel="canonical" href="https://aa89789123416-maker.github.io/manman-marketing/refund-policy.html" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="退款與變更規則｜漫漫行銷" />
+  <meta property="og:description" content="了解漫漫行銷各項網站建置、電商建置、賣場優化與顧問服務的退款、變更與取消規則。" />
+  <meta property="og:url" content="https://aa89789123416-maker.github.io/manman-marketing/refund-policy.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://aa89789123416-maker.github.io/manman-marketing/og-cover.png" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#E8912A" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首頁",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "退款與變更規則",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/refund-policy.html"
+      }
+    ]
+  }
+  </script>
   <style>
-    .policy-page { padding: 80px 0; }
-    .policy-hero { padding: 48px 0 32px; background: var(--gray-50); border-bottom: 1px solid var(--gray-200); margin-bottom: 48px; }
-    .policy-hero h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
-    .policy-hero .policy-date { font-size: 14px; color: var(--gray-500); }
-    .policy-body { max-width: 720px; }
-    .policy-body h2 { font-size: 20px; font-weight: 700; margin: 40px 0 12px; color: var(--dark); padding-bottom: 8px; border-bottom: 2px solid var(--primary-100); }
-    .policy-body p, .policy-body li { font-size: 15px; line-height: 1.8; color: var(--gray-700); margin-bottom: 12px; }
-    .policy-body ul { padding-left: 20px; list-style: disc; }
-    .policy-body a { color: var(--primary); text-decoration: underline; }
+    .policy-hero { background:var(--primary-50,#FFF8EE); padding:56px 0 48px; border-bottom:1px solid var(--primary-100,#FEF3E0); }
+    .policy-hero-inner { max-width:720px; }
+    .policy-hero h1 { font-size:clamp(28px,4vw,40px); font-weight:900; color:var(--dark); margin-bottom:12px; word-break:keep-all; }
+    .policy-hero p { font-size:16px; color:var(--gray-600,#4b5563); line-height:1.7; }
+    .policy-updated { font-size:13px; color:var(--gray-400,#9ca3af); margin-top:12px; }
+    .policy-content { max-width:720px; margin:0 auto; padding:56px 0 80px; }
+    .policy-content h2 { font-size:20px; font-weight:700; color:var(--dark); margin:40px 0 16px; padding-top:8px; border-top:2px solid var(--gray-100,#f3f4f6); word-break:keep-all; }
+    .policy-content h2:first-child { margin-top:0; border-top:none; }
+    .policy-content p { font-size:15px; line-height:1.8; color:var(--gray-700,#374151); margin-bottom:16px; }
+    .policy-content ul, .policy-content ol { padding-left:20px; margin-bottom:16px; }
+    .policy-content li { font-size:15px; line-height:1.8; color:var(--gray-700); margin-bottom:4px; }
+    .policy-back-nav { padding:40px 0; border-top:1px solid var(--gray-200); display:flex; gap:12px; flex-wrap:wrap; }
+    @media(max-width:600px){ .policy-hero { padding:40px 0 32px; } .policy-content { padding:40px 0 60px; } }
   </style>
 </head>
 <body>
@@ -33,93 +64,119 @@
     <div class="navbar-nav">
       <a href="index.html#services" class="nav-link">服務項目</a>
       <a href="pricing.html" class="nav-link">方案與價格</a>
+      <a href="index.html#portfolio" class="nav-link">成果展示</a>
+      <a href="index.html#process" class="nav-link">合作流程</a>
       <a href="index.html#faq" class="nav-link">常見問題</a>
     </div>
     <div class="navbar-actions">
-      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-sm">加入官方帳號</a>
+      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-sm nav-btn-line">加入官方帳號</a>
       <a href="pricing.html" class="btn btn-primary btn-sm">查看方案</a>
-      <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+      <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="手機導覽">
   <a href="index.html#services" class="mobile-nav-link">服務項目</a>
   <a href="pricing.html" class="mobile-nav-link">方案與價格</a>
+  <a href="index.html#portfolio" class="mobile-nav-link">成果展示</a>
+  <a href="index.html#process" class="mobile-nav-link">合作流程</a>
+  <a href="index.html#faq" class="mobile-nav-link">常見問題</a>
   <div class="mobile-nav-btns">
     <a href="pricing.html" class="btn btn-primary w-full">看方案</a>
+    <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline w-full">加入官方帳號</a>
   </div>
 </div>
 
-<main>
-  <div class="policy-hero">
-    <div class="container">
+<nav class="breadcrumb-nav" aria-label="breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+      <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">退款與變更規則</li>
+    </ol>
+  </div>
+</nav>
+
+<section class="policy-hero">
+  <div class="container">
+    <div class="policy-hero-inner">
       <h1>退款與變更規則</h1>
-      <p class="policy-date">最後更新：2026 年 3 月 15 日</p>
+      <p>我們希望把合作方式說清楚，讓你在下單前就知道：哪些情況可以取消、哪些情況可以調整、哪些費用在專案啟動後可能無法退還。</p>
+      <p class="policy-updated">最後更新日期：2026 年 3 月 15 日</p>
     </div>
   </div>
+</section>
 
-  <div class="policy-page">
-    <div class="container">
-      <div class="policy-body">
+<div class="container">
+  <div class="policy-content">
 
-        <p>我們希望每一位客戶都對服務感到滿意。以下說明漫漫行銷的退款條件與方案變更規則，請在委託前仔細閱讀。</p>
+    <h2>一、適用範圍</h2>
+    <p>本規則適用於漫漫行銷網站所提供之標準方案、客製合作、顧問、維護、賣場優化及其他相關服務。若你與我們另有個別書面約定，則以個別約定內容優先。</p>
 
-        <h2>一、退款申請時機</h2>
-        <p>若您在完成付款後、尚未填寫需求表（即專案正式啟動前）決定取消委託，可申請全額退款。</p>
-        <p>退款申請須於付款後 7 個日曆天內提出。超過此期限且尚未啟動者，將視個案情況評估，並可能收取行政處理費用。</p>
+    <h2>二、服務性質說明</h2>
+    <p>本網站提供之多數服務，屬於數位服務、設計服務、顧問服務或依需求進行之客製化服務，並非一般現貨商品買賣。因此，不同服務於下單後之取消、變更與退款方式，可能因是否已開始履行、是否已投入工時、是否屬客製內容，而有所不同。</p>
 
-        <h2>二、專案啟動後的退款</h2>
-        <p>一旦您填寫並提交需求表、或雙方已透過 Email / LINE 確認需求細節，即視為專案正式啟動，進入製作流程。</p>
-        <p>專案啟動後如需申請退款，我們將依製作進度評估已完成比例，收取對應的服務費用，餘額無息退還給您。進度評估方式如下：</p>
-        <ul>
-          <li>需求確認階段（尚未開始設計）：收取總價 20%</li>
-          <li>設計稿或架構完成階段：收取總價 50%</li>
-          <li>已交付初稿或測試版本：收取總價 80%</li>
-          <li>已完成並交付最終成果：不予退款</li>
-        </ul>
+    <h2>三、下單後但尚未開始處理</h2>
+    <p>若你已完成下單或付款，但我們尚未開始進行需求整理、專案建立、資料盤點、設計作業、顧問執行或其他實質履行工作前，你可儘速與我們聯繫申請取消。若經確認確實尚未開始處理，原則上可協助取消並辦理退款；如因付款通路、金流手續費、行政成本等已實際發生費用，得於合理範圍內扣除必要成本後退款。</p>
 
-        <h2>三、無法退款的情形</h2>
-        <p>以下情形恕不受理退款申請：</p>
-        <ul>
-          <li>服務項目已全部完成並交付，且客戶已確認驗收</li>
-          <li>已代為申請或開通的第三方服務費用，包含但不限於主機費、網域費、金流申請費、第三方外掛授權費等，因費用已實際支付予第三方，無法退回</li>
-          <li>因客戶自身原因（如長期未提供資料、未回覆確認）導致專案中止，且製作進度已達 80% 以上</li>
-        </ul>
+    <h2>四、已開始需求整理或專案啟動後</h2>
+    <p>若我們已依你的訂單開始進行以下任一事項，包括但不限於：建立專案資料、需求整理與溝通、結構規劃、文案整理、頁面設計、顧問分析、賣場內容盤點、其他已實際投入人力與時間之工作，則表示服務已開始履行。此時若你申請取消，我們將依實際已進行之工作內容、已投入工時、已完成成果及行政成本，評估可退款金額或是否改為保留後續可用之服務額度。</p>
 
-        <h2>四、方案變更</h2>
-        <p>若您在專案啟動後希望調整所選方案，規則如下：</p>
-        <ul>
-          <li>升級方案：可於專案進行中申請升級，補繳方案差額後，新方案所含服務將納入現有專案執行</li>
-          <li>降級方案：需視目前製作進度評估，若製作進度尚未超過新方案對應範圍，可辦理降級並退還差額；若進度已超出，則不予降級</li>
-        </ul>
-        <p>方案變更申請須以書面（Email）提出，雙方確認後方可生效。</p>
+    <h2>五、客製化與專案型服務</h2>
+    <p>對於依你的品牌、商品、頁面結構、功能需求、設計方向或營運內容而進行的客製服務，一旦已開始執行，通常即會產生不可回復之工時與作業成本。因此，這類服務在啟動後，不適合比照一般現貨商品以單純退貨方式處理；是否可退款、部分退款或改為專案暫停 / 調整，將依實際進度個案判斷。</p>
 
-        <h2>五、退款流程</h2>
-        <p>如需申請退款，請依以下步驟辦理：</p>
-        <ul>
-          <li>發送 Email 至 <a href="mailto:hello@manman.tw">hello@manman.tw</a>，主旨請標示「退款申請」</li>
-          <li>Email 內容請說明：訂單編號（或付款日期）、委託方案名稱、申請退款原因</li>
-          <li>我們將於收到申請後 5 個工作天內回覆評估結果，並告知可退款金額</li>
-          <li>雙方確認退款金額後，於 5 個工作天內完成退款處理</li>
-        </ul>
+    <h2>六、顧問、諮詢與維護服務</h2>
+    <p>若屬單次顧問、諮詢、分析、維護、內容整理等服務，一經開始執行、安排會議、提出建議、交付分析內容或投入處理，即視為已履行全部或部分服務。已完成之部分原則上不予退款；尚未執行之部分，得依實際情況協議調整。</p>
 
-        <h2>六、退款方式</h2>
-        <p>退款將依您原始的付款方式退回：</p>
-        <ul>
-          <li>信用卡付款：退回至原信用卡帳戶，入帳時間依各發卡銀行作業時間而定，通常為 7～14 個工作天</li>
-          <li>銀行轉帳付款：退回至您指定的銀行帳戶，通常於確認退款後 3～5 個工作天內到帳</li>
-        </ul>
-        <p>退款金額以新台幣計算，本公司不負擔任何匯差或手續費。</p>
+    <h2>七、因你方因素造成之取消或延誤</h2>
+    <p>若因以下情況導致合作無法繼續或嚴重延誤：</p>
+    <ul>
+      <li>長期未提供必要資料</li>
+      <li>多次失聯或逾期未回覆</li>
+      <li>反覆大幅變更需求</li>
+      <li>提供不實資訊</li>
+      <li>其他可歸責於你方之事由</li>
+    </ul>
+    <p>我們得依實際已完成工作與成本，保留全部或部分已付款項，並視情況終止或暫停專案。</p>
 
-        <h2>七、聯絡方式</h2>
-        <p>若您對退款規則有任何疑問，或需要進一步說明，歡迎與我們聯繫：</p>
-        <p>Email：<a href="mailto:hello@manman.tw">hello@manman.tw</a></p>
-        <p>LINE 官方帳號：<a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener">加入官方帳號</a></p>
+    <h2>八、因我方因素無法繼續履行</h2>
+    <p>若因可歸責於我們之重大原因，致服務無法合理繼續履行，我們將與你協議補救方案、延期、替代方案，或就尚未執行部分辦理合理退款。</p>
 
-      </div>
+    <h2>九、變更需求的處理方式</h2>
+    <p>若你並非要取消，而是想調整需求，原則上可優先採以下方式處理：</p>
+    <ul>
+      <li>調整頁面範圍</li>
+      <li>延後部分內容</li>
+      <li>改為分階段執行</li>
+      <li>改為其他適合方案</li>
+      <li>保留部分額度於後續使用</li>
+    </ul>
+    <p>我們通常會優先協助你把合作改成更合適的方式，而不是直接進入取消流程。</p>
+
+    <h2>十、退款時間與方式</h2>
+    <p>經雙方確認可退款金額後，將依原付款方式或雙方另行約定方式辦理退款。退款作業時間可能因付款通路、銀行作業、假日及行政流程而有所差異，實際入帳時間仍以金流或金融機構處理為準。</p>
+
+    <h2>十一、聯絡我們</h2>
+    <p>若你有取消、變更、退款或專案調整需求，請盡快與我們聯繫，以利在專案初期處理：</p>
+    <ul>
+      <li>品牌名稱：漫漫行銷</li>
+      <li>聯絡信箱：<a href="mailto:hello@manman.tw">hello@manman.tw</a></li>
+      <li>官方聯繫方式：<a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener">LINE 官方帳號</a></li>
+    </ul>
+
+    <h2>十二、特別提醒</h2>
+    <p>下單前，建議你先確認：自己目前最需要的是哪一類服務、是否已閱讀方案內容、是否屬於標準方案範圍、若還不確定，是否應先填需求表或聯繫我們。</p>
+    <p>很多情況下，先把需求整理清楚，比事後處理取消與退款更有效率。</p>
+
+    <div class="policy-back-nav">
+      <a href="index.html" class="btn btn-outline">返回首頁</a>
+      <a href="pricing.html" class="btn btn-outline">查看方案與價格</a>
+      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-primary">加入官方帳號聊聊</a>
     </div>
+
   </div>
-</main>
+</div>
 
 <footer class="footer">
   <div class="container">
@@ -130,6 +187,27 @@
           <span class="logo-name">漫漫行銷</span>
         </div>
         <p>為中小品牌與創業者提供建站、電商、賣場與後續經營支援。</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@manman.tw" class="footer-contact-item footer-contact-item--icon">
+            <i data-lucide="mail" class="icon icon--sm" aria-hidden="true"></i>
+            hello@manman.tw
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-contact-item footer-contact-item--icon line-item">
+            <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+            加入官方 LINE 帳號
+          </a>
+        </div>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-social footer-social--line" aria-label="LINE">
+            <i data-lucide="message-circle" class="icon icon--sm"></i>
+          </a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>服務項目</h4>
@@ -138,6 +216,17 @@
           <li><a href="ecommerce.html">電商網站架設</a></li>
           <li><a href="marketplace-optimization.html">平台賣場優化</a></li>
           <li><a href="consulting.html">行銷顧問與維護</a></li>
+          <li><a href="pricing.html#addons">加購項目</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>快速入口</h4>
+        <ul>
+          <li><a href="pricing.html">方案與價格</a></li>
+          <li><a href="order.html">直接下單</a></li>
+          <li><a href="brief.html">填寫需求表</a></li>
+          <li><a href="index.html#portfolio">成果展示</a></li>
+          <li><a href="index.html#faq">常見問題</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -147,13 +236,39 @@
           <li><a href="terms.html">服務條款</a></li>
           <li><a href="refund-policy.html">退款 / 變更規則</a></li>
         </ul>
+        <div class="footer-meta">
+          <p>服務地區：全台品牌與商家</p>
+          <p>回覆時間：平日依序回覆</p>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 漫漫行銷 Manman Marketing. All rights reserved.</span>
+      <span>台灣 · 服務全台中小品牌</span>
     </div>
   </div>
 </footer>
+
+<div class="floating-btns" aria-hidden="true">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="fab fab-line" tabindex="-1">
+    <span class="fab-icon fab-icon--line"><i data-lucide="message-circle" class="icon icon--sm"></i></span>
+    加入官方帳號
+  </a>
+  <a href="pricing.html" class="fab fab-order" tabindex="-1">
+    <span class="fab-icon fab-icon--order"><i data-lucide="arrow-right" class="icon icon--sm"></i></span>
+    查看方案
+  </a>
+</div>
+<div class="mobile-sticky-cta" id="mobileStickyCta" aria-label="快速行動">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="msca-line">
+    <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+    加入 LINE
+  </a>
+  <a href="pricing.html" class="msca-plan">
+    <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+    看方案
+  </a>
+</div>
 
 <script src="lucide.min.js"></script>
 <script src="app.js"></script>

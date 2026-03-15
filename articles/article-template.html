@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[文章標題]｜漫漫行銷</title>
+  <meta name="description" content="[文章摘要]" />
+  <link rel="canonical" href="https://aa89789123416-maker.github.io/manman-marketing/articles/article-template.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="[文章標題]｜漫漫行銷" />
+  <meta property="og:description" content="[文章摘要]" />
+  <meta property="og:url" content="https://aa89789123416-maker.github.io/manman-marketing/articles/article-template.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://aa89789123416-maker.github.io/manman-marketing/og-cover.png" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <meta name="theme-color" content="#E8912A" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首頁",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "行銷知識",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/blog.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "文章標題",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/articles/article-template.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "[文章標題]",
+    "description": "[文章摘要]",
+    "datePublished": "2026-03-15",
+    "dateModified": "2026-03-15",
+    "author": {
+      "@type": "Organization",
+      "name": "漫漫行銷"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "漫漫行銷",
+      "url": "https://aa89789123416-maker.github.io/manman-marketing/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://aa89789123416-maker.github.io/manman-marketing/articles/article-template.html"
+    }
+  }
+  </script>
+  <style>
+    .article-layout { display:grid; grid-template-columns:1fr 280px; gap:48px; align-items:start; padding:48px 0 80px; }
+    @media(max-width:900px){ .article-layout{grid-template-columns:1fr;} .article-sidebar{display:none;} }
+    .article-header { margin-bottom:32px; padding-bottom:32px; border-bottom:2px solid var(--gray-100); }
+    .article-tag { display:inline-block; background:var(--primary-100,#FEF3E0); color:var(--primary-dark); font-size:12px; font-weight:700; padding:4px 10px; border-radius:6px; margin-bottom:12px; }
+    .article-header h1 { font-size:clamp(24px,4vw,36px); font-weight:900; line-height:1.4; color:var(--dark); word-break:keep-all; margin-bottom:16px; }
+    .article-meta { display:flex; gap:16px; font-size:13px; color:var(--gray-400); }
+    .article-excerpt { font-size:16px; color:var(--gray-600); line-height:1.7; margin-top:16px; }
+    .article-body h2 { font-size:22px; font-weight:800; color:var(--dark); margin:40px 0 16px; word-break:keep-all; }
+    .article-body h3 { font-size:18px; font-weight:700; color:var(--dark); margin:28px 0 12px; word-break:keep-all; }
+    .article-body p { font-size:15px; line-height:1.85; color:var(--gray-700); margin-bottom:20px; }
+    .article-body ul, .article-body ol { padding-left:20px; margin-bottom:20px; }
+    .article-body li { font-size:15px; line-height:1.8; color:var(--gray-700); margin-bottom:6px; }
+    .article-cta-inline { background:var(--primary-50,#FFF8EE); border:1px solid var(--primary-100,#FEF3E0); border-radius:12px; padding:24px; margin:40px 0; }
+    .article-sidebar { position:sticky; top:100px; }
+    .sidebar-card { background:var(--white); border:1px solid var(--gray-200); border-radius:12px; padding:20px; margin-bottom:20px; }
+    .sidebar-card h3 { font-size:15px; font-weight:700; color:var(--dark); margin-bottom:12px; }
+    .sidebar-links { list-style:none; padding:0; }
+    .sidebar-links li { margin-bottom:8px; }
+    .sidebar-links a { font-size:14px; color:var(--gray-600); text-decoration:none; display:flex; align-items:center; gap:6px; }
+    .sidebar-links a:hover { color:var(--primary); }
+    .article-footer { margin-top:48px; padding-top:32px; border-top:2px solid var(--gray-100); }
+    .article-footer-cta { background:var(--primary-50,#FFF8EE); border:1px solid var(--primary-100,#FEF3E0); border-radius:14px; padding:32px; text-align:center; margin-top:32px; }
+    .article-footer-cta h3 { font-size:20px; font-weight:800; color:var(--dark); margin-bottom:8px; word-break:keep-all; }
+    .article-footer-cta p { font-size:14px; color:var(--gray-600); margin-bottom:20px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="mainNavbar">
+  <div class="navbar-inner">
+    <a href="../index.html" class="navbar-logo">
+      <div class="logo-icon" aria-hidden="true">漫</div>
+      <span class="logo-name">漫漫行銷</span>
+    </a>
+    <div class="navbar-nav">
+      <a href="../index.html#services" class="nav-link">服務項目</a>
+      <a href="../pricing.html" class="nav-link">方案與價格</a>
+      <a href="../index.html#portfolio" class="nav-link">成果展示</a>
+      <a href="../index.html#process" class="nav-link">合作流程</a>
+      <a href="../index.html#faq" class="nav-link">常見問題</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-sm nav-btn-line">加入官方帳號</a>
+      <a href="../pricing.html" class="btn btn-primary btn-sm">查看方案</a>
+      <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="手機導覽">
+  <a href="../index.html#services" class="mobile-nav-link">服務項目</a>
+  <a href="../pricing.html" class="mobile-nav-link">方案與價格</a>
+  <a href="../index.html#portfolio" class="mobile-nav-link">成果展示</a>
+  <a href="../index.html#process" class="mobile-nav-link">合作流程</a>
+  <a href="../index.html#faq" class="mobile-nav-link">常見問題</a>
+  <div class="mobile-nav-btns">
+    <a href="../pricing.html" class="btn btn-primary w-full">看方案</a>
+    <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline w-full">加入官方帳號</a>
+  </div>
+</div>
+
+<nav class="breadcrumb-nav" aria-label="breadcrumb">
+  <div class="container">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="../index.html">首頁</a></li>
+      <li class="breadcrumb-item"><a href="../blog.html">行銷知識</a></li>
+      <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">文章標題</li>
+    </ol>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="article-layout">
+
+    <main class="article-content">
+
+      <header class="article-header">
+        <span class="article-tag">品牌網站</span>
+        <h1>[文章標題：替換為實際文章標題]</h1>
+        <div class="article-meta">
+          <span>2026 年 3 月 15 日</span>
+          <span>閱讀約 5 分鐘</span>
+        </div>
+        <p class="article-excerpt">[文章摘要：替換為實際文章的核心重點，約 2–3 句話，讓讀者快速了解這篇文章能幫他解決什麼問題。]</p>
+      </header>
+
+      <div class="article-body">
+
+        <h2>為什麼這個問題值得搞清楚</h2>
+        <p>這裡放文章的開場段落，說明這個主題為什麼重要、讀者可能遇到什麼困境，或是這個問題被誤解的地方。目的是讓讀者覺得「對，這就是我的情況」，願意繼續讀下去。</p>
+        <p>開場不需要太長，2–3 段說清楚背景即可。重點是要讓讀者感覺你理解他們的狀況。</p>
+
+        <h2>第一個重點：[替換為實際小標]</h2>
+        <p>這裡開始正文的第一個主要段落。用清楚的方式說明重點，避免太多術語。如果有需要條列的資訊，可以用清單：</p>
+        <ul>
+          <li>第一項重點說明</li>
+          <li>第二項重點說明</li>
+          <li>第三項重點說明，可以稍微展開解釋</li>
+        </ul>
+        <p>條列之後可以再加一段補充說明，讓段落更完整。</p>
+
+        <h3>補充細節：[替換為實際小標]</h3>
+        <p>如果某個重點需要更細的拆解，可以用 H3 補充。H3 不需要每段都有，只在真的需要分層說明時使用。</p>
+
+        <h2>第二個重點：[替換為實際小標]</h2>
+        <p>繼續說明第二個主要重點。每個 H2 段落建議包含 2–4 個段落，不要太短也不要拉太長。讀者在手機上閱讀的情況很常見，段落太長容易讀不下去。</p>
+        <p>可以在適當位置加入具體的例子或情境說明，讓讀者更容易理解抽象的概念。</p>
+
+        <div class="article-cta-inline">
+          <p style="font-weight:700; font-size:16px; color:var(--dark); margin-bottom:8px;">想了解相關服務？</p>
+          <p style="font-size:14px; color:var(--gray-600); margin-bottom:16px;">如果你正在考慮品牌網站或電商建置，可以先看看我們的方案，或直接填需求表讓我們協助評估。</p>
+          <div class="btn-group">
+            <a href="../pricing.html" class="btn btn-primary btn-sm">查看服務方案</a>
+            <a href="../brief.html" class="btn btn-outline btn-sm">填寫需求表</a>
+          </div>
+        </div>
+
+        <h2>第三個重點：[替換為實際小標]</h2>
+        <p>第三段主要內容。如果文章有四個以上的 H2，通常是文章較長的類型，可以在文章開頭加上目錄或摘要，方便讀者快速跳到想看的部分。</p>
+        <p>對於還在評估的讀者，這個段落可以用來說明「怎麼判斷自己適不適合」，降低決策難度。</p>
+
+        <h2>小結：可以怎麼開始</h2>
+        <p>文章結尾用來做簡短的總結，整理這篇文章的核心重點。不要重複所有內容，只提 2–3 個最重要的takeaway。</p>
+        <p>最後可以給讀者一個明確的下一步建議，讓他們知道讀完之後可以做什麼。</p>
+
+      </div>
+
+      <footer class="article-footer">
+        <p style="font-size:13px; color:var(--gray-400);">標籤：品牌網站、網站設計、中小品牌</p>
+
+        <div class="article-footer-cta">
+          <h3>有更多問題想問嗎？</h3>
+          <p>歡迎加入漫漫行銷官方帳號，說說你目前的情況，我們會協助你釐清方向。</p>
+          <div class="btn-group" style="justify-content:center;">
+            <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-primary">加入官方帳號聊聊</a>
+            <a href="../pricing.html" class="btn btn-outline">查看服務方案</a>
+          </div>
+        </div>
+
+        <div style="margin-top:32px;">
+          <p style="font-size:14px; font-weight:700; color:var(--dark); margin-bottom:12px;">相關文章</p>
+          <ul style="list-style:none; padding:0;">
+            <li style="margin-bottom:8px;"><a href="../blog.html" style="font-size:14px; color:var(--gray-600);">← 回到行銷知識列表</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    </main>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+        <h3>服務快速入口</h3>
+        <ul class="sidebar-links">
+          <li>
+            <a href="../brand-website.html">
+              <i data-lucide="monitor" class="icon icon--sm" aria-hidden="true"></i>
+              品牌網站設計
+            </a>
+          </li>
+          <li>
+            <a href="../ecommerce.html">
+              <i data-lucide="shopping-cart" class="icon icon--sm" aria-hidden="true"></i>
+              電商網站架設
+            </a>
+          </li>
+          <li>
+            <a href="../marketplace-optimization.html">
+              <i data-lucide="store" class="icon icon--sm" aria-hidden="true"></i>
+              平台賣場優化
+            </a>
+          </li>
+          <li>
+            <a href="../consulting.html">
+              <i data-lucide="bar-chart-2" class="icon icon--sm" aria-hidden="true"></i>
+              行銷顧問與維護
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>有問題想問？</h3>
+        <p style="font-size:13px; color:var(--gray-600); line-height:1.6; margin-bottom:16px;">加入官方帳號，說說你的品牌現況，我們會協助你找到最適合的方向。</p>
+        <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%; text-align:center;">加入官方帳號</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>相關文章</h3>
+        <ul class="sidebar-links">
+          <li><a href="../blog.html">查看所有文章 →</a></li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <div class="logo-icon" aria-hidden="true">漫</div>
+          <span class="logo-name">漫漫行銷</span>
+        </div>
+        <p>為中小品牌與創業者提供建站、電商、賣場與後續經營支援。</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@manman.tw" class="footer-contact-item footer-contact-item--icon">
+            <i data-lucide="mail" class="icon icon--sm" aria-hidden="true"></i>
+            hello@manman.tw
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-contact-item footer-contact-item--icon line-item">
+            <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+            加入官方 LINE 帳號
+          </a>
+        </div>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-social footer-social--line" aria-label="LINE">
+            <i data-lucide="message-circle" class="icon icon--sm"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>服務項目</h4>
+        <ul>
+          <li><a href="../brand-website.html">品牌網站設計</a></li>
+          <li><a href="../ecommerce.html">電商網站架設</a></li>
+          <li><a href="../marketplace-optimization.html">平台賣場優化</a></li>
+          <li><a href="../consulting.html">行銷顧問與維護</a></li>
+          <li><a href="../pricing.html#addons">加購項目</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>快速入口</h4>
+        <ul>
+          <li><a href="../pricing.html">方案與價格</a></li>
+          <li><a href="../order.html">直接下單</a></li>
+          <li><a href="../brief.html">填寫需求表</a></li>
+          <li><a href="../index.html#portfolio">成果展示</a></li>
+          <li><a href="../index.html#faq">常見問題</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>其他資訊</h4>
+        <ul>
+          <li><a href="../privacy.html">隱私權政策</a></li>
+          <li><a href="../terms.html">服務條款</a></li>
+          <li><a href="../refund-policy.html">退款 / 變更規則</a></li>
+        </ul>
+        <div class="footer-meta">
+          <p>服務地區：全台品牌與商家</p>
+          <p>回覆時間：平日依序回覆</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 漫漫行銷 Manman Marketing. All rights reserved.</span>
+      <span>台灣 · 服務全台中小品牌</span>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-btns" aria-hidden="true">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="fab fab-line" tabindex="-1">
+    <span class="fab-icon fab-icon--line"><i data-lucide="message-circle" class="icon icon--sm"></i></span>
+    加入官方帳號
+  </a>
+  <a href="../pricing.html" class="fab fab-order" tabindex="-1">
+    <span class="fab-icon fab-icon--order"><i data-lucide="arrow-right" class="icon icon--sm"></i></span>
+    查看方案
+  </a>
+</div>
+<div class="mobile-sticky-cta" id="mobileStickyCta" aria-label="快速行動">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="msca-line">
+    <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+    加入 LINE
+  </a>
+  <a href="../pricing.html" class="msca-plan">
+    <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+    看方案
+  </a>
+</div>
+
+<script src="../lucide.min.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

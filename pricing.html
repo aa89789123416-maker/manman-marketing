@@ -4,816 +4,1006 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>網站設計與電商建置價格｜品牌網站、電商網站、賣場優化費用｜漫漫行銷</title>
-  <meta name="description" content="查看漫漫行銷的品牌網站、電商網站、賣場優化與加值服務價格，方案透明，適合中小品牌與創業者。" />
+  <meta name="description" content="查看漫漫行銷的品牌網站、電商網站、平台賣場優化與加值服務價格。方案透明、流程清楚，適合中小品牌與創業者。" />
   <link rel="canonical" href="https://aa89789123416-maker.github.io/manman-marketing/pricing.html" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta property="og:type" content="website" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="網站設計與電商建置價格｜品牌網站、電商網站、賣場優化費用｜漫漫行銷" />
+  <meta property="og:description" content="查看漫漫行銷的品牌網站、電商網站、平台賣場優化與加值服務價格。方案透明、流程清楚，適合中小品牌與創業者。" />
   <meta property="og:url" content="https://aa89789123416-maker.github.io/manman-marketing/pricing.html" />
-  <meta property="og:title" content="網站設計與電商建置價格｜漫漫行銷" />
-  <meta property="og:description" content="查看漫漫行銷的品牌網站、電商網站、賣場優化與加值服務價格，方案透明，適合中小品牌與創業者。" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>漫</text></svg>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://aa89789123416-maker.github.io/manman-marketing/og-cover.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#E8912A" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .addon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .addon-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .addon-name {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .addon-price {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .addon-desc {
+      font-size: 13px;
+      color: var(--gray-500);
+      line-height: 1.5;
+    }
+    .qs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .qs-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 16px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .qs-card-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary-light, #FFF3E0);
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .qs-card-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .qs-card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.4;
+    }
+    .qs-card-sub {
+      font-size: 13px;
+      color: var(--gray-500);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .qs-card-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 4px;
+    }
+    .qs-card-link:hover {
+      text-decoration: underline;
+    }
+    .other-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .other-service-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 16px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .osc-tag {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .osc-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--dark);
+    }
+    .osc-price {
+      font-size: 15px;
+      color: var(--gray-500);
+    }
+    .osc-for {
+      font-size: 13px;
+      color: var(--gray-500);
+      line-height: 1.5;
+    }
+    .osc-items {
+      list-style: none;
+      padding: 0;
+      margin: 4px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .osc-items li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--gray-600, #4B5563);
+      line-height: 1.5;
+    }
+    .osc-items li .icon {
+      color: var(--primary);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .osc-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .transparency-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .transparency-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 16px;
+      padding: 28px 24px;
+    }
+    .transparency-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 16px;
+    }
+    .transparency-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .transparency-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--gray-600, #4B5563);
+      line-height: 1.5;
+    }
+    .transparency-list li .icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .transparency-list--included li .icon { color: var(--success, #16a34a); }
+    .transparency-list--extra li .icon { color: var(--gray-400); }
+    .scenario-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .scenario-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 20px 24px;
+      flex-wrap: wrap;
+    }
+    .scenario-row-if {
+      font-size: 14px;
+      color: var(--gray-500);
+      min-width: 200px;
+      flex: 1;
+    }
+    .scenario-row-arrow {
+      color: var(--gray-300);
+      flex-shrink: 0;
+    }
+    .scenario-row-then {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--dark);
+      flex-shrink: 0;
+    }
+    .scenario-row-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .scenario-row-link:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .scenario-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .scenario-row-arrow { display: none; }
+    }
+    .pcv2-for {
+      font-size: 13px;
+      color: var(--gray-500);
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }
+    .pcv2-meta {
+      font-size: 12px;
+      color: var(--gray-400);
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+    .intro-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .intro-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--gray-600, #4B5563);
+      line-height: 1.5;
+    }
+    .intro-list li .icon { color: var(--primary); flex-shrink: 0; margin-top: 2px; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首頁",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "方案與價格",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/pricing.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "我不確定自己該選哪個方案，怎麼辦？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以先從最接近你需求的服務頁開始看，或直接加入官方帳號，我們會協助你判斷。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "可以直接在網站付款嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以。標準方案可直接付款並進入專案啟動流程。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "之後想加功能怎麼辦？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "若需求超出原方案範圍，會先說明並報價，再由你決定是否加購。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "金流、物流、發票都可以處理嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以，會依方案內容與需求安排，部分項目可作為加購處理。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "一定要先聊過才能合作嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不一定。若你已經很清楚自己要什麼，可以直接下單；若還不確定，也可以先聊。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "做完之後誰來維護？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "可以自行管理，也可以交由我們協助後續維護與更新。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "方案價格可以客製嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "若需求明顯超出標準方案範圍，可另行評估客製內容與報價。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" id="mainNavbar">
   <div class="navbar-inner">
     <a href="index.html" class="navbar-logo">
-      <div class="logo-icon">漫</div>
-      漫漫行銷
+      <div class="logo-icon" aria-hidden="true">漫</div>
+      <span class="logo-name">漫漫行銷</span>
     </a>
     <div class="navbar-nav">
       <a href="index.html#services" class="nav-link">服務項目</a>
-      <a href="pricing.html" class="nav-link" style="color:var(--primary);">方案與價格</a>
+      <a href="pricing.html" class="nav-link">方案與價格</a>
       <a href="index.html#portfolio" class="nav-link">成果展示</a>
       <a href="index.html#process" class="nav-link">合作流程</a>
       <a href="index.html#faq" class="nav-link">常見問題</a>
     </div>
     <div class="navbar-actions">
-      <a href="pricing.html" class="btn btn-outline btn-sm">查看方案</a>
-      <a href="order.html" class="btn btn-primary btn-sm">直接下單</a>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-sm nav-btn-line">加入官方帳號</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">查看方案</a>
+      <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
-
-<div class="mobile-nav" id="mobileNav">
-  <a href="index.html" class="mobile-nav-link">首頁</a>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="手機導覽">
   <a href="index.html#services" class="mobile-nav-link">服務項目</a>
   <a href="pricing.html" class="mobile-nav-link">方案與價格</a>
+  <a href="index.html#portfolio" class="mobile-nav-link">成果展示</a>
+  <a href="index.html#process" class="mobile-nav-link">合作流程</a>
   <a href="index.html#faq" class="mobile-nav-link">常見問題</a>
   <div class="mobile-nav-btns">
-    <a href="order.html" class="btn btn-primary w-full">直接下單</a>
+    <a href="pricing.html" class="btn btn-primary w-full">看方案</a>
+    <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline w-full">加入官方帳號</a>
   </div>
 </div>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
+<nav class="breadcrumb-nav" aria-label="breadcrumb">
   <div class="container">
-    <div class="section-tag" style="margin-bottom:16px;">方案與價格</div>
-    <h1>方案透明，價格清楚，<br>看到適合的就可以直接開始</h1>
-    <p>把中小品牌最常需要的服務整理成清楚的方案。不用來回談很久才知道預算，也不用怕每做一點就一直加價。</p>
-    <div class="sub-tags">
-      <span class="sub-tag">適合中小品牌</span>
-      <span class="sub-tag">個人創業者</span>
-      <span class="sub-tag">工作室</span>
-      <span class="sub-tag">電商品牌</span>
-    </div>
-    <div class="btn-group" style="justify-content:center;margin-top:24px;">
-      <a href="#selector" class="btn btn-primary btn-lg">直接看方案</a>
-      <a href="https://lin.ee/wKvaxBW" class="btn btn-outline btn-lg" target="_blank" rel="noopener">聊聊哪個適合我</a>
-    </div>
-    <p style="font-size:13px;color:var(--gray-400);margin-top:16px;">
-      若你有特殊功能、客製串接或大型專案需求，可選最接近的方案，再由我們協助評估。
-    </p>
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+      <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">方案與價格</li>
+    </ol>
   </div>
-</section>
+</nav>
 
-<!-- QUICK SELECTOR -->
-<section class="section section-alt" id="selector">
+<!-- SECTION 1: Hero -->
+<section class="slp-hero">
   <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">先選你現在最需要的是哪一種</h2>
-    </div>
-    <div class="category-selector">
-      <button class="category-btn" onclick="scrollToSection('brand-website')">
-        <span class="cat-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="monitor-smartphone" class="icon icon--md"></i></span></span>
-        <span class="cat-label">我要品牌網站</span>
-        <span class="cat-desc">服務型商家、個人品牌、工作室</span>
-        <span class="btn btn-outline btn-sm" style="margin-top:8px;">看品牌網站方案</span>
-      </button>
-      <button class="category-btn" onclick="scrollToSection('ecommerce')">
-        <span class="cat-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="shopping-bag" class="icon icon--md"></i></span></span>
-        <span class="cat-label">我要電商網站</span>
-        <span class="cat-desc">要賣商品、建立購物流程的品牌</span>
-        <span class="btn btn-outline btn-sm" style="margin-top:8px;">看電商方案</span>
-      </button>
-      <button class="category-btn" onclick="scrollToSection('marketplace')">
-        <span class="cat-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="layout-dashboard" class="icon icon--md"></i></span></span>
-        <span class="cat-label">我要平台賣場</span>
-        <span class="cat-desc">已在平台上賣東西的賣家</span>
-        <span class="btn btn-outline btn-sm" style="margin-top:8px;">看賣場方案</span>
-      </button>
-      <button class="category-btn" onclick="scrollToSection('consulting')">
-        <span class="cat-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="megaphone" class="icon icon--md"></i></span></span>
-        <span class="cat-label">我要顧問或代操</span>
-        <span class="cat-desc">需要後續經營、內容或陪跑規劃</span>
-        <span class="btn btn-outline btn-sm" style="margin-top:8px;">看加值服務</span>
-      </button>
+    <div class="slp-hero-inner">
+      <div class="slp-tag">方案與價格</div>
+      <h1 class="slp-title">
+        <span class="title-line">網站設計與電商建置價格，</span><span class="title-line">直接看懂、直接選。</span>
+      </h1>
+      <p class="slp-subtitle">漫漫行銷把常見需求整理成清楚的方案，讓中小品牌與創業者可以先看懂服務內容、價格範圍與適合對象，再決定要直接開始，還是先聊聊需求。</p>
+      <div class="hero-chips">
+        <span class="hero-chip">品牌網站 NT$19,800 起</span>
+        <span class="hero-chip">電商網站 NT$59,800 起</span>
+        <span class="hero-chip">可依需求加購延伸項目</span>
+      </div>
+      <div class="btn-group">
+        <a href="order.html" class="btn btn-primary btn-lg">直接下單</a>
+        <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-lg">加入官方帳號聊聊</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== BRAND WEBSITE ===================== -->
-<section class="section" id="brand-website">
+<!-- SECTION 2: Intro guide -->
+<section class="section section-alt">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header text-center fade-up">
+      <div class="section-tag">看清楚再選</div>
+      <h2 class="section-title">
+        <span class="title-line">這一頁不是只給你看價格，</span><span class="title-line">而是幫你更快選對方案。</span>
+      </h2>
+    </div>
+    <div class="slp-desc fade-up">
+      <p>很多人看價格表時，最常遇到的不是覺得貴或便宜，而是看完還是不知道自己該選哪一個。</p>
+      <p>所以這一頁除了列出方案與費用，也會幫你釐清：</p>
+      <ul class="intro-list">
+        <li><i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>你現在比較適合品牌網站、電商網站，還是賣場優化</li>
+        <li><i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>各方案包含哪些內容</li>
+        <li><i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>哪些需求可以後續再加</li>
+        <li><i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>如果還不確定，也可以先用較輕鬆的方式開始</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: Quick selector -->
+<section class="section">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="section-tag">快速判斷</div>
+      <h2 class="section-title">
+        <span class="title-line">不確定怎麼選？</span><span class="title-line">先用這個方式判斷。</span>
+      </h2>
+    </div>
+    <div class="qs-grid fade-up">
+      <div class="qs-card">
+        <span class="qs-card-icon" aria-hidden="true">
+          <i data-lucide="layout" class="icon icon--sm"></i>
+        </span>
+        <div class="qs-card-label">情境</div>
+        <div class="qs-card-title">如果你需要的是品牌門面</div>
+        <div class="qs-card-sub">
+          你比較適合：<strong>品牌網站方案</strong><br />
+          適合個人品牌、工作室、服務型商家、中小品牌
+        </div>
+        <a href="brand-website.html" class="qs-card-link">
+          了解品牌網站方案 <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="qs-card">
+        <span class="qs-card-icon" aria-hidden="true">
+          <i data-lucide="shopping-cart" class="icon icon--sm"></i>
+        </span>
+        <div class="qs-card-label">情境</div>
+        <div class="qs-card-title">如果你要開始賣商品</div>
+        <div class="qs-card-sub">
+          你比較適合：<strong>電商網站方案</strong><br />
+          適合商品賣家、品牌電商、想建立官網購物流程的人
+        </div>
+        <a href="ecommerce.html" class="qs-card-link">
+          了解電商網站方案 <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="qs-card">
+        <span class="qs-card-icon" aria-hidden="true">
+          <i data-lucide="store" class="icon icon--sm"></i>
+        </span>
+        <div class="qs-card-label">情境</div>
+        <div class="qs-card-title">如果你已經在平台賣東西</div>
+        <div class="qs-card-sub">
+          你比較適合：<strong>賣場優化或顧問支援</strong><br />
+          適合想先優化平台頁面、活動頁、商品頁的人
+        </div>
+        <a href="marketplace-optimization.html" class="qs-card-link">
+          了解賣場優化服務 <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="qs-card">
+        <span class="qs-card-icon" aria-hidden="true">
+          <i data-lucide="help-circle" class="icon icon--sm"></i>
+        </span>
+        <div class="qs-card-label">情境</div>
+        <div class="qs-card-title">如果你還不確定需求範圍</div>
+        <div class="qs-card-sub">
+          你比較適合：<strong>先填需求表或加入官方帳號</strong><br />
+          適合需求還在整理中、怕直接下單選錯的人
+        </div>
+        <a href="brief.html" class="qs-card-link">
+          填寫需求表 <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4a: Brand website pricing -->
+<section class="section section-alt" id="brand-website">
+  <div class="container">
+    <div class="section-header text-center fade-up">
       <div class="section-tag">品牌網站方案</div>
-      <h2 class="section-title">品牌網站方案</h2>
-      <p class="section-subtitle">先建立專業形象，讓客戶更容易信任你、找到你、聯絡你。</p>
+      <h2 class="section-title">
+        <span class="title-line">品牌網站方案</span>
+      </h2>
     </div>
-    <div class="grid-2 pricing-cards-grid">
-      <!-- Starter -->
-      <div class="pricing-card">
-        <div class="pricing-category">品牌網站</div>
-        <h3>入門形象站</h3>
-        <p class="pricing-target">個人品牌、工作室、接案者、顧問型服務、初創商家</p>
-        <p style="font-size:14px;color:var(--gray-600);margin-bottom:16px;">用更低門檻的方式，先做出一個清楚、專業、可上線的品牌網站。</p>
-        <div class="pricing-price">
-          <div class="price-label">方案價格</div>
-          <div class="price-amount"><span class="currency">NT$</span>19,800</div>
+    <div class="slp-pricing-grid fade-up">
+      <div class="pricing-card-v2">
+        <div class="pcv2-category">品牌網站</div>
+        <div class="pcv2-name">入門形象站</div>
+        <div class="pcv2-price">
+          <span class="pcv2-price-amount">NT$19,800</span>
+          <span class="pcv2-price-note">一次性費用</span>
         </div>
-        <div class="pricing-includes">
-          <h4 class="includes-heading includes-heading--yes"><i data-lucide="check-circle-2" class="icon icon--sm"></i> 包含內容</h4>
-          <ul class="includes-list">
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 1～3 頁網站</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 套版客製調整</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> RWD 響應式設計</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 聯絡表單</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 基礎 SEO 設定</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 基本文案架構建議</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 協助上線</li>
-          </ul>
-          <h4 class="includes-heading includes-heading--no" style="margin-top:16px;"><i data-lucide="x-circle" class="icon icon--sm"></i> 不包含</h4>
-          <ul class="includes-list excludes-list">
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 購物車功能</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 金流串接</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 發票串接</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 客製功能開發</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 多語系</li>
-          </ul>
-        </div>
-        <div class="pricing-meta">
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">製作時間</div>
-            <div class="pricing-meta-value">7～14 天</div>
-          </div>
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">修改次數</div>
-            <div class="pricing-meta-value">2 次</div>
-          </div>
-        </div>
-        <div style="background:var(--primary-50);border-radius:var(--radius-sm);padding:12px;margin-bottom:20px;font-size:13px;color:var(--gray-600);">
-          <strong style="color:var(--primary-dark);">適合你如果：</strong> 想先有一個正式官網、需要清楚展示服務、預算有限但不想做得太隨便
-        </div>
-        <div class="pricing-btns">
-          <a href="order.html?plan=starter-site" class="btn btn-dark w-full">立即下單</a>
-          <a href="#" class="btn btn-outline w-full">查看更多細節</a>
+        <div class="pcv2-for">適合個人品牌、工作室、接案者與服務型商家，想先建立基本品牌門面。</div>
+        <ul class="pcv2-features">
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>1～3 頁網站</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>基本首頁 / 關於 / 聯絡頁規劃</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>響應式設計</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>聯絡表單</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>基礎 SEO 設定</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>協助上線</li>
+        </ul>
+        <div class="pcv2-meta">製作時間：約 7–14 個工作天 ／ 修改次數：2 次</div>
+        <div class="pcv2-btns">
+          <a href="brand-website.html" class="btn btn-outline btn-sm">了解服務詳情</a>
+          <a href="order.html" class="btn btn-primary btn-sm">立即開始</a>
         </div>
       </div>
-
-      <!-- Pro -->
-      <div class="pricing-card featured">
-        <div class="pricing-badge"><span class="badge badge-primary">推薦方案</span></div>
-        <div class="pricing-category">品牌網站</div>
-        <h3>品牌形象站 Pro</h3>
-        <p class="pricing-target">中小商家、品牌型工作室、需要完整展示內容的服務型品牌</p>
-        <p style="font-size:14px;color:var(--gray-600);margin-bottom:16px;">不只是基本形象，而是把品牌感、頁面結構與詢問流程一起整理好。</p>
-        <div class="pricing-price">
-          <div class="price-label">方案價格</div>
-          <div class="price-amount"><span class="currency">NT$</span>39,800</div>
+      <div class="pricing-card-v2 pricing-card-v2--featured">
+        <div class="pcv2-category">品牌網站進階</div>
+        <div class="pcv2-name">品牌形象站 Pro</div>
+        <div class="pcv2-price">
+          <span class="pcv2-price-amount">NT$39,800 起</span>
+          <span class="pcv2-price-note">一次性費用</span>
         </div>
-        <div class="pricing-includes">
-          <h4 class="includes-heading includes-heading--yes"><i data-lucide="check-circle-2" class="icon icon--sm"></i> 包含內容</h4>
-          <ul class="includes-list">
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 5～8 頁網站</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 視覺風格規劃</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 品牌架構與 CTA 規劃</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 表單 / 詢價 / 預約功能</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 基礎 SEO 架構</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> GA4 安裝</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 協助上線</li>
-          </ul>
-          <h4 class="includes-heading includes-heading--no" style="margin-top:16px;"><i data-lucide="x-circle" class="icon icon--sm"></i> 不包含</h4>
-          <ul class="includes-list excludes-list">
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 電商購物功能</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 複雜會員功能</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 進階金流與發票整合</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 客製系統開發</li>
-          </ul>
-        </div>
-        <div class="pricing-meta">
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">製作時間</div>
-            <div class="pricing-meta-value">14～21 天</div>
-          </div>
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">修改次數</div>
-            <div class="pricing-meta-value">2 次</div>
-          </div>
-        </div>
-        <div style="background:var(--primary-50);border-radius:var(--radius-sm);padding:12px;margin-bottom:20px;font-size:13px;color:var(--gray-600);">
-          <strong style="color:var(--primary-dark);">適合你如果：</strong> 想讓網站不只是有而是更像一個品牌、需要展示多項服務或內容、想提升詢問率與專業感
-        </div>
-        <div class="pricing-btns">
-          <a href="order.html?plan=brand-pro" class="btn btn-primary w-full">立即下單</a>
-          <a href="#" class="btn btn-outline w-full">聊聊是否適合我</a>
+        <div class="pcv2-for">內容較多、服務較完整，想建立更完整品牌網站的人。</div>
+        <ul class="pcv2-features">
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>多頁網站規劃</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>完整頁面架構設計</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>響應式設計</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>聯絡與導流入口規劃</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>基礎 SEO 架構</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>協助上線</li>
+        </ul>
+        <div class="pcv2-meta">製作時間：約 14–21 個工作天 ／ 修改次數：2 次</div>
+        <div class="pcv2-btns">
+          <a href="brand-website.html" class="btn btn-outline btn-sm">了解服務詳情</a>
+          <a href="order.html" class="btn btn-primary btn-sm">立即開始</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== ECOMMERCE ===================== -->
-<section class="section section-alt" id="ecommerce">
+<!-- SECTION 4b: Ecommerce pricing -->
+<section class="section" id="ecommerce">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header text-center fade-up">
       <div class="section-tag">電商網站方案</div>
-      <h2 class="section-title">電商網站方案</h2>
-      <p class="section-subtitle">從商品展示、購物車、收款到基本追蹤，幫你把賣東西需要的流程整理好。</p>
+      <h2 class="section-title">
+        <span class="title-line">電商網站方案</span>
+      </h2>
     </div>
-    <div class="grid-3 pricing-cards-grid">
-      <!-- Starter Ecom -->
-      <div class="pricing-card">
-        <div class="pricing-category">電商網站</div>
-        <h3>電商起步版</h3>
-        <p class="pricing-target">剛開始賣商品的小品牌、個人賣家、初期電商品牌</p>
-        <div class="pricing-price">
-          <div class="price-label">方案價格</div>
-          <div class="price-amount"><span class="currency">NT$</span>59,800</div>
+    <div class="slp-pricing-grid fade-up">
+      <div class="pricing-card-v2">
+        <div class="pcv2-category">電商網站</div>
+        <div class="pcv2-name">電商起步版</div>
+        <div class="pcv2-price">
+          <span class="pcv2-price-amount">NT$59,800</span>
+          <span class="pcv2-price-note">一次性費用</span>
         </div>
-        <div class="pricing-includes">
-          <h4 class="includes-heading includes-heading--yes"><i data-lucide="check-circle-2" class="icon icon--sm"></i> 包含內容</h4>
-          <ul class="includes-list">
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 電商網站建置</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 商品分類與商品頁設定</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 購物車功能</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 金流串接 1 種</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 物流基本設定</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 優惠券基本功能</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 基礎 SEO</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 後台操作教學</li>
-          </ul>
-          <h4 class="includes-heading includes-heading--no" style="margin-top:12px;"><i data-lucide="x-circle" class="icon icon--sm"></i> 不包含</h4>
-          <ul class="includes-list excludes-list">
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 客製會員系統</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 複雜促銷規則</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 進階發票整合</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 深度客製功能</li>
-          </ul>
-        </div>
-        <div class="pricing-meta">
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">製作時間</div>
-            <div class="pricing-meta-value">14～21 天</div>
-          </div>
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">修改次數</div>
-            <div class="pricing-meta-value">2 次</div>
-          </div>
-        </div>
-        <div class="pricing-btns">
-          <a href="order.html?plan=ecom-starter" class="btn btn-dark w-full">立即下單</a>
-          <a href="#" class="btn btn-outline w-full">看方案細節</a>
+        <div class="pcv2-for">剛開始賣商品、想建立基本官網購物流程的品牌。</div>
+        <ul class="pcv2-features">
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>電商網站建置</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>商品分類與商品頁設定</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>購物車功能</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>金流串接 1 種</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>物流基本設定</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>基礎結帳流程整理</li>
+        </ul>
+        <div class="pcv2-meta">製作時間：約 14–21 個工作天 ／ 修改次數：2 次</div>
+        <div class="pcv2-btns">
+          <a href="ecommerce.html" class="btn btn-outline btn-sm">了解服務詳情</a>
+          <a href="order.html" class="btn btn-primary btn-sm">立即開始</a>
         </div>
       </div>
-
-      <!-- Growth Ecom -->
-      <div class="pricing-card featured">
-        <div class="pricing-badge"><span class="badge badge-primary">熱門方案</span></div>
-        <div class="pricing-category">電商網站</div>
-        <h3>電商成長版</h3>
-        <p class="pricing-target">已有商品、在意品牌感、希望購物流程更完整的商家</p>
-        <div class="pricing-price">
-          <div class="price-label">方案價格</div>
-          <div class="price-amount"><span class="currency">NT$</span>89,800</div>
+      <div class="pricing-card-v2 pricing-card-v2--featured">
+        <div class="pcv2-category">電商升級</div>
+        <div class="pcv2-name">電商成長版</div>
+        <div class="pcv2-price">
+          <span class="pcv2-price-amount">NT$89,800</span>
+          <span class="pcv2-price-note">一次性費用</span>
         </div>
-        <div class="pricing-includes">
-          <h4 class="includes-heading includes-heading--yes"><i data-lucide="check-circle-2" class="icon icon--sm"></i> 包含內容</h4>
-          <ul class="includes-list">
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 電商網站完整建置</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 金流串接 1～2 種</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 物流設定</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 發票串接基礎整合</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 首頁 / 商品頁 / 結帳流程優化</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 會員基礎功能</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> GA4 / Meta Pixel 追蹤</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> SEO 基礎架構</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 上線後 14 天微調</li>
-          </ul>
-          <h4 class="includes-heading includes-heading--no" style="margin-top:12px;"><i data-lucide="x-circle" class="icon icon--sm"></i> 不包含</h4>
-          <ul class="includes-list excludes-list">
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> ERP / CRM 客製串接</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 複雜會員分級</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 深度客製系統開發</li>
-          </ul>
-        </div>
-        <div class="pricing-meta">
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">製作時間</div>
-            <div class="pricing-meta-value">21～30 天</div>
-          </div>
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">修改次數</div>
-            <div class="pricing-meta-value">2 次</div>
-          </div>
-        </div>
-        <div class="pricing-btns">
-          <a href="order.html?plan=ecom-growth" class="btn btn-primary w-full">立即下單</a>
-          <a href="#" class="btn btn-outline w-full">這是我最適合的嗎？</a>
-        </div>
-      </div>
-
-      <!-- Flagship -->
-      <div class="pricing-card">
-        <div class="pricing-category">電商網站</div>
-        <h3>電商旗艦版</h3>
-        <p class="pricing-target">需求較多、希望打造完整品牌電商體驗的品牌</p>
-        <div class="pricing-price">
-          <div class="price-label">方案價格</div>
-          <div class="price-amount"><span class="currency">NT$</span>129,800<span class="price-suffix">起</span></div>
-        </div>
-        <div class="pricing-includes">
-          <h4 class="includes-heading includes-heading--yes"><i data-lucide="check-circle-2" class="icon icon--sm"></i> 包含內容</h4>
-          <ul class="includes-list">
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 客製化首頁與品牌架構</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 多頁式電商網站規劃</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 金流 / 物流 / 發票整合</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 進階轉換流程設計</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> SEO 架構強化</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 追蹤與分析基礎規劃</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 專案管理與顧問討論</li>
-          </ul>
-        </div>
-        <div style="background:var(--primary-50);border-radius:var(--radius-sm);padding:12px;margin-bottom:16px;font-size:13px;color:var(--gray-600);">
-          此方案為客製型專案，實際報價依頁數、串接項目、特殊功能、內容量與時程進一步評估。
-        </div>
-        <div class="pricing-meta">
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">製作時間</div>
-            <div class="pricing-meta-value">依需求評估</div>
-          </div>
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">修改次數</div>
-            <div class="pricing-meta-value">依專案約定</div>
-          </div>
-        </div>
-        <div class="pricing-btns">
-          <a href="#" class="btn btn-dark w-full">預約評估</a>
-          <a href="#" class="btn btn-outline w-full">先聊需求</a>
+        <div class="pcv2-for">已有商品、重視品牌感、購買體驗與後續優化的商家。</div>
+        <ul class="pcv2-features">
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>電商網站完整建置</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>商品頁與分類架構整理</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>金流 / 物流整合</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>發票基礎整合</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>商品頁與結帳流程優化</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>基礎追蹤安裝</li>
+        </ul>
+        <div class="pcv2-meta">製作時間：約 21–30 個工作天 ／ 修改次數：2 次</div>
+        <div class="pcv2-btns">
+          <a href="ecommerce.html" class="btn btn-outline btn-sm">了解服務詳情</a>
+          <a href="order.html" class="btn btn-primary btn-sm">立即開始</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== MARKETPLACE ===================== -->
-<section class="section" id="marketplace">
+<!-- SECTION 5: Other services -->
+<section class="section section-alt">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">平台賣場方案</div>
-      <h2 class="section-title">平台賣場方案</h2>
-      <p class="section-subtitle">不是有賣場就會賣。頁面整理、商品呈現、活動規劃與關鍵字優化，常常才是差別。</p>
+    <div class="section-header text-center fade-up">
+      <div class="section-tag">其他服務</div>
+      <h2 class="section-title">
+        <span class="title-line">如果你現在需要的，</span><span class="title-line">不是建站本身，也可以從這裡開始。</span>
+      </h2>
     </div>
-    <div class="grid-3 pricing-cards-grid">
-      <div class="pricing-card">
-        <div class="pricing-category">平台賣場</div>
-        <h3>賣場建置基本版</h3>
-        <p class="pricing-target">剛開始經營平台賣場、想先把架構整理清楚的賣家</p>
-        <div class="pricing-price">
-          <div class="price-label">方案價格</div>
-          <div class="price-amount"><span class="currency">NT$</span>9,800</div>
-        </div>
-        <div class="pricing-includes">
-          <h4 class="includes-heading includes-heading--yes"><i data-lucide="check-circle-2" class="icon icon--sm"></i> 包含內容</h4>
-          <ul class="includes-list">
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 賣場首頁基礎整理</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 商品分類規劃建議</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 5 項商品頁優化示範</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 標題與基礎描述優化建議</li>
-          </ul>
-          <h4 class="includes-heading includes-heading--no" style="margin-top:12px;"><i data-lucide="x-circle" class="icon icon--sm"></i> 不包含</h4>
-          <ul class="includes-list excludes-list">
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 大量商品上架</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 活動頁視覺完整製作</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 長期代營運</li>
-          </ul>
-        </div>
-        <div class="pricing-meta">
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">製作時間</div>
-            <div class="pricing-meta-value">5～7 天</div>
-          </div>
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">修改次數</div>
-            <div class="pricing-meta-value">1 次</div>
-          </div>
-        </div>
-        <div class="pricing-btns">
-          <a href="order.html?plan=market-basic" class="btn btn-dark w-full">立即下單</a>
+    <div class="other-services-grid fade-up">
+      <div class="other-service-card">
+        <div class="osc-tag">賣場與平台優化</div>
+        <div class="osc-name">平台賣場優化</div>
+        <div class="osc-price">依需求報價 ／ 可先聊需求</div>
+        <div class="osc-for">已在平台賣東西、想優化首頁 / 商品頁 / 活動頁的品牌。</div>
+        <ul class="osc-items">
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>首頁結構整理</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>商品頁資訊優化</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>分類與版位調整</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>活動頁重點整理</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>關鍵字與標題優化</li>
+        </ul>
+        <div class="osc-btns">
+          <a href="marketplace-optimization.html" class="btn btn-outline btn-sm">查看賣場優化服務</a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-primary btn-sm">先聊聊需求</a>
         </div>
       </div>
-
-      <div class="pricing-card featured">
-        <div class="pricing-badge"><span class="badge badge-primary">推薦</span></div>
-        <div class="pricing-category">平台賣場</div>
-        <h3>賣場建置進階版</h3>
-        <p class="pricing-target">想提升頁面專業感與轉換率的賣家</p>
-        <div class="pricing-price">
-          <div class="price-label">方案價格</div>
-          <div class="price-amount"><span class="currency">NT$</span>19,800</div>
-        </div>
-        <div class="pricing-includes">
-          <h4 class="includes-heading includes-heading--yes"><i data-lucide="check-circle-2" class="icon icon--sm"></i> 包含內容</h4>
-          <ul class="includes-list">
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 賣場首頁視覺規劃</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 商品頁模板設計</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 活動頁規劃</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 20 項商品頁優化協助</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 標題 / 關鍵字 / 描述優化</li>
-          </ul>
-          <h4 class="includes-heading includes-heading--no" style="margin-top:12px;"><i data-lucide="x-circle" class="icon icon--sm"></i> 不包含</h4>
-          <ul class="includes-list excludes-list">
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 長期檔期代營運</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 平台廣告代投</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 大量圖片重製</li>
-          </ul>
-        </div>
-        <div class="pricing-meta">
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">製作時間</div>
-            <div class="pricing-meta-value">7～14 天</div>
-          </div>
-          <div class="pricing-meta-item">
-            <div class="pricing-meta-label">修改次數</div>
-            <div class="pricing-meta-value">2 次</div>
-          </div>
-        </div>
-        <div class="pricing-btns">
-          <a href="order.html?plan=market-pro" class="btn btn-primary w-full">立即下單</a>
-        </div>
-      </div>
-
-      <div class="pricing-card">
-        <div class="pricing-category">平台賣場</div>
-        <h3>賣場代營運</h3>
-        <p class="pricing-target">需要持續優化與更新賣場的品牌或賣家</p>
-        <div class="pricing-price">
-          <div class="price-label">月費方案</div>
-          <div class="price-amount"><span class="currency">NT$</span>15,800<span class="price-suffix">/ 月起</span></div>
-        </div>
-        <div class="pricing-includes">
-          <h4 class="includes-heading includes-heading--yes"><i data-lucide="check-circle-2" class="icon icon--sm"></i> 包含內容</h4>
-          <ul class="includes-list">
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 商品上架與更新</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 檔期規劃</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 基礎活動頁調整</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 賣場頁優化</li>
-            <li><span class="icon-check"><i data-lucide="check" class="icon icon--sm"></i></span> 月報告 1 份</li>
-          </ul>
-          <h4 class="includes-heading includes-heading--no" style="margin-top:12px;"><i data-lucide="x-circle" class="icon icon--sm"></i> 不包含</h4>
-          <ul class="includes-list excludes-list">
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 大量設計重製</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 廣告代操</li>
-            <li><span class="icon-x"><i data-lucide="x" class="icon icon--sm"></i></span> 跨平台完整營運規劃</li>
-          </ul>
-        </div>
-        <div style="background:var(--gray-50);border-radius:var(--radius-sm);padding:12px;margin-bottom:20px;font-size:13px;color:var(--gray-500);">
-          依商品數量、更新頻率與合作內容不同，月費可再調整。
-        </div>
-        <div class="pricing-btns">
-          <a href="#" class="btn btn-dark w-full">聊聊合作方式</a>
+      <div class="other-service-card">
+        <div class="osc-tag">顧問與後續支援</div>
+        <div class="osc-name">行銷顧問與維護</div>
+        <div class="osc-price">依合作方式與範圍安排</div>
+        <div class="osc-for">網站做好後需要後續支援、想持續維護、需要顧問視角的品牌。</div>
+        <ul class="osc-items">
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>行銷顧問</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>網站維護</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>頁面更新</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>短影音代操</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>品牌內容支援</li>
+        </ul>
+        <div class="osc-btns">
+          <a href="consulting.html" class="btn btn-outline btn-sm">查看顧問與維護服務</a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-primary btn-sm">加入官方帳號聊聊</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== CONSULTING ===================== -->
-<section class="section section-alt" id="consulting">
+<!-- SECTION 6: Add-ons -->
+<section class="section" id="addons">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">顧問與加值服務</div>
-      <h2 class="section-title">顧問與加值服務</h2>
-      <p class="section-subtitle">網站做好之後，後續要怎麼經營，也可以繼續交給我們。</p>
-    </div>
-    <div class="grid-3">
-      <div class="card">
-        <div style="margin-bottom:16px;"><span class="icon-badge icon-badge--lg icon-badge--brand"><i data-lucide="brain-circuit" class="icon icon--lg"></i></span></div>
-        <h3 style="font-size:18px;margin-bottom:8px;">行銷顧問</h3>
-        <div style="margin-bottom:16px;">
-          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--gray-100);font-size:14px;">
-            <span>單次諮詢 90 分鐘</span>
-            <strong style="color:var(--primary);">NT$3,600</strong>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:8px 0;font-size:14px;">
-            <span>月顧問方案</span>
-            <strong style="color:var(--primary);">NT$12,800 起</strong>
-          </div>
-        </div>
-        <p style="font-size:13px;color:var(--gray-500);margin-bottom:16px;">適合不確定先做什麼、想釐清品牌與漏斗方向、需要有人協助整理接下來路線的品牌。</p>
-        <a href="#" class="btn btn-primary w-full">預約顧問</a>
-      </div>
-
-      <div class="card">
-        <div style="margin-bottom:16px;"><span class="icon-badge icon-badge--lg icon-badge--brand"><i data-lucide="clapperboard" class="icon icon--lg"></i></span></div>
-        <h3 style="font-size:18px;margin-bottom:8px;">短影音代操</h3>
-        <div style="margin-bottom:16px;">
-          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--gray-100);font-size:14px;">
-            <span>基本版</span>
-            <strong style="color:var(--primary);">NT$18,800 / 月</strong>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--gray-100);font-size:14px;">
-            <span>成長版</span>
-            <strong style="color:var(--primary);">NT$36,800 / 月</strong>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:8px 0;font-size:14px;">
-            <span>客製版</span>
-            <strong style="color:var(--gray-400);">另行報價</strong>
-          </div>
-        </div>
-        <p style="font-size:13px;color:var(--gray-500);margin-bottom:16px;">適合想經營品牌曝光、為網站或賣場導流、把內容製作外包的品牌。</p>
-        <a href="#" class="btn btn-primary w-full">詢問代操方案</a>
-      </div>
-
-      <div class="card">
-        <div style="margin-bottom:16px;"><span class="icon-badge icon-badge--lg icon-badge--brand"><i data-lucide="wrench" class="icon icon--lg"></i></span></div>
-        <h3 style="font-size:18px;margin-bottom:8px;">網站維護</h3>
-        <div style="margin-bottom:16px;">
-          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--gray-100);font-size:14px;">
-            <span>維護 Lite</span>
-            <strong style="color:var(--primary);">NT$2,000 / 月</strong>
-          </div>
-          <div style="display:flex;justify-content:space-between;padding:8px 0;font-size:14px;">
-            <span>維護 Pro</span>
-            <strong style="color:var(--primary);">NT$4,500 / 月</strong>
-          </div>
-        </div>
-        <p style="font-size:13px;color:var(--gray-500);margin-bottom:16px;">適合網站上線後還需要更新、不想自己處理小修改與排查、需要固定技術支援的品牌。</p>
-        <a href="#" class="btn btn-primary w-full">查看維護方案</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== COMPARISON TABLE ===================== -->
-<section class="section" id="compare">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">方案比較</div>
-      <h2 class="section-title">快速比較，看看哪個最適合你</h2>
-    </div>
-    <div class="comparison-table-wrap">
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>方案</th>
-            <th>適合對象</th>
-            <th>規模</th>
-            <th>購物車</th>
-            <th>金流</th>
-            <th>發票</th>
-            <th>SEO</th>
-            <th>追蹤</th>
-            <th>修改</th>
-            <th>時間</th>
-            <th>價格</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="plan-col">入門形象站</td>
-            <td>個人品牌 / 工作室</td>
-            <td>1～3 頁</td>
-            <td><span class="cross-icon">✕</span></td>
-            <td><span class="cross-icon">✕</span></td>
-            <td><span class="cross-icon">✕</span></td>
-            <td>基礎</td>
-            <td><span class="cross-icon">✕</span></td>
-            <td>2 次</td>
-            <td>7～14天</td>
-            <td class="price-col">NT$19,800</td>
-          </tr>
-          <tr>
-            <td class="plan-col">品牌形象站 Pro</td>
-            <td>中小商家 / 服務品牌</td>
-            <td>5～8 頁</td>
-            <td><span class="cross-icon">✕</span></td>
-            <td><span class="cross-icon">✕</span></td>
-            <td><span class="cross-icon">✕</span></td>
-            <td>基礎</td>
-            <td>GA4</td>
-            <td>2 次</td>
-            <td>14～21天</td>
-            <td class="price-col">NT$39,800</td>
-          </tr>
-          <tr>
-            <td class="plan-col">電商起步版</td>
-            <td>初期電商品牌</td>
-            <td>電商基礎</td>
-            <td><span class="check-icon">✓</span></td>
-            <td>1 種</td>
-            <td>另加</td>
-            <td>基礎</td>
-            <td>基礎</td>
-            <td>2 次</td>
-            <td>14～21天</td>
-            <td class="price-col">NT$59,800</td>
-          </tr>
-          <tr style="background:var(--primary-50);">
-            <td class="plan-col" style="font-weight:800;color:var(--primary);">電商成長版 <span class="badge badge-primary" style="font-size:10px;vertical-align:middle;">熱門</span></td>
-            <td>成長型品牌</td>
-            <td>電商完整</td>
-            <td><span class="check-icon">✓</span></td>
-            <td>1～2 種</td>
-            <td>基礎</td>
-            <td>基礎</td>
-            <td>GA4+Pixel</td>
-            <td>2 次</td>
-            <td>21～30天</td>
-            <td class="price-col">NT$89,800</td>
-          </tr>
-          <tr>
-            <td class="plan-col">電商旗艦版</td>
-            <td>客製型品牌</td>
-            <td>依專案</td>
-            <td><span class="check-icon">✓</span></td>
-            <td>客製</td>
-            <td>客製</td>
-            <td>強化</td>
-            <td>規劃</td>
-            <td>依約定</td>
-            <td>依評估</td>
-            <td class="price-col">NT$129,800起</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== ADD-ONS ===================== -->
-<section class="section section-alt" id="addons">
-  <div class="container">
-    <div class="section-header">
+    <div class="section-header text-center fade-up">
       <div class="section-tag">加購項目</div>
-      <h2 class="section-title">需要更多功能，也可以清楚加購</h2>
-      <p class="section-subtitle">我們不喜歡把不必要的項目全部包進去讓價格變高。需要的功能再加，會更透明也更適合你。</p>
+      <h2 class="section-title">
+        <span class="title-line">有些需求不一定一開始就要做，</span><span class="title-line">也可以之後再加。</span>
+      </h2>
     </div>
-    <div class="grid-2">
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="pen-tool" class="icon icon--md"></i></span></div><div class="addon-info"><h4>Logo / 視覺識別</h4><p>品牌視覺尚未建立者</p></div><div class="addon-price"><div class="amount">NT$8,000</div><div class="unit">起</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="file-plus" class="icon icon--md"></i></span></div><div class="addon-info"><h4>額外頁面</h4><p>需要更多頁面延伸</p></div><div class="addon-price"><div class="amount">NT$3,500</div><div class="unit">/ 頁起</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="file-pen-line" class="icon icon--md"></i></span></div><div class="addon-info"><h4>文案代寫</h4><p>沒有完整文案，需要協助整理</p></div><div class="addon-price"><div class="amount">NT$3,000</div><div class="unit">/ 頁起</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="file-search" class="icon icon--md"></i></span></div><div class="addon-info"><h4>SEO 文章</h4><p>提升搜尋排名的內容行銷</p></div><div class="addon-price"><div class="amount">NT$2,500</div><div class="unit">/ 篇起</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="shopping-bag" class="icon icon--md"></i></span></div><div class="addon-info"><h4>商品頁設計</h4><p>電商商品頁獨立設計</p></div><div class="addon-price"><div class="amount">NT$2,000</div><div class="unit">/ 頁起</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="credit-card" class="icon icon--md"></i></span></div><div class="addon-info"><h4>額外金流串接</h4><p>需要多元付款方式</p></div><div class="addon-price"><div class="amount">NT$3,000</div><div class="unit">起</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="receipt-text" class="icon icon--md"></i></span></div><div class="addon-info"><h4>發票串接</h4><p>有電子發票需求者</p></div><div class="addon-price"><div class="amount">NT$5,000</div><div class="unit">起</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="globe" class="icon icon--md"></i></span></div><div class="addon-info"><h4>多語系</h4><p>跨語言客群品牌</p></div><div class="addon-price"><div class="amount">NT$8,000</div><div class="unit">起</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="package" class="icon icon--md"></i></span></div><div class="addon-info"><h4>大量商品匯入</h4><p>需要大量商品資料整理上架</p></div><div class="addon-price"><div class="amount">依數量</div><div class="unit">報價</div></div></div>
-      <div class="addon-card"><div class="addon-icon"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="zap" class="icon icon--md"></i></span></div><div class="addon-info"><h4>急件費</h4><p>有特定緊急時程需求</p></div><div class="addon-price"><div class="amount">總價 +20%</div><div class="unit">起</div></div></div>
-    </div>
-    <div class="text-center mt-32" style="background:var(--primary-50);border-radius:var(--radius-lg);padding:24px;">
-      <p style="font-size:15px;color:var(--gray-700);">若你的需求超出方案範圍，我們會先說明，再由你決定是否加購，不會直接做到一半才突然追加。</p>
+    <div class="addon-grid fade-up">
+      <div class="addon-card">
+        <div class="addon-name">Logo / 視覺識別</div>
+        <div class="addon-price">NT$8,000 起</div>
+        <div class="addon-desc">適合品牌視覺尚未建立者。</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">文案代寫</div>
+        <div class="addon-price">NT$3,000 / 頁起</div>
+        <div class="addon-desc">適合沒有完整網站文案，需要協助整理內容的人。</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">發票串接</div>
+        <div class="addon-price">NT$5,000 起</div>
+        <div class="addon-desc">適合需要電子發票整合的品牌。</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">網站維護</div>
+        <div class="addon-price">NT$2,000 / 月起</div>
+        <div class="addon-desc">適合上線後需要固定支援與更新的人。</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">活動頁 / 專案頁整理</div>
+        <div class="addon-price">NT$5,000 起</div>
+        <div class="addon-desc">適合有檔期活動、促案需求的品牌。</div>
+      </div>
+      <div class="addon-card">
+        <div class="addon-name">基礎追蹤設定</div>
+        <div class="addon-price">NT$3,000 起</div>
+        <div class="addon-desc">適合需要安裝 GA / FB Pixel 等基本追蹤工具的品牌。</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== DELIVERY RULES ===================== -->
-<section class="section" id="terms">
+<!-- SECTION 7: Transparency -->
+<section class="section section-alt">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">合作規則</div>
-      <h2 class="section-title">合作方式與交付規則</h2>
-      <p class="section-subtitle">讓你在下單前就清楚知道整個合作是怎麼運作的。</p>
+    <div class="section-header text-center fade-up">
+      <div class="section-tag">合作透明度</div>
+      <h2 class="section-title">
+        <span class="title-line">為了避免合作過程有落差，</span><span class="title-line">有些事情會先講清楚。</span>
+      </h2>
     </div>
-    <div class="grid-2">
-      <div class="card">
-        <div style="margin-bottom:12px;"><span class="icon-badge icon-badge--md icon-badge--brand"><i data-lucide="rocket" class="icon icon--md"></i></span></div>
-        <h4 style="font-size:16px;font-weight:700;margin-bottom:8px;">啟動方式</h4>
-        <p style="font-size:14px;color:var(--gray-600);">付款完成並提交需求表後，專案正式啟動。標準方案不需要先反覆開會，先啟動、再整理，效率更高。</p>
+    <div class="transparency-grid fade-up">
+      <div class="transparency-card">
+        <h3>一般會包含</h3>
+        <ul class="transparency-list transparency-list--included">
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>方案內約定的頁面與功能</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>基本設計與製作</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>約定次數內的修改</li>
+          <li><i data-lucide="check" class="icon icon--sm" aria-hidden="true"></i>協助完成上線流程</li>
+        </ul>
       </div>
-      <div class="card">
-        <div style="margin-bottom:12px;"><span class="icon-badge icon-badge--md icon-badge--neutral"><i data-lucide="clock-3" class="icon icon--md"></i></span></div>
-        <h4 style="font-size:16px;font-weight:700;margin-bottom:8px;">製作時間</h4>
-        <p style="font-size:14px;color:var(--gray-600);">各方案頁面所列時間為一般案件預估時間，實際仍會依資料準備速度與需求內容調整。</p>
-      </div>
-      <div class="card">
-        <div style="margin-bottom:12px;"><span class="icon-badge icon-badge--md icon-badge--neutral"><i data-lucide="pen-line" class="icon icon--md"></i></span></div>
-        <h4 style="font-size:16px;font-weight:700;margin-bottom:8px;">修改次數</h4>
-        <p style="font-size:14px;color:var(--gray-600);">標準方案通常包含 1～2 次修改，超出範圍或新增需求可另行加購，不會在未告知情況下追加費用。</p>
-      </div>
-      <div class="card">
-        <div style="margin-bottom:12px;"><span class="icon-badge icon-badge--md icon-badge--neutral"><i data-lucide="folder-open" class="icon icon--md"></i></span></div>
-        <h4 style="font-size:16px;font-weight:700;margin-bottom:8px;">資料提供</h4>
-        <p style="font-size:14px;color:var(--gray-600);">若客戶未提供完整資料、文案、商品資訊或素材，製作時間將順延。我們也提供文案代寫等加購協助。</p>
-      </div>
-      <div class="card">
-        <div style="margin-bottom:12px;"><span class="icon-badge icon-badge--md icon-badge--neutral"><i data-lucide="settings" class="icon icon--md"></i></span></div>
-        <h4 style="font-size:16px;font-weight:700;margin-bottom:8px;">客製項目</h4>
-        <p style="font-size:14px;color:var(--gray-600);">特殊功能、第三方串接、系統開發、會員邏輯、複雜資料處理，皆另行評估報價，不影響標準方案。</p>
-      </div>
-      <div class="card">
-        <div style="margin-bottom:12px;"><span class="icon-badge icon-badge--md icon-badge--neutral"><i data-lucide="message-circle" class="icon icon--md"></i></span></div>
-        <h4 style="font-size:16px;font-weight:700;margin-bottom:8px;">溝通方式</h4>
-        <p style="font-size:14px;color:var(--gray-600);">標準合作以網站訊息中心、Email、LINE 官方帳號為主；較高階方案可另安排專屬溝通群組。</p>
+      <div class="transparency-card">
+        <h3>可能需要另行評估或加購</h3>
+        <ul class="transparency-list transparency-list--extra">
+          <li><i data-lucide="minus" class="icon icon--sm" aria-hidden="true"></i>超出原本頁數或功能範圍</li>
+          <li><i data-lucide="minus" class="icon icon--sm" aria-hidden="true"></i>大量商品整理與資料建置</li>
+          <li><i data-lucide="minus" class="icon icon--sm" aria-hidden="true"></i>額外文案撰寫</li>
+          <li><i data-lucide="minus" class="icon icon--sm" aria-hidden="true"></i>複雜系統串接</li>
+          <li><i data-lucide="minus" class="icon icon--sm" aria-hidden="true"></i>長期代操與持續更新</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section section-alt" id="faq">
+<!-- SECTION 8: How to choose -->
+<section class="section">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">FAQ</div>
-      <h2 class="section-title">在下單之前，很多人會先問這些</h2>
+    <div class="section-header text-center fade-up">
+      <div class="section-tag">怎麼選</div>
+      <h2 class="section-title">
+        <span class="title-line">如果你還是不確定，</span><span class="title-line">這樣選通常最不容易錯。</span>
+      </h2>
     </div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">我不確定自己該選哪個方案，怎麼辦？<span class="faq-icon"><i data-lucide="chevron-down"></i></span></button>
-        <div class="faq-answer" hidden><div class="faq-answer-inner">可以先從最接近你需求的方案看起，或直接聯繫我們，我們會協助你判斷是否需要升級或加購。</div></div>
+    <div class="scenario-list fade-up">
+      <div class="scenario-row">
+        <div class="scenario-row-if">情境：你現在最需要的是正式門面</div>
+        <div class="scenario-row-arrow"><i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i></div>
+        <div class="scenario-row-then">先看：品牌網站方案</div>
+        <a href="brand-website.html" class="scenario-row-link">前往查看 <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i></a>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">可以直接在網站付款嗎？<span class="faq-icon"><i data-lucide="chevron-down"></i></span></button>
-        <div class="faq-answer" hidden><div class="faq-answer-inner">可以，部分標準方案可直接線上付款啟動。付款完成後會立即引導你填寫需求表並建立專案。</div></div>
+      <div class="scenario-row">
+        <div class="scenario-row-if">情境：你現在最需要的是商品購買流程</div>
+        <div class="scenario-row-arrow"><i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i></div>
+        <div class="scenario-row-then">先看：電商網站方案</div>
+        <a href="ecommerce.html" class="scenario-row-link">前往查看 <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i></a>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">如果我之後想加功能呢？<span class="faq-icon"><i data-lucide="chevron-down"></i></span></button>
-        <div class="faq-answer" hidden><div class="faq-answer-inner">可以，會依新增需求另行報價，不會直接混進原本方案造成不透明。所有追加項目我們會先說明費用，由你決定是否繼續。</div></div>
+      <div class="scenario-row">
+        <div class="scenario-row-if">情境：你現在已在平台賣貨，但頁面很亂</div>
+        <div class="scenario-row-arrow"><i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i></div>
+        <div class="scenario-row-then">先看：賣場優化</div>
+        <a href="marketplace-optimization.html" class="scenario-row-link">前往查看 <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i></a>
       </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">價格看起來比有些平台高，差別在哪？<span class="faq-icon"><i data-lucide="chevron-down"></i></span></button>
-        <div class="faq-answer" hidden><div class="faq-answer-inner">平台是工具，漫漫行銷提供的是規劃、設計、設定、整合與上線協助，幫你把整個流程真正做起來。如果你需要的是「幫你把生意做起來的夥伴」，這才是我們做的事。</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">做完之後我自己能改嗎？<span class="faq-icon"><i data-lucide="chevron-down"></i></span></button>
-        <div class="faq-answer" hidden><div class="faq-answer-inner">可以，我們會依方案內容提供基本操作說明；若不想自己改，也可交由我們維護，維護方案從 NT$2,000/月 起。</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">一定要先聊過才能合作嗎？<span class="faq-icon"><i data-lucide="chevron-down"></i></span></button>
-        <div class="faq-answer" hidden><div class="faq-answer-inner">不一定。標準化方案可以直接下單，客製型需求或旗艦方案再安排評估即可。</div></div>
+      <div class="scenario-row">
+        <div class="scenario-row-if">情境：你其實知道問題很多，但不確定從哪裡開始</div>
+        <div class="scenario-row-arrow"><i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i></div>
+        <div class="scenario-row-then">先填需求表或加入官方帳號</div>
+        <a href="brief.html" class="scenario-row-link">填寫需求表 <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="cta-section">
+<!-- SECTION 9: FAQ -->
+<section class="section section-alt">
   <div class="container">
-    <div class="cta-inner">
-      <h2>已經看到適合的方案了，就直接開始吧</h2>
-      <p>不管你現在需要的是品牌網站、電商網站、賣場優化，還是後續顧問與代操，漫漫行銷都希望把合作變得更清楚、更快、更安心。</p>
-      <div class="btn-group" style="justify-content:center;">
-        <a href="order.html" class="btn btn-primary btn-lg">立即下單</a>
-        <a href="https://lin.ee/wKvaxBW" class="btn btn-outline-white btn-lg" target="_blank" rel="noopener"><i data-lucide="message-circle" class="icon icon--sm" style="color:#06C755;display:inline-block;vertical-align:middle;margin-right:6px;"></i>加入官方帳號聊聊</a>
-        <a href="index.html" class="btn btn-outline-white btn-lg">查看完整服務</a>
+    <div class="section-header text-center fade-up">
+      <div class="section-tag">常見問題</div>
+      <h2 class="section-title">看價格之前，很多人會先問這些。</h2>
+    </div>
+    <div class="faq-list fade-up">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-a-1">
+          我不確定自己該選哪個方案，怎麼辦？
+          <span class="faq-icon" aria-hidden="true"><i data-lucide="chevron-down" class="icon icon--sm"></i></span>
+        </button>
+        <div class="faq-answer" id="pricing-faq-a-1" hidden>
+          <div class="faq-answer-inner">
+            可以先從最接近你需求的服務頁開始看，或直接加入官方帳號，我們會協助你判斷。
+          </div>
+        </div>
       </div>
-      <p class="cta-note">價格透明，流程清楚，今天就可以啟動。</p>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-a-2">
+          可以直接在網站付款嗎？
+          <span class="faq-icon" aria-hidden="true"><i data-lucide="chevron-down" class="icon icon--sm"></i></span>
+        </button>
+        <div class="faq-answer" id="pricing-faq-a-2" hidden>
+          <div class="faq-answer-inner">
+            可以。標準方案可直接付款並進入專案啟動流程。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-a-3">
+          之後想加功能怎麼辦？
+          <span class="faq-icon" aria-hidden="true"><i data-lucide="chevron-down" class="icon icon--sm"></i></span>
+        </button>
+        <div class="faq-answer" id="pricing-faq-a-3" hidden>
+          <div class="faq-answer-inner">
+            若需求超出原方案範圍，會先說明並報價，再由你決定是否加購。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-a-4">
+          金流、物流、發票都可以處理嗎？
+          <span class="faq-icon" aria-hidden="true"><i data-lucide="chevron-down" class="icon icon--sm"></i></span>
+        </button>
+        <div class="faq-answer" id="pricing-faq-a-4" hidden>
+          <div class="faq-answer-inner">
+            可以，會依方案內容與需求安排，部分項目可作為加購處理。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-a-5">
+          一定要先聊過才能合作嗎？
+          <span class="faq-icon" aria-hidden="true"><i data-lucide="chevron-down" class="icon icon--sm"></i></span>
+        </button>
+        <div class="faq-answer" id="pricing-faq-a-5" hidden>
+          <div class="faq-answer-inner">
+            不一定。若你已經很清楚自己要什麼，可以直接下單；若還不確定，也可以先聊。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-a-6">
+          做完之後誰來維護？
+          <span class="faq-icon" aria-hidden="true"><i data-lucide="chevron-down" class="icon icon--sm"></i></span>
+        </button>
+        <div class="faq-answer" id="pricing-faq-a-6" hidden>
+          <div class="faq-answer-inner">
+            可以自行管理，也可以交由我們協助後續維護與更新。
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="pricing-faq-a-7">
+          方案價格可以客製嗎？
+          <span class="faq-icon" aria-hidden="true"><i data-lucide="chevron-down" class="icon icon--sm"></i></span>
+        </button>
+        <div class="faq-answer" id="pricing-faq-a-7" hidden>
+          <div class="faq-answer-inner">
+            若需求明顯超出標準方案範圍，可另行評估客製內容與報價。
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- SECTION 10: Final CTA -->
+<section class="cta-section section-amber">
+  <div class="container">
+    <div class="cta-inner text-center fade-up">
+      <div class="section-tag">現在就開始</div>
+      <h2 class="section-title">
+        <span class="title-line">現在不一定要立刻決定，</span><span class="title-line">但你可以先選一個最適合的開始。</span>
+      </h2>
+      <p class="section-subtitle">如果你已經知道自己需要哪一種服務，可以直接下單啟動；如果還不確定，也可以先填需求表或加入官方帳號聊聊，讓我們先幫你把方向整理清楚。</p>
+      <div class="cta-btn-group btn-group">
+        <a href="order.html" class="btn btn-primary btn-lg">直接下單</a>
+        <a href="brief.html" class="btn btn-outline btn-lg">填寫需求表</a>
+        <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-lg">加入官方帳號聊聊</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo-text"><div class="logo-icon" style="width:32px;height:32px;font-size:16px;">漫</div>漫漫行銷</div>
-        <p>中小品牌與創業者的一站式建站與行銷服務平台。</p>
+        <div class="logo-text">
+          <div class="logo-icon" aria-hidden="true">漫</div>
+          <span class="logo-name">漫漫行銷</span>
+        </div>
+        <p>為中小品牌與創業者提供建站、電商、賣場與後續經營支援。</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@manman.tw" class="footer-contact-item footer-contact-item--icon">
+            <i data-lucide="mail" class="icon icon--sm" aria-hidden="true"></i>
+            hello@manman.tw
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-contact-item footer-contact-item--icon line-item">
+            <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+            加入官方 LINE 帳號
+          </a>
+        </div>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-social footer-social--line" aria-label="LINE">
+            <i data-lucide="message-circle" class="icon icon--sm"></i>
+          </a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>服務項目</h4>
         <ul>
-          <li><a href="#brand-website">品牌網站</a></li>
-          <li><a href="#ecommerce">電商網站</a></li>
-          <li><a href="#marketplace">平台賣場</a></li>
-          <li><a href="#consulting">顧問代操</a></li>
+          <li><a href="brand-website.html">品牌網站設計</a></li>
+          <li><a href="ecommerce.html">電商網站架設</a></li>
+          <li><a href="marketplace-optimization.html">平台賣場優化</a></li>
+          <li><a href="consulting.html">行銷顧問與維護</a></li>
+          <li><a href="pricing.html#addons">加購項目</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>快速入口</h4>
         <ul>
+          <li><a href="pricing.html">方案與價格</a></li>
           <li><a href="order.html">直接下單</a></li>
           <li><a href="brief.html">填寫需求表</a></li>
           <li><a href="index.html#portfolio">成果展示</a></li>
-          <li><a href="#faq">常見問題</a></li>
+          <li><a href="index.html#faq">常見問題</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>聯絡我們</h4>
+        <h4>其他資訊</h4>
         <ul>
-          <li><a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener">官方 LINE 帳號</a></li>
-          <li><a href="mailto:hello@manman.tw">hello@manman.tw</a></li>
-          <li><a href="#">服務條款</a></li>
+          <li><a href="privacy.html">隱私權政策</a></li>
+          <li><a href="terms.html">服務條款</a></li>
+          <li><a href="refund-policy.html">退款 / 變更規則</a></li>
         </ul>
+        <div class="footer-meta">
+          <p>服務地區：全台品牌與商家</p>
+          <p>回覆時間：平日依序回覆</p>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 漫漫行銷. All rights reserved.</span>
+      <span>© 2026 漫漫行銷 Manman Marketing. All rights reserved.</span>
+      <span>台灣 · 服務全台中小品牌</span>
     </div>
   </div>
 </footer>
 
-<div class="floating-btns">
-  <a href="https://lin.ee/wKvaxBW" class="fab fab-line" target="_blank" rel="noopener">
+<div class="floating-btns" aria-hidden="true">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="fab fab-line" tabindex="-1">
     <span class="fab-icon fab-icon--line"><i data-lucide="message-circle" class="icon icon--sm"></i></span>
     加入官方帳號
   </a>
-  <a href="order.html" class="fab fab-order btn-primary" style="background:var(--primary);color:white;border:none;">
+  <a href="pricing.html" class="fab fab-order" tabindex="-1">
     <span class="fab-icon fab-icon--order"><i data-lucide="arrow-right" class="icon icon--sm"></i></span>
-    立即下單
+    查看方案
+  </a>
+</div>
+<div class="mobile-sticky-cta" id="mobileStickyCta" aria-label="快速行動">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="msca-line">
+    <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+    加入 LINE
+  </a>
+  <a href="pricing.html" class="msca-plan">
+    <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+    看方案
   </a>
 </div>
 

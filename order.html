@@ -3,454 +3,458 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>下單 — 漫漫行銷</title>
+  <title>直接下單｜網站設計與電商建置服務｜漫漫行銷</title>
+  <meta name="description" content="直接選擇適合的網站或電商方案並啟動專案。若你已經確定需求，這裡可以直接開始。" />
+  <link rel="canonical" href="https://aa89789123416-maker.github.io/manman-marketing/order.html" />
   <meta name="robots" content="noindex,nofollow" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>漫</text></svg>" />
+  <meta property="og:title" content="直接下單｜網站設計與電商建置服務｜漫漫行銷" />
+  <meta property="og:description" content="直接選擇適合的網站或電商方案並啟動專案。若你已經確定需求，這裡可以直接開始。" />
+  <meta property="og:url" content="https://aa89789123416-maker.github.io/manman-marketing/order.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://aa89789123416-maker.github.io/manman-marketing/og-cover.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#E8912A" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首頁",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "方案與價格",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/pricing.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "直接下單",
+        "item": "https://aa89789123416-maker.github.io/manman-marketing/order.html"
+      }
+    ]
+  }
+  </script>
+  <style>
+    .order-form { max-width: 680px; margin: 0 auto; }
+    .form-section { margin-bottom: 40px; }
+    .form-legend,
+    .form-section-title { font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 20px; display: block; padding-bottom: 12px; border-bottom: 2px solid var(--primary-100, #FEF3E0); }
+    .form-group { margin-bottom: 20px; }
+    .form-label { display: block; font-size: 14px; font-weight: 600; color: var(--dark); margin-bottom: 6px; }
+    .form-control { width: 100%; padding: 10px 14px; border: 1.5px solid var(--gray-300, #d1d5db); border-radius: 8px; font-size: 15px; font-family: inherit; color: var(--dark); background: var(--white, #fff); transition: border-color .2s; box-sizing: border-box; }
+    .form-control:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(232,145,42,.15); }
+    textarea.form-control { resize: vertical; min-height: 100px; }
+    .form-check-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-check { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
+    .form-check input { accent-color: var(--primary); flex-shrink: 0; }
+    .plan-selector { border: none; padding: 0; margin: 0; }
+    .plan-options { display: flex; flex-direction: column; gap: 12px; }
+    .plan-option { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; padding: 16px; border: 2px solid var(--gray-200, #e5e7eb); border-radius: 12px; transition: border-color .2s; }
+    .plan-option:hover { border-color: var(--primary); }
+    .plan-option input[type="radio"] { margin-top: 3px; accent-color: var(--primary); flex-shrink: 0; }
+    .plan-option:has(input:checked) { border-color: var(--primary); background: var(--primary-50, #FFF8EE); }
+    .plan-option-name { font-weight: 700; font-size: 15px; color: var(--dark); }
+    .plan-option-price { font-size: 20px; font-weight: 900; color: var(--primary); margin: 2px 0 4px; }
+    .plan-option-desc { font-size: 13px; color: var(--gray-500, #6b7280); line-height: 1.5; }
+    .payment-methods { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .payment-method-badge { padding: 6px 14px; background: var(--gray-100, #f3f4f6); border-radius: 20px; font-size: 13px; color: var(--gray-600, #4b5563); font-weight: 600; }
+    .form-submit-area { text-align: center; padding: 32px 0 0; border-top: 1px solid var(--gray-200, #e5e7eb); margin-top: 32px; }
+    .form-submit-note { margin-top: 16px; font-size: 13px; color: var(--gray-500, #6b7280); }
+    .transparency-note { background: var(--gray-50, #f9fafb); border: 1px solid var(--gray-200, #e5e7eb); border-radius: 10px; padding: 16px; font-size: 13px; color: var(--gray-600, #4b5563); line-height: 1.6; margin-top: 24px; }
+    .notice-box { background: #FFFBEB; border: 1px solid #FDE68A; border-radius: 10px; padding: 14px 18px; font-size: 14px; color: #92400E; margin-top: 20px; line-height: 1.6; }
+    .checklist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+    .checklist li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: var(--dark); }
+    .checklist li::before { content: ''; display: inline-block; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; flex-shrink: 0; margin-top: 2px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); background-size: 12px 12px; background-position: center; background-repeat: no-repeat; }
+    .process-list { list-style: none; padding: 0; margin: 0; counter-reset: step-counter; display: flex; flex-direction: column; gap: 12px; }
+    .process-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--dark); counter-increment: step-counter; }
+    .process-list li::before { content: counter(step-counter); display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; min-width: 28px; background: var(--primary); color: white; border-radius: 50%; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+    .section-note { font-size: 14px; color: var(--gray-500, #6b7280); margin-top: 20px; line-height: 1.6; }
+    .form-fieldset { border: none; padding: 0; margin: 0; }
+  </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
+<nav class="navbar" id="mainNavbar">
   <div class="navbar-inner">
     <a href="index.html" class="navbar-logo">
-      <div class="logo-icon">漫</div>
-      漫漫行銷
+      <div class="logo-icon" aria-hidden="true">漫</div>
+      <span class="logo-name">漫漫行銷</span>
     </a>
     <div class="navbar-nav">
       <a href="index.html#services" class="nav-link">服務項目</a>
       <a href="pricing.html" class="nav-link">方案與價格</a>
       <a href="index.html#portfolio" class="nav-link">成果展示</a>
+      <a href="index.html#process" class="nav-link">合作流程</a>
       <a href="index.html#faq" class="nav-link">常見問題</a>
     </div>
     <div class="navbar-actions">
-      <a href="pricing.html" class="btn btn-outline btn-sm">返回方案</a>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-sm nav-btn-line">加入官方帳號</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">查看方案</a>
+      <button class="hamburger" id="hamburger" aria-label="開啟選單" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
-
-<div class="mobile-nav" id="mobileNav">
-  <a href="index.html" class="mobile-nav-link">首頁</a>
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="手機導覽">
+  <a href="index.html#services" class="mobile-nav-link">服務項目</a>
   <a href="pricing.html" class="mobile-nav-link">方案與價格</a>
+  <a href="index.html#portfolio" class="mobile-nav-link">成果展示</a>
+  <a href="index.html#process" class="mobile-nav-link">合作流程</a>
   <a href="index.html#faq" class="mobile-nav-link">常見問題</a>
-</div>
-
-<!-- PAGE HERO -->
-<div style="background:var(--primary-50);border-bottom:1px solid var(--gray-200);padding:32px 0 24px;">
-  <div class="container">
-    <div class="flex-between">
-      <div>
-        <div class="section-tag" style="margin-bottom:8px;">下單</div>
-        <h1 style="font-size:28px;font-weight:900;color:var(--dark);margin-bottom:4px;">確認方案後，就可以直接開始</h1>
-        <p style="font-size:14px;color:var(--gray-500);">完成付款後，我們會立即引導你填寫需求表並建立專案。</p>
-      </div>
-      <div style="display:flex;gap:16px;font-size:13px;color:var(--gray-500);" class="trust-row">
-        <span>🔒 流程透明</span>
-        <span>⚡ 付款後即啟動</span>
-        <span>🛡️ 不追加費用</span>
-      </div>
-    </div>
+  <div class="mobile-nav-btns">
+    <a href="pricing.html" class="btn btn-primary w-full">看方案</a>
+    <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline w-full">加入官方帳號</a>
   </div>
 </div>
 
-<!-- ORDER PAGE BODY -->
-<section style="padding:40px 0 80px;background:var(--gray-50);">
+<nav class="breadcrumb-nav" aria-label="breadcrumb">
   <div class="container">
-    <div class="order-layout">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+      <li class="breadcrumb-item"><a href="pricing.html">方案與價格</a></li>
+      <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">直接下單</li>
+    </ol>
+  </div>
+</nav>
 
-      <!-- LEFT: Form -->
-      <div>
-
-        <!-- Step 1: Plan Summary -->
-        <div class="form-section" id="planSummary">
-          <h3>
-            <span class="step-badge">1</span>
-            你選擇的方案
-          </h3>
-          <div style="background:var(--gray-50);border-radius:var(--radius);padding:20px;border:1px solid var(--gray-200);" id="selectedPlan">
-            <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;">
-              <div>
-                <div style="font-size:12px;font-weight:600;color:var(--primary);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;" id="planCategory">電商網站</div>
-                <div style="font-size:20px;font-weight:800;color:var(--dark);" id="planName">電商成長版</div>
-                <div style="font-size:14px;color:var(--gray-500);margin-top:4px;" id="planTarget">已有商品、在意品牌感、希望購物流程更完整的商家</div>
-              </div>
-              <div style="text-align:right;">
-                <div style="font-size:28px;font-weight:900;color:var(--dark);" id="planPrice">NT$89,800</div>
-                <a href="pricing.html" class="btn btn-outline btn-sm" style="margin-top:8px;">更換方案</a>
-              </div>
-            </div>
-            <div style="display:flex;flex-wrap:wrap;gap:8px;" id="planFeatures">
-              <span style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-full);padding:4px 12px;font-size:13px;">電商網站完整建置</span>
-              <span style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-full);padding:4px 12px;font-size:13px;">金流串接 1～2 種</span>
-              <span style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-full);padding:4px 12px;font-size:13px;">物流設定</span>
-              <span style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-full);padding:4px 12px;font-size:13px;">發票串接</span>
-              <span style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-full);padding:4px 12px;font-size:13px;">GA4 / Meta Pixel</span>
-              <span style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-full);padding:4px 12px;font-size:13px;">上線後 14 天微調</span>
-            </div>
-            <div style="display:flex;gap:12px;margin-top:16px;">
-              <div style="flex:1;background:var(--white);border-radius:var(--radius-sm);padding:10px;text-align:center;border:1px solid var(--gray-200);">
-                <div style="font-size:11px;color:var(--gray-400);">預估交付</div>
-                <div style="font-size:14px;font-weight:700;" id="planTime">21～30 工作天</div>
-              </div>
-              <div style="flex:1;background:var(--white);border-radius:var(--radius-sm);padding:10px;text-align:center;border:1px solid var(--gray-200);">
-                <div style="font-size:11px;color:var(--gray-400);">修改次數</div>
-                <div style="font-size:14px;font-weight:700;">2 次</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Plan selector for demo -->
-          <div style="margin-top:16px;">
-            <p style="font-size:13px;color:var(--gray-500);margin-bottom:10px;">沒有預先選擇方案？請選擇：</p>
-            <select class="form-select" id="planSelector" onchange="updatePlan(this.value)">
-              <option value="">— 請選擇方案 —</option>
-              <optgroup label="品牌網站">
-                <option value="starter-site">入門形象站 — NT$19,800</option>
-                <option value="brand-pro">品牌形象站 Pro — NT$39,800</option>
-              </optgroup>
-              <optgroup label="電商網站">
-                <option value="ecom-starter">電商起步版 — NT$59,800</option>
-                <option value="ecom-growth" selected>電商成長版 — NT$89,800</option>
-                <option value="ecom-flagship">電商旗艦版 — NT$129,800 起（需評估）</option>
-              </optgroup>
-              <optgroup label="平台賣場">
-                <option value="market-basic">賣場建置基本版 — NT$9,800</option>
-                <option value="market-pro">賣場建置進階版 — NT$19,800</option>
-              </optgroup>
-            </select>
-          </div>
-        </div>
-
-        <!-- Step 2: Add-ons -->
-        <div class="form-section">
-          <h3>
-            <span class="step-badge">2</span>
-            有需要的項目，也可以現在一起加上
-            <span style="font-size:12px;font-weight:500;color:var(--gray-400);margin-left:auto;">不用一次全包，真正需要的再加就好</span>
-          </h3>
-          <div class="addon-grid" id="addonGrid">
-            <div class="addon-check-card" onclick="toggleAddon(this, 3000)">
-              <input type="checkbox" class="addon-checkbox">
-              <label>
-                <span class="addon-name">文案代寫</span>
-                <span class="addon-price-label">NT$3,000 / 頁起</span>
-                <span class="addon-desc">沒有完整文案，需要協助整理內容</span>
-              </label>
-            </div>
-            <div class="addon-check-card" onclick="toggleAddon(this, 8000)">
-              <input type="checkbox" class="addon-checkbox">
-              <label>
-                <span class="addon-name">Logo / 視覺識別</span>
-                <span class="addon-price-label">NT$8,000 起</span>
-                <span class="addon-desc">品牌視覺尚未建立者</span>
-              </label>
-            </div>
-            <div class="addon-check-card" onclick="toggleAddon(this, 5000)">
-              <input type="checkbox" class="addon-checkbox">
-              <label>
-                <span class="addon-name">發票串接</span>
-                <span class="addon-price-label">NT$5,000 起</span>
-                <span class="addon-desc">有電子發票需求者</span>
-              </label>
-            </div>
-            <div class="addon-check-card" onclick="toggleAddon(this, 3000)">
-              <input type="checkbox" class="addon-checkbox">
-              <label>
-                <span class="addon-name">額外金流串接</span>
-                <span class="addon-price-label">NT$3,000 起</span>
-                <span class="addon-desc">需要多元付款方式</span>
-              </label>
-            </div>
-            <div class="addon-check-card" onclick="toggleAddon(this, 8000)">
-              <input type="checkbox" class="addon-checkbox">
-              <label>
-                <span class="addon-name">多語系</span>
-                <span class="addon-price-label">NT$8,000 起</span>
-                <span class="addon-desc">跨語言客群品牌</span>
-              </label>
-            </div>
-            <div class="addon-check-card" onclick="toggleAddon(this, 2000)">
-              <input type="checkbox" class="addon-checkbox">
-              <label>
-                <span class="addon-name">網站維護 Lite</span>
-                <span class="addon-price-label">NT$2,000 / 月</span>
-                <span class="addon-desc">上線後固定支援小修改</span>
-              </label>
-            </div>
-            <div class="addon-check-card" onclick="toggleAddon(this, 4500)">
-              <input type="checkbox" class="addon-checkbox">
-              <label>
-                <span class="addon-name">網站維護 Pro</span>
-                <span class="addon-price-label">NT$4,500 / 月</span>
-                <span class="addon-desc">固定調整與優先支援</span>
-              </label>
-            </div>
-            <div class="addon-check-card" onclick="toggleAddon(this, 12800)">
-              <input type="checkbox" class="addon-checkbox">
-              <label>
-                <span class="addon-name">行銷顧問首月</span>
-                <span class="addon-price-label">NT$12,800 / 月起</span>
-                <span class="addon-desc">上線後持續優化</span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 3: Process reminder -->
-        <div class="form-section">
-          <h3><span class="step-badge">3</span>付款完成後，接下來會這樣進行</h3>
-          <div class="process-mini">
-            <div class="process-mini-step"><span class="process-mini-num">1</span>完成付款</div>
-            <div class="process-mini-step"><span class="process-mini-num">2</span>進入需求表頁面</div>
-            <div class="process-mini-step"><span class="process-mini-num">3</span>提交品牌與專案資料（約 5～10 分鐘）</div>
-            <div class="process-mini-step"><span class="process-mini-num">4</span>系統建立專案</div>
-            <div class="process-mini-step"><span class="process-mini-num">5</span>由漫漫行銷啟動製作流程</div>
-            <div class="process-mini-step"><span class="process-mini-num">6</span>透過官方帳號 / Email / 專案訊息開始對接</div>
-          </div>
-          <div style="background:var(--primary-50);border-radius:var(--radius-sm);padding:12px;margin-top:16px;font-size:13px;color:var(--gray-600);">
-            標準方案不需要先反覆開會，先啟動、再整理，會更有效率。
-          </div>
-        </div>
-
-        <!-- Step 4: Contact Info -->
-        <div class="form-section">
-          <h3><span class="step-badge">4</span>聯絡資訊</h3>
-          <p style="font-size:13px;color:var(--gray-500);margin-bottom:20px;">詳細需求將在付款完成後的需求表中填寫，這裡先留下基本聯絡方式即可。</p>
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label">聯絡姓名 <span class="required">*</span></label>
-              <input type="text" class="form-input" placeholder="王小明" required />
-            </div>
-            <div class="form-group">
-              <label class="form-label">品牌 / 公司名稱 <span class="required">*</span></label>
-              <input type="text" class="form-input" placeholder="XX 品牌" required />
-            </div>
-            <div class="form-group">
-              <label class="form-label">Email <span class="required">*</span></label>
-              <input type="email" class="form-input" placeholder="you@example.com" required />
-            </div>
-            <div class="form-group">
-              <label class="form-label">手機 <span class="required">*</span></label>
-              <input type="tel" class="form-input" placeholder="09XX-XXX-XXX" required />
-            </div>
-            <div class="form-group">
-              <label class="form-label">LINE ID <span class="optional">選填</span></label>
-              <input type="text" class="form-input" placeholder="your_line_id" />
-            </div>
-            <div class="form-group">
-              <label class="form-label">統一編號 <span class="optional">選填，需要發票者請填</span></label>
-              <input type="text" class="form-input" placeholder="12345678" />
-            </div>
-            <div class="form-group full">
-              <label class="form-label">備註 <span class="optional">選填</span></label>
-              <textarea class="form-textarea" placeholder="有任何特別說明可以先寫在這裡…"></textarea>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 5: Payment Method -->
-        <div class="form-section">
-          <h3><span class="step-badge">5</span>付款方式</h3>
-          <div class="payment-methods" id="paymentMethods">
-            <label class="payment-method active" onclick="selectPayment(this)">
-              <input type="radio" name="payment" value="credit" checked />
-              <span class="payment-method-icon">💳</span>
-              <span class="payment-method-label">信用卡</span>
-            </label>
-            <label class="payment-method" onclick="selectPayment(this)">
-              <input type="radio" name="payment" value="atm" />
-              <span class="payment-method-icon">🏦</span>
-              <span class="payment-method-label">ATM 轉帳</span>
-            </label>
-            <label class="payment-method" onclick="selectPayment(this)">
-              <input type="radio" name="payment" value="linepay" />
-              <span class="payment-method-icon">💚</span>
-              <span class="payment-method-label">LINE Pay</span>
-            </label>
-            <label class="payment-method" onclick="selectPayment(this)">
-              <input type="radio" name="payment" value="transfer" />
-              <span class="payment-method-icon">📱</span>
-              <span class="payment-method-label">行動支付</span>
-            </label>
-          </div>
-          <p style="font-size:13px;color:var(--gray-500);margin-top:12px;">付款完成後，系統會立即引導你進入需求填寫與專案啟動流程。</p>
-        </div>
-
-        <!-- Step 6: Terms -->
-        <div class="form-section">
-          <h3><span class="step-badge">6</span>下單前請確認以下事項</h3>
-          <div class="terms-list">
-            <label class="term-item">
-              <input type="checkbox" required />
-              我已閱讀並理解本方案的包含與不包含內容
-            </label>
-            <label class="term-item">
-              <input type="checkbox" required />
-              我了解特殊功能、額外頁面與客製需求需另行加購
-            </label>
-            <label class="term-item">
-              <input type="checkbox" required />
-              我了解實際製作時間會依資料提供完整度調整
-            </label>
-            <label class="term-item">
-              <input type="checkbox" required />
-              我同意付款完成後進入專案啟動流程，並同意<a href="#" style="color:var(--primary);">服務條款與隱私政策</a>
-            </label>
-          </div>
-        </div>
-
-        <!-- Submit -->
-        <div style="text-align:center;margin-top:8px;">
-          <a href="success.html" class="btn btn-primary btn-lg w-full" style="font-size:17px;padding:18px 32px;" onclick="return validateAndSubmit()">
-            確認付款，開始專案 →
-          </a>
-          <p style="font-size:13px;color:var(--gray-400);margin-top:12px;">付款後將立即進入需求填寫頁面。</p>
-          <a href="pricing.html" class="btn btn-outline" style="margin-top:10px;">返回查看方案</a>
-        </div>
+<section class="slp-hero">
+  <div class="container">
+    <div class="slp-hero-inner">
+      <div class="slp-tag">直接下單</div>
+      <h1 class="slp-title">
+        <span class="title-line">直接下單，</span><span class="title-line">今天就可以開始。</span>
+      </h1>
+      <p class="slp-subtitle">如果你已經知道自己要做品牌網站、電商網站，或已經看過方案與價格，這裡可以直接選擇方案並啟動專案。付款完成後，我們會依流程協助你往下開始。</p>
+      <div class="notice-box">
+        如果你還不確定自己該選哪個方案，建議先填需求表或加入官方帳號聊聊，避免太早選錯。
       </div>
-
-      <!-- RIGHT: Order Summary (sticky) -->
-      <div class="order-sticky">
-        <div class="order-summary-card">
-          <div class="order-summary-header">
-            <h3 style="font-size:15px;font-weight:700;margin-bottom:2px;">訂單明細</h3>
-            <p style="font-size:12px;opacity:0.6;">所有項目皆於付款前清楚列示</p>
-          </div>
-          <div class="order-summary-body">
-            <div class="order-item">
-              <span class="order-item-name" id="summaryPlanName">電商成長版</span>
-              <span class="order-item-price" id="summaryPlanPrice">NT$89,800</span>
-            </div>
-            <div id="addonSummary"></div>
-            <div style="padding-top:12px;border-top:1px solid var(--gray-100);margin-top:4px;">
-              <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--gray-500);margin-bottom:6px;">
-                <span>方案小計</span>
-                <span id="planSubtotal">NT$89,800</span>
-              </div>
-              <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--gray-500);margin-bottom:6px;">
-                <span>加購小計</span>
-                <span id="addonSubtotal">NT$0</span>
-              </div>
-            </div>
-          </div>
-          <div class="order-total">
-            <span class="label">合計</span>
-            <span class="amount" id="orderTotal">NT$89,800</span>
-          </div>
-        </div>
-
-        <!-- Info Cards -->
-        <div style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
-          <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:16px;font-size:13px;">
-            <div style="font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px;">🔒 安全付款保障</div>
-            <p style="color:var(--gray-500);">所有交易均透過 SSL 加密保護，我們不儲存任何信用卡資訊。</p>
-          </div>
-          <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:16px;font-size:13px;">
-            <div style="font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px;">📋 有問題嗎？</div>
-            <p style="color:var(--gray-500);margin-bottom:10px;">不確定哪個方案最適合你？直接聯繫我們。</p>
-            <a href="#" class="btn btn-outline btn-sm w-full">
-              <span style="color:#06C755;">●</span> 加入 LINE 詢問
-            </a>
-          </div>
-        </div>
+      <div class="btn-group" style="margin-top: 28px;">
+        <a href="#order-form" class="btn btn-primary btn-lg">填寫下單資訊</a>
+        <a href="brief.html" class="btn btn-outline btn-lg">我還不確定，先填需求表</a>
       </div>
-
     </div>
   </div>
 </section>
 
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="section-tag">下單前確認</div>
+      <h2 class="section-title">
+        <span class="title-line">下單前，</span><span class="title-line">先確認這幾件事。</span>
+      </h2>
+    </div>
+    <div style="max-width: 560px; margin: 0 auto;" class="fade-up">
+      <ul class="checklist">
+        <li>你大致知道自己要選哪個方案</li>
+        <li>你已經看過方案包含內容</li>
+        <li>你知道目前最優先想解決的問題</li>
+        <li>若有特殊需求，願意先進一步說明</li>
+      </ul>
+      <p class="section-note" style="margin-top: 24px;">如果你現在只是「大概想做網站，但還不確定範圍」，<a href="brief.html" style="color: var(--primary);">先填需求表</a>通常會更適合。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="order-form">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="section-tag">下單表單</div>
+      <h2 class="section-title">選擇方案 + 填寫基本資訊</h2>
+    </div>
+
+    <form class="order-form fade-up" novalidate>
+
+      <!-- PART A: 方案選擇 -->
+      <div class="form-section">
+        <fieldset class="plan-selector form-fieldset">
+          <legend class="form-legend">選擇你要啟動的方案</legend>
+          <div class="plan-options">
+            <label class="plan-option">
+              <input type="radio" name="plan" value="entry-brand" />
+              <div class="plan-option-body">
+                <div class="plan-option-name">入門形象站</div>
+                <div class="plan-option-price">NT$19,800</div>
+                <div class="plan-option-desc">適合個人品牌、工作室、接案者與服務型商家，先建立基本品牌門面。</div>
+              </div>
+            </label>
+            <label class="plan-option">
+              <input type="radio" name="plan" value="brand-pro" />
+              <div class="plan-option-body">
+                <div class="plan-option-name">品牌形象站 Pro</div>
+                <div class="plan-option-price">NT$39,800 起</div>
+                <div class="plan-option-desc">適合內容較多、服務較完整，想建立更完整品牌網站的人。</div>
+              </div>
+            </label>
+            <label class="plan-option">
+              <input type="radio" name="plan" value="ecom-starter" />
+              <div class="plan-option-body">
+                <div class="plan-option-name">電商起步版</div>
+                <div class="plan-option-price">NT$59,800</div>
+                <div class="plan-option-desc">適合剛開始賣商品、想建立基本官網購物流程的品牌。</div>
+              </div>
+            </label>
+            <label class="plan-option">
+              <input type="radio" name="plan" value="ecom-growth" />
+              <div class="plan-option-body">
+                <div class="plan-option-name">電商成長版</div>
+                <div class="plan-option-price">NT$89,800</div>
+                <div class="plan-option-desc">適合已有商品、重視品牌感與購買體驗的商家。</div>
+              </div>
+            </label>
+            <label class="plan-option">
+              <input type="radio" name="plan" value="not-sure" />
+              <div class="plan-option-body">
+                <div class="plan-option-name">我不確定，想先聊需求</div>
+                <div class="plan-option-price" style="font-size: 14px; font-weight: 600;">→ 前往需求表</div>
+                <div class="plan-option-desc">還不確定方案？先填需求表，我們幫你釐清方向。</div>
+              </div>
+            </label>
+          </div>
+        </fieldset>
+        <div id="not-sure-notice" style="display: none; margin-top: 16px;">
+          <div class="notice-box">
+            看起來你還不太確定方向，建議先<a href="brief.html" style="color: var(--primary); font-weight: 700;">填寫需求表</a>，我們會協助你整理適合的下一步。
+          </div>
+        </div>
+      </div>
+
+      <!-- PART B: 基本資訊 -->
+      <div class="form-section">
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">填寫基本資訊</legend>
+          <div class="form-group">
+            <label class="form-label" for="contact-name">聯絡姓名 <span style="color: var(--primary);">*</span></label>
+            <input type="text" id="contact-name" name="contact_name" class="form-control" placeholder="王小明" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="brand-name">品牌名稱 / 公司名稱 <span style="color: var(--primary);">*</span></label>
+            <input type="text" id="brand-name" name="brand_name" class="form-control" placeholder="XX 品牌" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span style="color: var(--primary);">*</span></label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-line">LINE ID 或電話 <span style="color: var(--primary);">*</span></label>
+            <input type="text" id="contact-line" name="contact_line" class="form-control" placeholder="二選一即可" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="brand-status">目前品牌狀況</label>
+            <select id="brand-status" name="brand_status" class="form-control">
+              <option value="">— 請選擇 —</option>
+              <option value="preparing">還在準備中</option>
+              <option value="started">已經開始經營</option>
+              <option value="has-products">已經有商品/服務</option>
+              <option value="upgrade">已有網站/賣場想升級</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">你最想先完成的事情</label>
+            <div class="form-check-group" style="margin-top: 4px;">
+              <label class="form-check">
+                <input type="checkbox" name="priority" value="brand-front" />
+                建立品牌門面
+              </label>
+              <label class="form-check">
+                <input type="checkbox" name="priority" value="ecom-flow" />
+                建立電商購買流程
+              </label>
+              <label class="form-check">
+                <input type="checkbox" name="priority" value="product-info" />
+                整理商品資訊
+              </label>
+              <label class="form-check">
+                <input type="checkbox" name="priority" value="start-inquiry" />
+                開始正式接案/接詢問
+              </label>
+              <label class="form-check">
+                <input type="checkbox" name="priority" value="other" />
+                其他
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- PART C: 補充需求 -->
+      <div class="form-section">
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">補充需求（可選填）</legend>
+          <div class="form-group">
+            <label class="form-label" for="existing-site">目前有沒有網站或賣場連結？</label>
+            <input type="text" id="existing-site" name="existing_site" class="form-control" placeholder="https://... 或蝦皮、Instagram 等連結" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="ref-site">是否有指定風格或參考網站？</label>
+            <input type="text" id="ref-site" name="ref_site" class="form-control" placeholder="貼上你喜歡的網站連結或描述風格方向" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="special-notes">有沒有特殊需求想先說明？</label>
+            <textarea id="special-notes" name="special_notes" class="form-control" placeholder="例：需要特定功能、有特殊頁面需求、有時程壓力…"></textarea>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- PART D: 付款方式 -->
+      <div class="form-section">
+        <div class="form-section-title">付款方式</div>
+        <p style="font-size: 14px; color: var(--gray-600, #4b5563); line-height: 1.7; margin-bottom: 16px;">
+          標準方案可依實際串接方式提供付款流程。付款完成後，會依照你選擇的方案建立專案流程，並安排後續需求整理與製作。
+        </p>
+        <div class="payment-methods">
+          <span class="payment-method-badge">信用卡</span>
+          <span class="payment-method-badge">ATM 轉帳</span>
+          <span class="payment-method-badge">LINE Pay</span>
+        </div>
+      </div>
+
+      <!-- PART E: 下單後流程 -->
+      <div class="form-section">
+        <div class="form-section-title">下單後，接下來會怎麼進行？</div>
+        <ol class="process-list">
+          <li>確認下單資料</li>
+          <li>建立專案資料</li>
+          <li>提供需求表 / 需求整理入口</li>
+          <li>開始設計與製作</li>
+          <li>驗收後上線</li>
+          <li>視需要延伸維護或顧問服務</li>
+        </ol>
+        <div class="transparency-note">
+          標準方案適合常見需求。若你的需求包含大量頁面、特殊功能、複雜串接、額外文案或超出原本方案範圍的內容，後續可能需要另行評估與報價。我們希望把這些事情提前講清楚，避免做到一半才產生落差。
+        </div>
+      </div>
+
+      <!-- SUBMIT -->
+      <div class="form-submit-area">
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; max-width: 400px; font-size: 16px; padding: 16px 32px;">
+          確認並送出下單資訊
+        </button>
+        <p class="form-submit-note">
+          我還不確定，<a href="brief.html" style="color: var(--primary);">改填需求表</a>
+        </p>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <div class="logo-icon" aria-hidden="true">漫</div>
+          <span class="logo-name">漫漫行銷</span>
+        </div>
+        <p>為中小品牌與創業者提供建站、電商、賣場與後續經營支援。</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@manman.tw" class="footer-contact-item footer-contact-item--icon">
+            <i data-lucide="mail" class="icon icon--sm" aria-hidden="true"></i>
+            hello@manman.tw
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-contact-item footer-contact-item--icon line-item">
+            <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+            加入官方 LINE 帳號
+          </a>
+        </div>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="footer-social footer-social--line" aria-label="LINE">
+            <i data-lucide="message-circle" class="icon icon--sm"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>服務項目</h4>
+        <ul>
+          <li><a href="brand-website.html">品牌網站設計</a></li>
+          <li><a href="ecommerce.html">電商網站架設</a></li>
+          <li><a href="marketplace-optimization.html">平台賣場優化</a></li>
+          <li><a href="consulting.html">行銷顧問與維護</a></li>
+          <li><a href="pricing.html#addons">加購項目</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>快速入口</h4>
+        <ul>
+          <li><a href="pricing.html">方案與價格</a></li>
+          <li><a href="order.html">直接下單</a></li>
+          <li><a href="brief.html">填寫需求表</a></li>
+          <li><a href="index.html#portfolio">成果展示</a></li>
+          <li><a href="index.html#faq">常見問題</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>其他資訊</h4>
+        <ul>
+          <li><a href="privacy.html">隱私權政策</a></li>
+          <li><a href="terms.html">服務條款</a></li>
+          <li><a href="refund-policy.html">退款 / 變更規則</a></li>
+        </ul>
+        <div class="footer-meta">
+          <p>服務地區：全台品牌與商家</p>
+          <p>回覆時間：平日依序回覆</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 漫漫行銷 Manman Marketing. All rights reserved.</span>
+      <span>台灣 · 服務全台中小品牌</span>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-btns" aria-hidden="true">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="fab fab-line" tabindex="-1">
+    <span class="fab-icon fab-icon--line"><i data-lucide="message-circle" class="icon icon--sm"></i></span>
+    加入官方帳號
+  </a>
+  <a href="pricing.html" class="fab fab-order" tabindex="-1">
+    <span class="fab-icon fab-icon--order"><i data-lucide="arrow-right" class="icon icon--sm"></i></span>
+    查看方案
+  </a>
+</div>
+<div class="mobile-sticky-cta" id="mobileStickyCta" aria-label="快速行動">
+  <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="msca-line">
+    <i data-lucide="message-circle" class="icon icon--sm" aria-hidden="true"></i>
+    加入 LINE
+  </a>
+  <a href="pricing.html" class="msca-plan">
+    <i data-lucide="arrow-right" class="icon icon--sm" aria-hidden="true"></i>
+    看方案
+  </a>
+</div>
+
+<script src="lucide.min.js"></script>
 <script src="app.js"></script>
 <script>
-// Plan data
-const plans = {
-  'starter-site': { name:'入門形象站', category:'品牌網站', price:19800, time:'7～14 工作天', features:['1～3 頁網站','RWD 響應式設計','聯絡表單','基礎 SEO','協助上線'] },
-  'brand-pro': { name:'品牌形象站 Pro', category:'品牌網站', price:39800, time:'14～21 工作天', features:['5～8 頁網站','視覺風格規劃','CTA 規劃','詢價表單','GA4 安裝','協助上線'] },
-  'ecom-starter': { name:'電商起步版', category:'電商網站', price:59800, time:'14～21 工作天', features:['電商網站建置','購物車功能','金流串接 1 種','物流基本設定','後台操作教學'] },
-  'ecom-growth': { name:'電商成長版', category:'電商網站', price:89800, time:'21～30 工作天', features:['電商網站完整建置','金流串接 1～2 種','物流設定','發票串接','GA4 / Meta Pixel','上線後 14 天微調'] },
-  'ecom-flagship': { name:'電商旗艦版', category:'電商網站', price:129800, time:'依需求評估', features:['客製化品牌架構','完整電商流程','金流/物流/發票','SEO 架構強化','追蹤規劃'] },
-  'market-basic': { name:'賣場建置基本版', category:'平台賣場', price:9800, time:'5～7 工作天', features:['賣場首頁整理','商品分類建議','5 項商品頁優化','標題與描述建議'] },
-  'market-pro': { name:'賣場建置進階版', category:'平台賣場', price:19800, time:'7～14 工作天', features:['賣場首頁視覺規劃','商品頁模板','活動頁規劃','20 項商品頁優化'] }
-};
-
-let basePlanPrice = 89800;
-let addonTotal = 0;
-
-function updatePlan(value) {
-  if (!value || !plans[value]) return;
-  const p = plans[value];
-  document.getElementById('planCategory').textContent = p.category;
-  document.getElementById('planName').textContent = p.name;
-  document.getElementById('planPrice').textContent = 'NT$' + p.price.toLocaleString();
-  document.getElementById('planTime').textContent = p.time;
-  const featEl = document.getElementById('planFeatures');
-  featEl.innerHTML = p.features.map(f => `<span style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-full);padding:4px 12px;font-size:13px;">${f}</span>`).join('');
-  document.getElementById('summaryPlanName').textContent = p.name;
-  document.getElementById('summaryPlanPrice').textContent = 'NT$' + p.price.toLocaleString();
-  document.getElementById('planSubtotal').textContent = 'NT$' + p.price.toLocaleString();
-  basePlanPrice = p.price;
-  updateTotal();
-}
-
-function toggleAddon(card, price) {
-  const cb = card.querySelector('input');
-  cb.checked = !cb.checked;
-  if (cb.checked) {
-    card.style.borderColor = 'var(--primary)';
-    card.style.background = 'var(--primary-50)';
-    addonTotal += price;
-  } else {
-    card.style.borderColor = '';
-    card.style.background = '';
-    addonTotal -= price;
-  }
-  updateTotal();
-  updateAddonSummary();
-}
-
-function updateAddonSummary() {
-  const summaryEl = document.getElementById('addonSummary');
-  const cards = document.querySelectorAll('.addon-check-card input:checked');
-  let html = '';
-  cards.forEach(cb => {
-    const label = cb.nextElementSibling;
-    const name = label.querySelector('.addon-name').textContent;
-    const priceLabel = label.querySelector('.addon-price-label').textContent;
-    html += `<div class="order-item"><span class="order-item-name" style="color:var(--gray-500);">${name}</span><span class="order-item-price" style="color:var(--gray-500);font-size:13px;">${priceLabel}</span></div>`;
+  // Show redirect notice when "not sure" option is selected
+  document.querySelectorAll('input[name="plan"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      var notice = document.getElementById('not-sure-notice');
+      if (this.value === 'not-sure') {
+        notice.style.display = 'block';
+      } else {
+        notice.style.display = 'none';
+      }
+    });
   });
-  summaryEl.innerHTML = html;
-  document.getElementById('addonSubtotal').textContent = addonTotal > 0 ? 'NT$' + addonTotal.toLocaleString() + '+' : 'NT$0';
-}
-
-function updateTotal() {
-  const total = basePlanPrice + addonTotal;
-  document.getElementById('orderTotal').textContent = 'NT$' + total.toLocaleString() + (addonTotal > 0 ? '+' : '');
-}
-
-function selectPayment(label) {
-  document.querySelectorAll('.payment-method').forEach(l => l.classList.remove('active'));
-  label.classList.add('active');
-}
-
-function validateAndSubmit() {
-  // Basic validation
-  const checkboxes = document.querySelectorAll('.terms-list input[type=checkbox]');
-  let allChecked = true;
-  checkboxes.forEach(cb => { if (!cb.checked) allChecked = false; });
-  if (!allChecked) {
-    alert('請勾選所有確認事項後再送出。');
-    return false;
-  }
-  return true;
-}
-
-// Init from URL param
-const urlParams = new URLSearchParams(window.location.search);
-const planParam = urlParams.get('plan');
-if (planParam && plans[planParam]) {
-  document.getElementById('planSelector').value = planParam;
-  updatePlan(planParam);
-}
 </script>
 </body>
 </html>
