@@ -3459,11 +3459,22 @@ h1, h2, h3, h4, h5, h6 {
     gap: 6px;
   }
   .hero-chip { font-size: 12px; padding: 5px 12px; }
-  .hero-visual { order: -1; }
+  /* Mobile: content first, visual below */
+  .hero-content { order: 1; }
+  .hero-visual {
+    display: flex;
+    order: 2;
+  }
   .process-mockup {
     max-width: 100%;
-    padding: 20px;
+    padding: 16px;
   }
+  .process-mockup-title { margin-bottom: 12px; }
+  .pm-step { padding: 8px 0; gap: 10px; }
+  .pm-step-num { width: 26px; height: 26px; font-size: 12px; }
+  .pm-step-icon { width: 28px; height: 28px; }
+  .pm-step-icon svg { width: 14px; height: 14px; }
+  .pm-step-label { font-size: 13px; }
 
   /* Trust Bar */
   .trust-bar-grid {
@@ -4886,13 +4897,14 @@ section#faq { padding: 64px 0; }
 .scv2-title-link:hover { color: var(--primary); }
 
 .scv2-more {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-size: 13px;
   font-weight: 600;
   color: var(--primary);
   margin-top: 10px;
   text-decoration: none;
-  transition: gap 0.15s;
 }
 
 .scv2-more:hover { text-decoration: underline; }
