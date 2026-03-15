@@ -4102,3 +4102,27 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   gap: 6px;
 }
+
+/* ===================================================
+   PRICING — includes heading icon styles
+   =================================================== */
+.includes-heading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.includes-heading--yes {
+  color: #16a34a;
+}
+.includes-heading--yes .icon {
+  stroke: #16a34a;
+}
+.includes-heading--no {
+  color: var(--gray-400);
+}
+.includes-heading--no .icon {
+  stroke: var(--gray-400);
+}
