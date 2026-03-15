@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>行銷知識｜網站設計、電商與品牌經營文章｜漫漫行銷</title>
-  <meta name="description" content="漫漫行銷分享網站設計、電商建置、平台賣場、品牌經營與行銷實用知識，協助中小品牌更快找到方向。" />
+  <title>網站設計、電商與品牌經營文章｜漫漫行銷</title>
+  <meta name="description" content="閱讀漫漫行銷整理的品牌網站、電商網站、賣場優化與品牌經營文章，幫助中小品牌與創業者更清楚下一步。" />
   <link rel="canonical" href="https://aa89789123416-maker.github.io/manman-marketing/blog.html" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="行銷知識｜網站設計、電商與品牌經營文章｜漫漫行銷" />
-  <meta property="og:description" content="漫漫行銷分享網站設計、電商建置、平台賣場、品牌經營與行銷實用知識，協助中小品牌更快找到方向。" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="網站設計、電商與品牌經營文章｜漫漫行銷" />
+  <meta property="og:description" content="閱讀漫漫行銷整理的品牌網站、電商網站、賣場優化與品牌經營文章，幫助中小品牌與創業者更清楚下一步。" />
   <meta property="og:url" content="https://aa89789123416-maker.github.io/manman-marketing/blog.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://aa89789123416-maker.github.io/manman-marketing/og-cover.png" />
@@ -38,20 +38,23 @@
   }
   </script>
   <style>
-    .blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px; }
     @media(max-width:900px){ .blog-grid{grid-template-columns:repeat(2,1fr);} }
     @media(max-width:600px){ .blog-grid{grid-template-columns:1fr;} }
-    .blog-card { background:var(--white,#fff); border:1px solid var(--gray-200); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; transition:box-shadow .2s; }
-    .blog-card:hover { box-shadow:0 4px 20px rgba(0,0,0,.08); }
-    .blog-card-body { padding:20px; flex:1; display:flex; flex-direction:column; }
-    .blog-card-meta { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
-    .blog-card-tag { background:var(--primary-100,#FEF3E0); color:var(--primary-dark,#C97820); font-size:11px; font-weight:700; padding:3px 8px; border-radius:4px; }
-    .blog-card-date { font-size:12px; color:var(--gray-400); }
-    .blog-card-title { font-size:16px; font-weight:700; color:var(--dark); margin-bottom:8px; line-height:1.5; word-break:keep-all; }
-    .blog-card-excerpt { font-size:13px; color:var(--gray-500); line-height:1.6; flex:1; margin-bottom:16px; }
-    .blog-card-link { font-size:13px; font-weight:600; color:var(--primary); }
-    .blog-card--coming .blog-card-title { color:var(--gray-400); }
-    .coming-badge { background:var(--gray-100); color:var(--gray-400); font-size:11px; padding:2px 8px; border-radius:4px; margin-left:6px; }
+    .blog-card { background:var(--white,#fff); border:1px solid var(--gray-200,#e5e7eb); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; transition:box-shadow .2s,transform .2s; text-decoration:none; }
+    .blog-card:hover { box-shadow:0 8px 24px rgba(0,0,0,.08); transform:translateY(-2px); }
+    .blog-card-body { padding:22px; flex:1; display:flex; flex-direction:column; }
+    .blog-card-meta { display:flex; align-items:center; gap:8px; margin-bottom:12px; }
+    .blog-card-tag { background:var(--primary-100,#FEF3E0); color:var(--primary-dark,#C97820); font-size:11px; font-weight:700; padding:3px 9px; border-radius:5px; }
+    .blog-card-date { font-size:12px; color:var(--gray-400,#9ca3af); }
+    .blog-card-title { font-size:16px; font-weight:800; color:var(--dark); margin-bottom:10px; line-height:1.5; word-break:keep-all; flex:1; }
+    .blog-card-excerpt { font-size:13px; color:var(--gray-500,#6b7280); line-height:1.6; margin-bottom:16px; }
+    .blog-card-link { font-size:13px; font-weight:600; color:var(--primary); display:flex; align-items:center; gap:4px; }
+    .topic-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px; }
+    @media(max-width:700px){ .topic-grid{grid-template-columns:1fr;} }
+    .topic-card { background:var(--white); border:1px solid var(--gray-200); border-radius:12px; padding:20px; }
+    .topic-card-name { font-size:16px; font-weight:700; color:var(--dark); margin-bottom:8px; }
+    .topic-card-desc { font-size:13px; color:var(--gray-500); line-height:1.6; }
   </style>
 </head>
 <body>
@@ -104,9 +107,13 @@
     <div class="slp-hero-inner">
       <div class="slp-tag">行銷知識</div>
       <h1 class="slp-title">
-        <span class="title-line">實用知識，</span><span class="title-line">幫你把品牌做得更清楚。</span>
+        <span class="title-line">網站、電商與品牌經營文章</span>
       </h1>
-      <p class="slp-subtitle">這裡分享關於網站設計、電商建置、賣場優化與品牌經營的實用文章，讓你在開始前更清楚方向。</p>
+      <p class="slp-subtitle">如果你正在思考品牌網站、電商網站、賣場優化、內容經營或網站規劃的下一步，這裡整理了漫漫行銷的文章，幫你先把方向看清楚。</p>
+      <div class="btn-group">
+        <a href="pricing.html" class="btn btn-primary btn-lg">查看方案與價格</a>
+        <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-lg">加入官方帳號聊聊</a>
+      </div>
     </div>
   </div>
 </section>
@@ -118,78 +125,100 @@
     </div>
     <div class="blog-grid fade-up">
 
-      <div class="blog-card blog-card--coming">
+      <a href="articles/brand-website-design-checklist.html" class="blog-card">
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <span class="blog-card-tag">品牌網站</span>
-            <span class="coming-badge">即將發布</span>
+            <span class="blog-card-date">2026/03/15</span>
           </div>
-          <h3 class="blog-card-title">品牌網站設計要注意什麼</h3>
-          <p class="blog-card-excerpt">預計分享品牌網站設計的重點注意事項，包括資訊架構、SEO 基礎與視覺規劃。</p>
-          <span class="blog-card-link" aria-disabled="true">即將發布</span>
+          <h3 class="blog-card-title">品牌網站設計要注意什麼？中小品牌最常忽略的 7 件事</h3>
+          <p class="blog-card-excerpt">很多人以為品牌網站就是把畫面做漂亮，但真正影響網站效果的，往往是資訊結構、導流方式與信任感建立。</p>
+          <span class="blog-card-link">閱讀全文 →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="blog-card blog-card--coming">
+      <a href="articles/ecommerce-vs-marketplace.html" class="blog-card">
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <span class="blog-card-tag">電商</span>
-            <span class="coming-badge">即將發布</span>
+            <span class="blog-card-date">2026/03/15</span>
           </div>
-          <h3 class="blog-card-title">電商網站和平台賣場差在哪</h3>
-          <p class="blog-card-excerpt">協助你了解電商官網與平台賣場的差異，找到最適合你現階段的選擇。</p>
-          <span class="blog-card-link" aria-disabled="true">即將發布</span>
+          <h3 class="blog-card-title">電商網站和平台賣場差在哪？什麼階段該做官網？</h3>
+          <p class="blog-card-excerpt">官網電商和平台賣場不是誰取代誰，而是適合的階段不同。這篇文章會幫你看懂兩者差異，以及什麼時候該把重心放到品牌官網。</p>
+          <span class="blog-card-link">閱讀全文 →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="blog-card blog-card--coming">
+      <a href="articles/official-website-or-shopee-first.html" class="blog-card">
         <div class="blog-card-body">
           <div class="blog-card-meta">
-            <span class="blog-card-tag">賣場</span>
-            <span class="coming-badge">即將發布</span>
+            <span class="blog-card-tag">選擇策略</span>
+            <span class="blog-card-date">2026/03/15</span>
           </div>
-          <h3 class="blog-card-title">中小品牌該先做官網還是先做蝦皮</h3>
-          <p class="blog-card-excerpt">分析兩種路線的優缺點，讓你根據預算與目標做出更清楚的判斷。</p>
-          <span class="blog-card-link" aria-disabled="true">即將發布</span>
+          <h3 class="blog-card-title">中小品牌該先做官網還是先做蝦皮？先看你現在卡在哪裡</h3>
+          <p class="blog-card-excerpt">不是每個品牌一開始都適合直接做官網，也不是所有人都該永遠只靠平台。這篇文章會從不同情境幫你判斷。</p>
+          <span class="blog-card-link">閱讀全文 →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="blog-card blog-card--coming">
+      <a href="articles/web-design-pricing-guide.html" class="blog-card">
         <div class="blog-card-body">
           <div class="blog-card-meta">
-            <span class="blog-card-tag">費用</span>
-            <span class="coming-badge">即將發布</span>
+            <span class="blog-card-tag">費用參考</span>
+            <span class="blog-card-date">2026/03/15</span>
           </div>
-          <h3 class="blog-card-title">網頁設計費用怎麼看才不容易踩雷</h3>
-          <p class="blog-card-excerpt">整理常見費用結構與注意事項，讓你在選擇廠商前有更清楚的參考。</p>
-          <span class="blog-card-link" aria-disabled="true">即將發布</span>
+          <h3 class="blog-card-title">網頁設計費用怎麼看才不容易踩雷？看價格前先懂這幾件事</h3>
+          <p class="blog-card-excerpt">價格差很多，常常不是誰比較便宜，而是內容根本不一樣。這篇文章會幫你拆解網站報價背後真正該看的重點。</p>
+          <span class="blog-card-link">閱讀全文 →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="blog-card blog-card--coming">
+      <a href="articles/product-page-conversion-tips.html" class="blog-card">
         <div class="blog-card-body">
           <div class="blog-card-meta">
-            <span class="blog-card-tag">商品頁</span>
-            <span class="coming-badge">即將發布</span>
+            <span class="blog-card-tag">賣場轉換</span>
+            <span class="blog-card-date">2026/03/15</span>
           </div>
-          <h3 class="blog-card-title">商品頁怎麼設計比較容易成交</h3>
-          <p class="blog-card-excerpt">從資訊排版、圖片配置與描述方式，整理商品頁設計的轉換要點。</p>
-          <span class="blog-card-link" aria-disabled="true">即將發布</span>
+          <h3 class="blog-card-title">商品頁怎麼設計比較容易成交？不是把資訊塞滿就有用</h3>
+          <p class="blog-card-excerpt">很多商品頁的問題不是資訊太少，而是資訊太亂。這篇文章整理商品頁更容易成交的幾個關鍵。</p>
+          <span class="blog-card-link">閱讀全文 →</span>
         </div>
-      </div>
+      </a>
 
-      <div class="blog-card blog-card--coming">
+      <a href="articles/do-startup-brands-need-a-website.html" class="blog-card">
         <div class="blog-card-body">
           <div class="blog-card-meta">
-            <span class="blog-card-tag">品牌</span>
-            <span class="coming-badge">即將發布</span>
+            <span class="blog-card-tag">品牌起步</span>
+            <span class="blog-card-date">2026/03/15</span>
           </div>
-          <h3 class="blog-card-title">品牌剛起步，網站一定要先做嗎</h3>
-          <p class="blog-card-excerpt">從品牌發展的角度分析，什麼時候應該優先做網站、什麼時候先做其他事。</p>
-          <span class="blog-card-link" aria-disabled="true">即將發布</span>
+          <h3 class="blog-card-title">品牌剛起步，網站一定要先做嗎？先釐清你現在需要的是什麼</h3>
+          <p class="blog-card-excerpt">網站很重要，但不是每個品牌都該在同一時間點做。這篇文章幫你判斷，現在的你到底需不需要先做網站。</p>
+          <span class="blog-card-link">閱讀全文 →</span>
         </div>
-      </div>
+      </a>
 
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <h2 class="section-title"><span class="title-line">文章分類</span></h2>
+    </div>
+    <div class="topic-grid fade-up">
+      <div class="topic-card">
+        <div class="topic-card-name">品牌網站</div>
+        <div class="topic-card-desc">品牌網站設計、資訊架構、手機版體驗、SEO 基礎</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-card-name">電商與賣場</div>
+        <div class="topic-card-desc">電商建置、平台賣場、商品頁優化、購買流程</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-card-name">品牌起步</div>
+        <div class="topic-card-desc">品牌定位、費用參考、合作流程、方向判斷</div>
+      </div>
     </div>
   </div>
 </section>
@@ -197,13 +226,14 @@
 <section class="cta-section section-amber">
   <div class="container">
     <div class="cta-inner text-center fade-up">
-      <div class="section-tag">準備好了嗎</div>
+      <div class="section-tag">聊聊看</div>
       <h2 class="section-title">
-        <span class="title-line">想把品牌整理清楚，</span><span class="title-line">可以從這裡開始。</span>
+        <span class="title-line">有任何問題，也可以先聊聊</span>
       </h2>
-      <p class="section-subtitle">看完文章有方向了嗎？歡迎直接查看方案，或加入官方帳號聊聊你的需求。</p>
+      <p class="section-subtitle">如果你讀完文章後還是不確定自己適合哪一個方向，歡迎直接加入官方帳號聊聊，或先填寫需求表讓我們幫你整理。</p>
       <div class="cta-btn-group btn-group">
-        <a href="pricing.html" class="btn btn-primary btn-lg">查看我們的服務方案</a>
+        <a href="pricing.html" class="btn btn-primary btn-lg">查看方案與價格</a>
+        <a href="brief.html" class="btn btn-outline btn-lg">填寫需求表</a>
         <a href="https://lin.ee/wKvaxBW" target="_blank" rel="noopener" class="btn btn-outline btn-lg">加入官方帳號聊聊</a>
       </div>
     </div>

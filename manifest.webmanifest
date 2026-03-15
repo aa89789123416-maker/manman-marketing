@@ -1,17 +1,24 @@
 {
   "name": "漫漫行銷",
   "short_name": "漫漫行銷",
-  "description": "漫漫行銷為中小品牌與創業者提供品牌網站、電商網站、平台賣場優化與後續行銷支援。",
+  "description": "品牌網站、電商網站、賣場優化與行銷服務",
   "start_url": "/manman-marketing/",
-  "display": "browser",
+  "scope": "/manman-marketing/",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#E8912A",
   "icons": [
     {
-      "src": "/manman-marketing/favicon.svg",
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
