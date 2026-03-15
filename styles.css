@@ -196,6 +196,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   color: var(--dark);
   margin-bottom: 16px;
+  word-break: keep-all;
+  line-break: strict;
 }
 
 .section-subtitle {
@@ -514,9 +516,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
   letter-spacing: -0.03em;
   margin-bottom: 20px;
+  word-break: keep-all;
+  line-break: strict;
 }
 
 .hero-title span {
+  color: var(--primary);
+}
+.hero-title-accent {
   color: var(--primary);
 }
 
@@ -1494,6 +1501,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white);
   margin-bottom: 16px;
   letter-spacing: -0.03em;
+  word-break: keep-all;
+  line-break: strict;
 }
 
 .cta-inner p {
@@ -2627,7 +2636,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--dark);
   margin-bottom: 20px;
 }
-.hero-title span {
+.hero-title span,
+.hero-title-accent {
   color: var(--primary);
 }
 .hero-subtitle {
@@ -3441,44 +3451,53 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Hero */
   .hero {
-    padding: 48px 0 40px;
+    padding: 36px 0 32px;
   }
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 28px;
   }
+  .hero-tag { margin-bottom: 14px; }
   .hero-title {
     font-size: 30px;
+    margin-bottom: 14px;
   }
   .hero-subtitle { display: none; }
   .hero-subtitle-mobile {
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--gray-600);
-    line-height: 1.75;
-    margin-bottom: 28px;
+    line-height: 1.7;
+    margin-bottom: 20px;
   }
   .hero-chips {
     flex-wrap: wrap;
     gap: 6px;
+    margin-top: 16px;
   }
-  .hero-chip { font-size: 12px; padding: 5px 12px; }
+  .hero-chip { font-size: 12px; padding: 5px 11px; }
   /* Mobile: content first, visual below */
   .hero-content { order: 1; }
   .hero-visual {
     display: flex;
     order: 2;
+    margin-top: 4px;
   }
+  /* Process mockup: compact */
   .process-mockup {
     max-width: 100%;
-    padding: 16px;
+    padding: 14px 16px;
   }
-  .process-mockup-title { margin-bottom: 12px; }
-  .pm-step { padding: 8px 0; gap: 10px; }
-  .pm-step-num { width: 26px; height: 26px; font-size: 12px; }
-  .pm-step-icon { width: 28px; height: 28px; }
-  .pm-step-icon svg { width: 14px; height: 14px; }
-  .pm-step-label { font-size: 13px; }
+  .process-mockup-title { margin-bottom: 10px; font-size: 11px; }
+  .pm-step { padding: 6px 0; gap: 10px; }
+  .pm-step-icon { width: 26px; height: 26px; }
+  .pm-step-icon svg { width: 13px; height: 13px; }
+  .pm-step-name { font-size: 13px; }
+  .pm-step-desc { font-size: 11px; }
+  .pm-connector { height: 10px !important; }
+  .process-mockup-note { margin-top: 12px; padding-top: 10px; font-size: 11px; }
+  /* Outcome card: hide on small mobile, keep only mockup */
+  .hero-outcome-card { display: none; }
 
   /* Trust Bar */
   .trust-bar-grid {
@@ -4614,8 +4633,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---- Section visual hierarchy: varied spacing ---- */
-/* Hero stays prominent */
-.hero { padding: 120px 0 80px; }
+/* Hero stays prominent (desktop only) */
+@media (min-width: 769px) {
+  .hero { padding: 120px 0 80px; }
+}
 
 /* Pricing section: prominent */
 section#pricing { padding: 96px 0; }
@@ -4950,4 +4971,24 @@ section#faq { padding: 64px 0; }
   font-weight: 800;
   color: var(--primary-dark);
   letter-spacing: -0.01em;
+}
+
+/* =====================================================
+   TYPOGRAPHY UTILITIES
+   ===================================================== */
+
+/* Manual line-break control for headings */
+.title-line {
+  display: block;
+}
+
+/* On desktop (≥769px), let titles flow naturally — only force breaks on narrow */
+@media (min-width: 769px) {
+  .section-title .title-line,
+  .cta-inner h2 .title-line {
+    display: inline;
+  }
+  .hero-title .title-line {
+    display: block;
+  }
 }
