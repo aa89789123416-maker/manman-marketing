@@ -63,26 +63,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   faqItems.forEach(item => {
     const btn = item.querySelector('.faq-question');
-    const answer = item.querySelector('.faq-answer');
 
-    if (btn && answer) {
+    if (btn) {
       btn.addEventListener('click', function () {
-        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        const isOpen = item.classList.contains('open');
 
         // Close all
         faqItems.forEach(i => {
-          const b = i.querySelector('.faq-question');
-          const a = i.querySelector('.faq-answer');
-          if (b) b.setAttribute('aria-expanded', 'false');
-          if (a) a.hidden = true;
           i.classList.remove('open');
+          const b = i.querySelector('.faq-question');
+          if (b) b.setAttribute('aria-expanded', 'false');
         });
 
-        // Open clicked (if not already open)
+        // Open clicked item (if it wasn't already open)
         if (!isOpen) {
-          btn.setAttribute('aria-expanded', 'true');
-          answer.hidden = false;
           item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
         }
       });
     }

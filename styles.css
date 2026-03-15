@@ -1436,7 +1436,11 @@ h1, h2, h3, h4, h5, h6 {
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.35s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 600px;
 }
 
 .faq-answer-inner {
