@@ -4126,3 +4126,563 @@ h1, h2, h3, h4, h5, h6 {
 .includes-heading--no .icon {
   stroke: var(--gray-400);
 }
+
+/* =====================================================
+   VISUAL UPGRADE 2026-03 — Design layer improvements
+   ===================================================== */
+
+/* ---- Logo brand upgrade ---- */
+.logo-icon {
+  width: 34px !important;
+  height: 34px !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+  color: white !important;
+  border-radius: 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 2px 8px rgba(232,145,42,0.30) !important;
+  letter-spacing: -0.01em !important;
+}
+
+.logo-name {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-size: 17px;
+  color: var(--dark);
+}
+
+.footer-brand .logo-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.footer-brand .logo-name {
+  font-size: 16px;
+}
+
+/* ---- Pain points: clean 2-col without arrow ---- */
+.pp-cols-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 8px;
+  padding: 0 24px;
+}
+
+.pp-col-head {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 0;
+}
+
+.pp-col-head--pain { color: #c2410c; }
+.pp-col-head--solution { color: #16a34a; padding-left: 24px; }
+
+.pp-item {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 0 !important;
+  padding: 16px 24px !important;
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--gray-100) !important;
+  background: var(--white) !important;
+  align-items: center !important;
+}
+
+.pp-pain {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  padding-right: 20px !important;
+}
+
+.pp-solution {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  padding-left: 20px !important;
+  border-left: 1px solid var(--gray-200) !important;
+}
+
+.pp-text {
+  font-size: 14px !important;
+  color: var(--gray-700) !important;
+  line-height: 1.5 !important;
+}
+
+.pp-text-block { display: none; }
+
+/* Mobile: stack pain points */
+@media (max-width: 640px) {
+  .pp-cols-header { display: none; }
+  .pp-item {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .pp-solution {
+    padding-left: 0 !important;
+    border-left: none !important;
+    border-top: 1px solid var(--gray-200);
+    padding-top: 12px !important;
+  }
+  .pp-pain { padding-right: 0 !important; }
+}
+
+/* ---- Portfolio mockup: detailed website thumbnails ---- */
+.portfolio-mock-body {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.pmc-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+  gap: 8px;
+}
+
+.pmc-nav-logo {
+  width: 32px;
+  height: 7px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.pmc-nav-links {
+  display: flex;
+  gap: 5px;
+  flex: 1;
+  justify-content: center;
+}
+
+.pmc-nav-link {
+  width: 18px;
+  height: 5px;
+  background: #e5e7eb;
+  border-radius: 2px;
+}
+
+.pmc-nav-cta {
+  width: 24px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.pmc-hero {
+  padding: 12px 8px;
+}
+
+.pmc-hero--compact { padding: 8px; }
+
+.pmc-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pmc-line {
+  height: 6px;
+  border-radius: 3px;
+}
+
+.pmc-line--lg { height: 8px; }
+.pmc-line--sm { height: 5px; }
+.pmc-line--xs { height: 4px; }
+
+.pmc-btn {
+  width: 40px;
+  height: 14px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.pmc-btn--sm {
+  width: 28px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+/* E-commerce product grid */
+.pmc-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+  padding: 6px 8px;
+}
+
+.pmc-product-card {
+  background: white;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.pmc-product-img {
+  height: 26px;
+}
+
+.pmc-product-info {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pmc-cta-bar {
+  padding: 6px 8px;
+  margin: 4px 8px 8px;
+  border-radius: 3px;
+}
+
+/* Brand website service cards */
+.pmc-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+  padding: 4px 8px;
+}
+
+.pmc-svc-card {
+  background: var(--gray-50);
+  border-radius: 3px;
+  padding: 6px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pmc-contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px 8px;
+}
+
+/* Marketplace tabs + grid */
+.pmc-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 0 8px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 4px;
+}
+
+.pmc-tab {
+  flex: 1;
+  height: 14px;
+  background: #e5e7eb;
+  border-radius: 2px 2px 0 0;
+  opacity: 0.5;
+}
+
+.pmc-tab--active { opacity: 1; }
+
+.pmc-grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px 8px 8px;
+}
+
+/* ---- Hero: outcome preview card ---- */
+.hero-outcome-card {
+  margin-top: 12px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.hoc-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray-500);
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--gray-100);
+  background: var(--gray-50);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hoc-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(16,185,129,0.2);
+}
+
+.hoc-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.hoc-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.hoc-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hoc-url {
+  flex: 1;
+  background: white;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 10px;
+  color: var(--gray-500);
+  font-family: monospace;
+}
+
+.hoc-content {
+  padding: 0;
+  background: var(--gray-50);
+}
+
+.hoc-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.hoc-logo {
+  width: 28px;
+  height: 7px;
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+.hoc-nav-links {
+  display: flex;
+  gap: 5px;
+}
+
+.hoc-nav-links div {
+  width: 16px;
+  height: 4px;
+  background: var(--gray-300);
+  border-radius: 2px;
+}
+
+.hoc-nav-btn {
+  width: 22px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+.hoc-hero-strip {
+  background: linear-gradient(135deg, var(--primary), #F59E0B);
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hoc-hl {
+  height: 7px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 3px;
+  width: 55%;
+}
+
+.hoc-hs {
+  height: 5px;
+  background: rgba(255,255,255,0.55);
+  border-radius: 2px;
+  width: 40%;
+}
+
+.hoc-hbtn {
+  width: 32px;
+  height: 12px;
+  background: white;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+
+.hoc-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+  padding: 6px 8px;
+}
+
+.hoc-card {
+  height: 28px;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid var(--gray-200);
+}
+
+/* Mobile: hide outcome card on tiny screens */
+@media (max-width: 480px) {
+  .hero-outcome-card { display: none; }
+}
+
+/* ---- Process mockup: refined status pill ---- */
+.pm-step-badge {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  padding: 3px 9px !important;
+  border-radius: 99px !important;
+  background: rgba(16,185,129,0.10) !important;
+  color: #059669 !important;
+  border: 1px solid rgba(16,185,129,0.25) !important;
+  white-space: nowrap !important;
+}
+
+.pm-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+  display: inline-block;
+  animation: pulse-dot 1.8s ease infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
+  50% { box-shadow: 0 0 0 4px rgba(16,185,129,0); }
+}
+
+.pm-step-check {
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  background: rgba(16,185,129,0.10) !important;
+  color: #059669 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+/* ---- Audience cards: smaller, softer icons ---- */
+.asc-icon-sm {
+  background: rgba(148,163,184,0.07) !important;
+  border: 1px solid rgba(148,163,184,0.12) !important;
+  color: var(--gray-500) !important;
+}
+
+/* ---- Section visual hierarchy: varied spacing ---- */
+/* Hero stays prominent */
+.hero { padding: 120px 0 80px; }
+
+/* Pricing section: prominent */
+section#pricing { padding: 96px 0; }
+
+/* Services: standard */
+section#services { padding: 80px 0; }
+
+/* Process: standard on amber bg */
+section#process { padding: 80px 0; }
+
+/* Audience: slightly lighter */
+section#audience { padding: 72px 0; }
+
+/* Why us: standard */
+section#why { padding: 80px 0; }
+
+/* Portfolio: prominent */
+section#portfolio { padding: 88px 0; }
+
+/* Addons: standard */
+section#addons { padding: 72px 0; }
+
+/* FAQ: lighter */
+section#faq { padding: 64px 0; }
+
+/* ---- Add-on list: better vertical alignment ---- */
+.addon-list-item {
+  align-items: center !important;
+}
+
+.ali-price {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  color: var(--primary-dark) !important;
+  white-space: nowrap !important;
+  letter-spacing: -0.01em !important;
+}
+
+.ali-body h4 {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  margin-bottom: 2px !important;
+}
+
+.ali-body p {
+  font-size: 13px !important;
+  color: var(--gray-500) !important;
+}
+
+/* Addon hover state */
+.addon-list-item {
+  transition: background 0.18s, box-shadow 0.18s !important;
+}
+
+.addon-list-item:hover {
+  background: var(--primary-50) !important;
+  box-shadow: 0 2px 8px rgba(232,145,42,0.08) !important;
+}
+
+/* Mobile: reduce addon icon size */
+@media (max-width: 640px) {
+  .addon-list-item .ali-icon.icon-badge--md {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 10px !important;
+  }
+}
+
+/* ---- Footer: clean up logo text ---- */
+.footer-brand .logo-name {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* ---- Process mockup: connector refinement ---- */
+.pm-connector {
+  border-left: 1.5px dashed rgba(0,0,0,0.12) !important;
+  margin-left: 22px !important;
+}
+
+/* ---- Section background hierarchy ---- */
+/* Alternate sections should have subtle contrast difference */
+.section-alt { background: #FAFAF9; }
+

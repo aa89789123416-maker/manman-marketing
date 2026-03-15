@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /order.html
+Disallow: /brief.html
+Disallow: /success.html
+
+Sitemap: https://aa89789123416-maker.github.io/manman-marketing/sitemap.xml
