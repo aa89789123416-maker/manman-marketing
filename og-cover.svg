@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="100%" stop-color="#FEF3C7"/>
+    </linearGradient>
+    <linearGradient id="logo-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#C97820"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="630" fill="#E8912A"/>
+  <!-- Logo icon -->
+  <rect x="80" y="220" width="80" height="80" rx="20" fill="url(#logo-g)"/>
+  <text x="120" y="280" font-family="serif" font-size="52" font-weight="900" fill="white" text-anchor="middle">漫</text>
+  <!-- Brand name -->
+  <text x="185" y="275" font-family="sans-serif" font-size="40" font-weight="800" fill="#111827">漫漫行銷</text>
+  <text x="185" y="318" font-family="sans-serif" font-size="22" fill="#6B7280">Manman Marketing</text>
+  <!-- Main headline -->
+  <text x="80" y="430" font-family="sans-serif" font-size="52" font-weight="900" fill="#111827">品牌網站・電商・賣場・行銷，</text>
+  <text x="80" y="498" font-family="sans-serif" font-size="52" font-weight="900" fill="#E8912A">一次搞定。</text>
+  <!-- Sub text -->
+  <text x="80" y="565" font-family="sans-serif" font-size="24" fill="#6B7280">中小品牌的一站式建站與行銷夥伴 · 價格透明 · 流程清楚</text>
+  <!-- Right decorative element -->
+  <rect x="900" y="80" width="220" height="140" rx="16" fill="#E8912A" opacity="0.12"/>
+  <rect x="940" y="280" width="180" height="100" rx="12" fill="#E8912A" opacity="0.08"/>
+  <rect x="920" y="430" width="240" height="80" rx="12" fill="#E8912A" opacity="0.15"/>
+  <!-- Price badge -->
+  <rect x="920" y="170" width="200" height="52" rx="26" fill="#E8912A"/>
+  <text x="1020" y="204" font-family="sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">NT$19,800 起</text>
+</svg>

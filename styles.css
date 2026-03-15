@@ -4686,3 +4686,252 @@ section#faq { padding: 64px 0; }
 /* Alternate sections should have subtle contrast difference */
 .section-alt { background: #FAFAF9; }
 
+
+/* =====================================================
+   BREADCRUMB — service landing pages
+   ===================================================== */
+.breadcrumb-nav {
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 10px 0;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--gray-500);
+  flex-wrap: wrap;
+}
+
+.breadcrumb-item a {
+  color: var(--gray-500);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.breadcrumb-item a:hover { color: var(--primary); }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  color: var(--gray-400);
+  margin-right: 6px;
+}
+
+.breadcrumb-item--current {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* =====================================================
+   SERVICE LANDING PAGE — slp-* classes
+   ===================================================== */
+.slp-hero {
+  padding: 80px 0 64px;
+  background: linear-gradient(160deg, var(--white) 0%, var(--primary-50) 100%);
+  border-bottom: 1px solid var(--primary-100);
+}
+
+.slp-hero-inner {
+  max-width: 680px;
+}
+
+.slp-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary-100);
+  color: var(--primary-dark);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 20px;
+}
+
+.slp-title {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .slp-title { font-size: 28px; }
+}
+
+.slp-subtitle {
+  font-size: 17px;
+  color: var(--gray-600);
+  line-height: 1.75;
+  margin-bottom: 32px;
+  max-width: 560px;
+}
+
+/* Features list */
+.slp-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slp-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--gray-700);
+  line-height: 1.5;
+}
+
+.slp-feature .icon-badge { flex-shrink: 0; margin-top: 1px; }
+
+/* Audience cards inside service pages */
+.slp-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .slp-audience-grid { grid-template-columns: 1fr; }
+}
+
+.slp-audience-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: var(--transition);
+}
+
+.slp-audience-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-200);
+}
+
+.slp-audience-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.slp-audience-card p {
+  font-size: 13px;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+/* Pricing mini-grid for service pages */
+.slp-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (max-width: 540px) {
+  .slp-pricing-grid { grid-template-columns: 1fr; }
+}
+
+.slp-price-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.slp-price-card--featured {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-primary);
+}
+
+.slp-price-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gray-700);
+  margin-bottom: 8px;
+}
+
+.slp-price-amount {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--dark);
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.slp-price-amount span { font-size: 16px; font-weight: 600; color: var(--gray-500); }
+
+.slp-price-note {
+  font-size: 13px;
+  color: var(--gray-500);
+  margin-bottom: 16px;
+}
+
+/* Service card v2 "more" link */
+.scv2-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.scv2-title-link:hover { color: var(--primary); }
+
+.scv2-more {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 10px;
+  text-decoration: none;
+  transition: gap 0.15s;
+}
+
+.scv2-more:hover { text-decoration: underline; }
+
+/* Service mode cards (consulting page) */
+.slp-modes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .slp-modes-grid { grid-template-columns: 1fr; }
+}
+
+.slp-mode-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+}
+
+.slp-mode-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.slp-mode-card p {
+  font-size: 14px;
+  color: var(--gray-500);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.slp-mode-price {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  letter-spacing: -0.01em;
+}
