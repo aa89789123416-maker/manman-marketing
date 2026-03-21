@@ -1438,6 +1438,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .faq-answer {
+  display: block; /* override HTML hidden attribute */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease;
